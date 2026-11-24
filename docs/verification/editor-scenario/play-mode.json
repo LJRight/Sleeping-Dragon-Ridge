@@ -1,0 +1,33 @@
+{
+  "unity": "6000.3.10f1",
+  "scenario": "Server And Client",
+  "database": "Temporary fixture with an existing guest and inventory tutorial",
+  "rounds": [
+    {
+      "play": 1,
+      "mainTag": "EditorGameServer",
+      "virtualTag": "EditorGameClient",
+      "clientScene": "WorldSession",
+      "loginTcp": 56293,
+      "gameUdp": 53297,
+      "gold": 37,
+      "revision": 1,
+      "sameGuest": true,
+      "clientReceivedServerKey": false,
+      "portsReleasedOnStop": true
+    },
+    {
+      "play": 2,
+      "mainTag": "EditorGameServer",
+      "virtualTag": "EditorGameClient",
+      "clientScene": "WorldSession",
+      "loginTcp": 56339,
+      "gameUdp": 63631,
+      "gold": 47,
+      "revision": 2,
+      "sameGuest": true,
+      "clientReceivedServerKey": false,
+      "portsReleasedOnStop": true
+    }
+  ]
+}

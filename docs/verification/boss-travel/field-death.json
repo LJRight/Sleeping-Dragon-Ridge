@@ -1,0 +1,237 @@
+{
+  "testedAt": "2026-11-19T00:24:49+09:00",
+  "platform": "Unity macOS arm64 standalone, headless QA client and isolated game / HTTP servers",
+  "scene": "Prototype",
+  "account": "g_cba2cba869802175dcd65187",
+  "input": "normal game UI via Unity EventSystem; quest accept, inventory open, reward equip and joystick. No attack, HP, position or progression injected.",
+  "monster": {
+    "definition": "A1",
+    "networkObjectId": 2,
+    "maximumHP": 28,
+    "name": "DragonSoulEater(Clone)"
+  },
+  "armed": {
+    "hp": 104,
+    "max": 104,
+    "pos": {
+      "x": -2.483473300933838,
+      "y": 1.0799999237060547,
+      "z": -0.6946657299995422
+    },
+    "epoch": 0,
+    "arena": false
+  },
+  "fieldLethalHits": [
+    {
+      "elapsed": 2.05,
+      "hp": 94,
+      "dragonPosition": {
+        "x": -0.0780380442738533,
+        "y": 0.07999998331069946,
+        "z": 10.927837371826172
+      },
+      "playerPosition": {
+        "x": -0.2604573667049408,
+        "y": 1.0799999237060547,
+        "z": 8.433349609375
+      }
+    },
+    {
+      "elapsed": 3.58,
+      "hp": 84,
+      "dragonPosition": {
+        "x": -0.0780380442738533,
+        "y": 0.07999998331069946,
+        "z": 10.927837371826172
+      },
+      "playerPosition": {
+        "x": -0.2604573667049408,
+        "y": 1.0799999237060547,
+        "z": 8.433349609375
+      }
+    },
+    {
+      "elapsed": 5.04,
+      "hp": 74,
+      "dragonPosition": {
+        "x": -0.0780380442738533,
+        "y": 0.07999998331069946,
+        "z": 10.927837371826172
+      },
+      "playerPosition": {
+        "x": -0.2604573667049408,
+        "y": 1.0799999237060547,
+        "z": 8.433349609375
+      }
+    },
+    {
+      "elapsed": 6.68,
+      "hp": 64,
+      "dragonPosition": {
+        "x": -0.0780380442738533,
+        "y": 0.07999998331069946,
+        "z": 10.927837371826172
+      },
+      "playerPosition": {
+        "x": -0.2604573667049408,
+        "y": 1.0799999237060547,
+        "z": 8.433349609375
+      }
+    },
+    {
+      "elapsed": 8.22,
+      "hp": 54,
+      "dragonPosition": {
+        "x": -0.0780380442738533,
+        "y": 0.07999998331069946,
+        "z": 10.927837371826172
+      },
+      "playerPosition": {
+        "x": -0.2604573667049408,
+        "y": 1.0799999237060547,
+        "z": 8.433349609375
+      }
+    },
+    {
+      "elapsed": 9.75,
+      "hp": 44,
+      "dragonPosition": {
+        "x": -0.0780380442738533,
+        "y": 0.07999998331069946,
+        "z": 10.927837371826172
+      },
+      "playerPosition": {
+        "x": -0.2604573667049408,
+        "y": 1.0799999237060547,
+        "z": 8.433349609375
+      }
+    },
+    {
+      "elapsed": 11.29,
+      "hp": 34,
+      "dragonPosition": {
+        "x": -0.0780380442738533,
+        "y": 0.07999998331069946,
+        "z": 10.927837371826172
+      },
+      "playerPosition": {
+        "x": -0.2604573667049408,
+        "y": 1.0799999237060547,
+        "z": 8.433349609375
+      }
+    },
+    {
+      "elapsed": 12.83,
+      "hp": 24,
+      "dragonPosition": {
+        "x": -0.0780380442738533,
+        "y": 0.07999998331069946,
+        "z": 10.927837371826172
+      },
+      "playerPosition": {
+        "x": -0.2604573667049408,
+        "y": 1.0799999237060547,
+        "z": 8.433349609375
+      }
+    },
+    {
+      "elapsed": 14.39,
+      "hp": 14,
+      "dragonPosition": {
+        "x": -0.0780380442738533,
+        "y": 0.07999998331069946,
+        "z": 10.927837371826172
+      },
+      "playerPosition": {
+        "x": -0.2604573667049408,
+        "y": 1.0799999237060547,
+        "z": 8.433349609375
+      }
+    },
+    {
+      "elapsed": 15.94,
+      "hp": 4,
+      "dragonPosition": {
+        "x": -0.0780380442738533,
+        "y": 0.07999998331069946,
+        "z": 10.927837371826172
+      },
+      "playerPosition": {
+        "x": -0.2604573667049408,
+        "y": 1.0799999237060547,
+        "z": 8.433349609375
+      }
+    },
+    {
+      "elapsed": 17.51,
+      "hp": 0,
+      "dragonPosition": {
+        "x": -0.0780380442738533,
+        "y": 0.07999998331069946,
+        "z": 10.927837371826172
+      },
+      "playerPosition": {
+        "x": -0.2604573667049408,
+        "y": 1.0799999237060547,
+        "z": 8.433349609375
+      }
+    }
+  ],
+  "death": {
+    "hp": 0,
+    "max": 104,
+    "pos": {
+      "x": -0.2604573667049408,
+      "y": 1.0799999237060547,
+      "z": 8.433349609375
+    },
+    "epoch": 1,
+    "arena": false
+  },
+  "nearestTown": {
+    "x": -3,
+    "y": 1,
+    "z": -4
+  },
+  "revival": {
+    "hp": 104,
+    "max": 104,
+    "pos": {
+      "x": -3.0,
+      "y": 1.0,
+      "z": -4.0
+    },
+    "epoch": 2,
+    "arena": false
+  },
+  "observedDeathToFullRevivalSeconds": 2.43,
+  "postRevivalJoystickMovement": {
+    "hp": 104,
+    "max": 104,
+    "pos": {
+      "x": -4.726998805999756,
+      "y": 1.0799498558044434,
+      "z": -4.0
+    },
+    "epoch": 2,
+    "arena": false
+  },
+  "observedFullHPInTownSeconds": 8.07,
+  "stationaryTownSampleCount": 52,
+  "storedProgressBeforeAndAfterMatches": true,
+  "ownerSnapshotBeforeAndAfterMatches": true,
+  "snapshotSHA256Before": "274d11f89681302b2a09551da48c8e3bf29d8e55f2ca2c96718b0be805442bab",
+  "snapshotSHA256After": "274d11f89681302b2a09551da48c8e3bf29d8e55f2ca2c96718b0be805442bab",
+  "level": 1,
+  "xp": 0.0,
+  "revision": 3,
+  "gold": 10,
+  "objective": "hunt",
+  "equipped": [
+    {
+      "id": "2419f975a53f4b6883ebb061b696e1d3",
+      "definition": "balance_sword"
+    }
+  ],
+  "bossDiscovered": false
+}

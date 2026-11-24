@@ -1,0 +1,102 @@
+2026-11-20 · Unity 6000.3.10f1 · macOS Editor Play Mode
+검증용 복제 프로젝트에서 원본과 동일한 두 몬스터 프리팹, Animator, 클립 및 전투 스크립트를 사용했다.
+
+로컬 전투 · 첫 두 열은 프레임 번호와 플레이 경과 시간(초)이다. 위치 단위는 m이다.
+START
+3 0.03 Boar OK Animator Idle [Idle] pos (0.00, 0.09, 0.00)
+10451 4.66 Boar OK Animator Walk [Walk] pos (0.00, 0.08, 0.02)
+10681 4.74 Boar OK wandering displacement [Walk] pos (-0.02, 0.08, 0.10)
+22215 8.76 Boar OK Animator Idle [Idle] pos (-0.71, 0.08, 4.04)
+22329 8.81 Boar OK Animator Scream [Scream] pos (-0.71, 0.08, 4.04)
+30315 11.48 Boar OK Animator Run [Run] pos (-0.71, 0.08, 4.04)
+30317 11.48 Boar OK Animator Get Hit [GetHit] pos (-0.71, 0.08, 4.04)
+33816 12.52 Boar OK Animator Run [Run] pos (-0.71, 0.08, 4.04)
+36165 13.42 Boar OK Animator Basic Attack [BasicAttack] pos (2.02, 0.08, 4.04)
+39366 14.76 Boar OK attack delivered 30 HP, zero field projectors [Run] pos (2.02, 0.08, 4.04)
+39422 14.78 Boar OK Animator Run [ReturnHome] pos (5.94, 0.08, 0.00)
+44864 16.66 Boar OK Animator Idle [Idle] pos (0.17, 0.08, 0.00)
+45401 16.88 Boar OK Animator Run [Run] pos (0.17, 0.08, 0.00)
+45401 16.88 Boar OK target re-entered during return; first post-return aggro skipped scream [Run] pos (0.17, 0.08, 0.00)
+45442 16.90 Boar OK Animator Run [ReturnHome] pos (12.94, 0.08, 0.00)
+54466 21.04 Boar OK Animator Idle [Idle] pos (0.17, 0.08, 0.00)
+54466 21.04 Boar OK nearby target beyond territory caused return [Idle] pos (0.17, 0.08, 0.00)
+54500 21.06 Boar OK Animator Run [ReturnHome] pos (15.94, 0.08, 0.00)
+74509 29.06 Boar OK blocked return waits for occupied home [ReturnHome] pos (4.09, 0.08, 0.00)
+79279 30.94 Boar OK Animator Idle [Idle] pos (0.00, 0.10, 0.00)
+79279 30.94 Boar OK blocked return recovered after home cleared [Idle] pos (0.00, 0.10, 0.00)
+79292 30.96 Boar OK Animator Run [ReturnHome] pos (15.94, 0.10, 0.00)
+79294 30.96 Boar OK Animator Die [Die] pos (15.94, 0.10, 0.00)
+82223 32.30 Boar OK lethal damage during return; death completed and deactivated [Die] pos (15.94, 0.10, 0.00)
+82226 32.37 SoulEater OK Animator Sleep [Sleep] pos (0.00, 0.09, 0.00)
+82611 32.56 SoulEater OK Animator Scream [Scream] pos (0.00, 0.08, 0.00)
+87240 34.90 SoulEater OK Animator Run [Run] pos (0.00, 0.08, 0.00)
+87242 34.90 SoulEater OK Animator Get Hit [GetHit] pos (0.00, 0.08, 0.00)
+89594 36.24 SoulEater OK Animator Run [Run] pos (0.00, 0.08, 0.00)
+91819 37.10 SoulEater OK Animator Basic Attack [BasicAttack] pos (2.52, 0.08, 0.00)
+94904 38.12 SoulEater OK attack delivered 10 HP, zero field projectors [Run] pos (2.52, 0.08, 0.00)
+94964 38.14 SoulEater OK Animator Run [ReturnHome] pos (5.94, 0.08, 0.00)
+100250 40.08 SoulEater OK Animator Idle [Idle] pos (0.18, 0.08, 0.00)
+100768 40.30 SoulEater OK Animator Run [Run] pos (0.18, 0.08, 0.00)
+100768 40.30 SoulEater OK target re-entered during return; first post-return aggro skipped scream [Run] pos (0.18, 0.08, 0.00)
+100809 40.32 SoulEater OK Animator Run [ReturnHome] pos (12.94, 0.08, 0.00)
+110601 44.60 SoulEater OK Animator Idle [Idle] pos (0.16, 0.08, 0.00)
+110601 44.60 SoulEater OK nearby target beyond territory caused return [Idle] pos (0.16, 0.08, 0.00)
+110647 44.62 SoulEater OK Animator Run [ReturnHome] pos (15.94, 0.08, 0.00)
+129122 52.62 SoulEater OK blocked return waits for occupied home [ReturnHome] pos (3.76, 0.08, 0.00)
+129349 52.72 SoulEater OK Animator Idle [Idle] pos (0.00, 0.10, 0.00)
+129349 52.72 SoulEater OK blocked return recovered after home cleared [Idle] pos (0.00, 0.10, 0.00)
+129397 52.74 SoulEater OK Animator Run [ReturnHome] pos (15.94, 0.10, 0.00)
+129399 52.74 SoulEater OK Animator Die [Die] pos (15.94, 0.10, 0.00)
+133253 54.26 SoulEater OK lethal damage during return; death completed and deactivated [Die] pos (15.94, 0.10, 0.00)
+133254 54.26 SoulEater PASS local both
+133254 54.26 SoulEater END
+
+Netcode for GameObjects 호스트 · SinglePlayerTransport · 실제 Player 프리팹 · 필드 초기 수평 거리 5m
+PASS NGO host started
+Boar registered
+Boar server authority and host presentation
+Boar replicated room=0
+B1 spawned with 132 HP and Idle
+Boar attacked
+Boar projector=False
+Boar damage=30
+SoulEater server authority and host presentation
+SoulEater replicated room=0
+SoulEater attacked
+SoulEater projector=False
+SoulEater damage=10
+host player entered boss room
+Boss server authority and host presentation
+Boss replicated room=1
+Boss attacked
+Boss projector=True
+Boss damage=10
+
+복귀 중 플레이어 피격 재교전 · 후속 검증
+Local play mode, real Player combat prefab normal attack input and physics hit
+263 2.93 Boar PASS nearby outside-15m attacker dealt damage while target stayed null and return continued
+289 3.23 Boar PASS two in-territory players approaching without a hit: return continued
+371 4.16 Boar PASS RequestAttack real hit (-10HP), immediate GetHit; attacker 2.05m, bystander 1.61m, target=attacker
+599 6.69 Boar PASS no repeated Scream, Run and BasicAttack targeted actual attacker through first counterattack: attacker HP 100->70, bystander 100->100, no field projector (74 attack frames)
+723 8.06 Boar PASS lethal hit while returning entered Die, then deactivated
+957 10.71 SoulEater PASS nearby outside-15m attacker dealt damage while target stayed null and return continued
+984 11.01 SoulEater PASS two in-territory players approaching without a hit: return continued
+1068 11.94 SoulEater PASS RequestAttack real hit (-10HP), immediate GetHit; attacker 2.05m, bystander 1.61m, target=attacker
+1284 14.34 SoulEater PASS no repeated Scream, Run and BasicAttack targeted actual attacker through first counterattack: attacker HP 100->90, bystander 100->100, no field projector (46 attack frames)
+1395 15.89 SoulEater PASS lethal hit while returning entered Die, then deactivated
+1397 15.91 SoulEater PASS LOCAL BOTH
+1397 15.91 SoulEater END
+
+NGO 호스트 · Unity Transport · Boar의 반격 대상 및 플레이어 사망·부활
+2026-11-20T02:53:00.1169230Z Started NGO host over Unity Transport
+2026-11-20T02:53:00.1435920Z Host and local client are connected
+2026-11-20T02:53:00.4371050Z Spawned server-owned Boar in Idle with two network players
+2026-11-20T02:53:03.8947490Z Observed first pursuit away from spawn, distance=3.409998
+2026-11-20T02:53:03.9146140Z Target escaped; host entered ReturnHome
+2026-11-20T02:53:03.9544090Z Passive nearby players did not interrupt return
+2026-11-20T02:53:03.9550000Z Server damage selected actual attacking player over the closer bystander
+2026-11-20T02:53:04.9942720Z Host chased actual attacker after hit recovery
+2026-11-20T02:53:06.3951660Z Monster's melee killed its attacker and triggered player death handling
+2026-11-20T02:53:06.3954410Z Closer bystander remained unharmed
+2026-11-20T02:53:08.8973660Z Player revived in nearest town at full HP 100, server delay=2.50s
+2026-11-20T02:53:08.8976080Z PASS

@@ -1,0 +1,29 @@
+{
+  "runAt": "2026-11-22T12:48:21+09:00",
+  "environment": "macOS 26.5.2 arm64, .NET SDK 9.0.315",
+  "scope": "실제 GameProgressBridge.cs를 링크한 .NET 하네스에서 ClientRequest와 Work 코루틴을 실행했다. 플레이어·NPC·시간 경과·HTTP 응답은 모의 객체로 재현했다. POST·GET 횟수는 하네스의 전송 기록이다.",
+  "coverageLimits": "Unity 플레이, 실제 HTTP 서버, DB의 골드·아이템 변동은 이 하네스의 검증 범위 밖이다.",
+  "source": "NetmarbleNeo/Assets/Scripts/GameProgressBridge.cs",
+  "sourceSha256": "a44321baa6f5946f7e6227cbf39e026b67645d29a11ab8c56f965cbaa25a03c2",
+  "fixture": { "area": "village", "quest": "first_temper", "state": "active", "starterSwordInstanceId": "sword-1", "initialDistanceM": 0 },
+  "cases": [
+    { "case": "대기 중 대장장이에서 5m로 이동", "post": 0, "result": "거리 거절", "passed": true },
+    { "case": "대기 중 사망", "post": 0, "result": "사망 거절", "passed": true },
+    { "case": "대기 중 지역 이동", "post": 0, "result": "이전 지역에서 등록한 요청 취소", "passed": true },
+    { "case": "같은 검에 자동 강화 2회 요청 후 첫 전송 실패", "post": 2, "get": 0, "result": "대기 요청을 하나로 합치고 같은 actionId와 본문으로 재전송", "passed": true },
+    { "case": "첫 전송 실패 후 재시도 대기 중 8m로 이동", "post": 1, "get": 1, "result": "추가 POST 없이 계정 상태 재조회", "passed": true },
+    { "case": "대장장이 위치에서 수동 강화 NPC를 warden으로 제출", "post": 0, "result": "잘못된 NPC 거절", "passed": true },
+    { "case": "자동 강화에 지급 검과 다른 인스턴스 ID 제출", "post": 0, "result": "지급 검 검사에서 거절", "passed": true }
+  ],
+  "harnessExitCode": 0,
+  "directCompile": {
+    "unityVersion": "6000.3.10f1",
+    "method": "Unity 내장 Roslyn과 프로젝트의 Assembly-CSharp 컴파일 참조로 최신 런타임 C# 소스를 임시 디렉터리에 직접 컴파일했다.",
+    "exitCode": 0,
+    "uiSourceSha256": {
+      "ExpeditionInventory.cs": "27603aa96bcf91845781144f5d665b2f838895b3c09fff9a5ce3f0e5ee60f975",
+      "ExpeditionUI.cs": "b5cb42b4b83f5c107c39e132215aab4cd18edbfcc997787f565760ddc183b09a",
+      "ExpeditionQuests.cs": "1315e5df3150dadac9901b2472333c8e040dcb4fc3578a1fb1f5c5deb0557613"
+    }
+  }
+}

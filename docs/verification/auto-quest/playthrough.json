@@ -1,0 +1,636 @@
+{
+  "scenario": "신규 게스트의 보스 관문까지 자동 진행",
+  "result": "passed",
+  "collector_note": "종료 프레임과 PNG를 저장한 뒤 원래 Python 요약기가 SQLite에 없는 state 열을 조회해 실패했다. 클라이언트 종료 프레임, 서버 이벤트, 읽기 전용 SQLite의 completed 및 counts 열을 대조해 이 결과를 복구했다.",
+  "measurement": {
+    "completed_runs": 1,
+    "elapsed_wall_seconds": 1132.1920545,
+    "start_utc": "2026-11-22T01:40:08.2855970Z",
+    "end_utc": "2026-11-22T01:59:00.4719870Z",
+    "clock": "Unity 클라이언트의 System.Diagnostics.Stopwatch. 시작 입력 전 Start(), 종료 조건을 처음 관측한 LateUpdate에서 Stop().",
+    "start": "신규 Lv1 게스트가 마을에서 실제 HUD AutoQuestButton을 누른 시점",
+    "end": "선행 8개 완료, Lv20, 능선의 주인 수락, 사냥터 관문 도착, 자동 진행 종료, OpenBossGate가 입력을 받을 수 있음을 함께 확인한 시점",
+    "included": [
+      "마을 NPC 이동·대화·수락·보고",
+      "인벤토리 열기와 검 장착",
+      "지역 간 이동과 로딩",
+      "의뢰 사냥과 레벨 조건을 채우는 추가 사냥",
+      "발생한 사망·부활·동선 복구",
+      "보스 의뢰 수락과 마지막 관문까지 이동"
+    ],
+    "outside_timer": [
+      "에디터·백엔드 시작, 로그인 및 최초 마을 로딩",
+      "결과 화면 캡처",
+      "보스 입장·전투·승리 보고"
+    ],
+    "repeat_procedure": [
+      "임시 데이터베이스로 로그인 서버를 열고 같은 게임 전용 서버와 클라이언트를 실행한다.",
+      "새 게스트로 접속해 마을 로딩이 끝나면 Lv1이며 완료 퀘스트가 없는지 확인한다.",
+      "자동 진행 HUD 버튼을 한 번 누르며 단조 시계를 시작한다. 이후 입력 없이 1배속으로 끝 조건까지 기다린다.",
+      "서버의 몬스터·플레이어 사망 기록과 저장 퀘스트·보상·보스 시도 수를 대조한다."
+    ],
+    "environment": {
+      "engine": "Unity 6000.3.10f1",
+      "platform": "macOS Unity 에디터의 전용 서버 1개와 클라이언트 1개, 임시 Python/SQLite 백엔드",
+      "fresh_guest_count": 1,
+      "client_timescale_observed": [
+        1.0
+      ],
+      "server_timescale_at_finish": 1.0,
+      "target_fps": 30,
+      "probe_poll_interval_seconds": 0.2,
+      "trace_policy": "클라이언트 상태·레벨·퀘스트·지도·리비전·로딩 변화 시 기록하며, 변동이 없어도 약 10초마다 기록한다.",
+      "driver_inputs_after_start": 0
+    },
+    "scope": "새 게스트 정상 동선 1회 실측. 복귀 계정 분기 및 이후 수정된 조작·정리 로직은 별도 검증 범위다."
+  },
+  "level_milestones": [
+    {
+      "level": 1,
+      "first_observed_seconds": 0.001,
+      "displayed_level": 1
+    },
+    {
+      "level": 2,
+      "first_observed_seconds": 28.79,
+      "displayed_level": 2
+    },
+    {
+      "level": 3,
+      "first_observed_seconds": 56.727,
+      "displayed_level": 3
+    },
+    {
+      "level": 4,
+      "first_observed_seconds": 107.183,
+      "displayed_level": 4
+    },
+    {
+      "level": 5,
+      "first_observed_seconds": 114.317,
+      "displayed_level": 5
+    },
+    {
+      "level": 6,
+      "first_observed_seconds": 233.103,
+      "displayed_level": 6
+    },
+    {
+      "level": 7,
+      "first_observed_seconds": 239.57,
+      "displayed_level": 7
+    },
+    {
+      "level": 8,
+      "first_observed_seconds": 246.836,
+      "displayed_level": 8
+    },
+    {
+      "level": 9,
+      "first_observed_seconds": 253.903,
+      "displayed_level": 9
+    },
+    {
+      "level": 10,
+      "first_observed_seconds": 268.37,
+      "displayed_level": 10
+    },
+    {
+      "level": 11,
+      "first_observed_seconds": 437.544,
+      "displayed_level": 11
+    },
+    {
+      "level": 12,
+      "first_observed_seconds": 444.278,
+      "displayed_level": 12
+    },
+    {
+      "level": 13,
+      "first_observed_seconds": 451.745,
+      "displayed_level": 13
+    },
+    {
+      "level": 14,
+      "first_observed_seconds": 458.045,
+      "displayed_level": 14
+    },
+    {
+      "level": 15,
+      "first_observed_seconds": 472.411,
+      "displayed_level": 15
+    },
+    {
+      "level": 16,
+      "first_observed_seconds": 695.991,
+      "displayed_level": 16
+    },
+    {
+      "level": 17,
+      "first_observed_seconds": 840.22,
+      "displayed_level": 17
+    },
+    {
+      "level": 18,
+      "first_observed_seconds": 845.553,
+      "displayed_level": 18
+    },
+    {
+      "level": 19,
+      "first_observed_seconds": 863.287,
+      "displayed_level": 19
+    },
+    {
+      "level": 20,
+      "first_observed_seconds": 872.654,
+      "displayed_level": 20
+    }
+  ],
+  "quests": [
+    {
+      "quest": "watch",
+      "name": "원정 준비",
+      "final_state": "completed",
+      "first_observed_accepted_seconds": 2.863,
+      "first_observed_completed_seconds": 3.383,
+      "goal_counts": [
+        {
+          "target": "open_inventory",
+          "accepted_alternatives": [],
+          "count": 1,
+          "required": 1
+        }
+      ]
+    },
+    {
+      "quest": "supplies",
+      "name": "대장간 보급",
+      "final_state": "completed",
+      "first_observed_accepted_seconds": 3.612,
+      "first_observed_completed_seconds": 5.628,
+      "goal_counts": [
+        {
+          "target": "parcel",
+          "accepted_alternatives": [],
+          "count": 1,
+          "required": 1
+        }
+      ]
+    },
+    {
+      "quest": "equip_sword",
+      "name": "첫 검을 차고",
+      "final_state": "completed",
+      "first_observed_accepted_seconds": 6.928,
+      "first_observed_completed_seconds": 7.4,
+      "goal_counts": [
+        {
+          "target": "equip_sword",
+          "accepted_alternatives": [],
+          "count": 1,
+          "required": 1
+        }
+      ]
+    },
+    {
+      "quest": "hunt",
+      "name": "능선의 위협",
+      "final_state": "completed",
+      "first_observed_accepted_seconds": 7.631,
+      "first_observed_completed_seconds": 56.727,
+      "goal_counts": [
+        {
+          "target": "A1",
+          "accepted_alternatives": [],
+          "count": 1,
+          "required": 1
+        }
+      ]
+    },
+    {
+      "quest": "hunt_a2",
+      "name": "잿불이 번지기 전에",
+      "final_state": "completed",
+      "first_observed_accepted_seconds": 57.16,
+      "first_observed_completed_seconds": 158.961,
+      "goal_counts": [
+        {
+          "target": "A2",
+          "accepted_alternatives": [],
+          "count": 2,
+          "required": 2
+        }
+      ]
+    },
+    {
+      "quest": "hunt_a3",
+      "name": "독안개 속의 발자국",
+      "final_state": "completed",
+      "first_observed_accepted_seconds": 159.191,
+      "first_observed_completed_seconds": 338.903,
+      "goal_counts": [
+        {
+          "target": "A3",
+          "accepted_alternatives": [],
+          "count": 3,
+          "required": 3
+        }
+      ]
+    },
+    {
+      "quest": "hunt_a4",
+      "name": "얼어붙은 고갯길",
+      "final_state": "completed",
+      "first_observed_accepted_seconds": 339.33,
+      "first_observed_completed_seconds": 570.051,
+      "goal_counts": [
+        {
+          "target": "A4",
+          "accepted_alternatives": [],
+          "count": 4,
+          "required": 4
+        }
+      ]
+    },
+    {
+      "quest": "hunt_boar",
+      "name": "관문 앞의 엄니",
+      "final_state": "completed",
+      "first_observed_accepted_seconds": 570.477,
+      "first_observed_completed_seconds": 995.604,
+      "goal_counts": [
+        {
+          "target": "B1",
+          "accepted_alternatives": [
+            "B1G"
+          ],
+          "count": 3,
+          "required": 3
+        }
+      ]
+    },
+    {
+      "quest": "ridge_boss",
+      "name": "능선의 주인",
+      "final_state": "active",
+      "first_observed_accepted_seconds": 996.037,
+      "first_observed_completed_seconds": null,
+      "goal_counts": [
+        {
+          "target": "ridge_boss",
+          "accepted_alternatives": [],
+          "count": 0,
+          "required": 1
+        }
+      ]
+    }
+  ],
+  "hunting": {
+    "zones": [
+      {
+        "zone": "A1",
+        "quest": "hunt",
+        "server_kills": 2,
+        "by_monster": {
+          "A1": 2
+        },
+        "quest_credited": 1,
+        "additional_kills": 1,
+        "kills_while_level_training_status_displayed": 1,
+        "gross_kill_xp": 40
+      },
+      {
+        "zone": "A2",
+        "quest": "hunt_a2",
+        "server_kills": 3,
+        "by_monster": {
+          "A2": 3
+        },
+        "quest_credited": 2,
+        "additional_kills": 1,
+        "kills_while_level_training_status_displayed": 1,
+        "gross_kill_xp": 120
+      },
+      {
+        "zone": "A3",
+        "quest": "hunt_a3",
+        "server_kills": 6,
+        "by_monster": {
+          "A3": 6
+        },
+        "quest_credited": 3,
+        "additional_kills": 3,
+        "kills_while_level_training_status_displayed": 3,
+        "gross_kill_xp": 420
+      },
+      {
+        "zone": "A4",
+        "quest": "hunt_a4",
+        "server_kills": 6,
+        "by_monster": {
+          "A4": 6
+        },
+        "quest_credited": 4,
+        "additional_kills": 2,
+        "kills_while_level_training_status_displayed": 2,
+        "gross_kill_xp": 630
+      },
+      {
+        "zone": "B1",
+        "quest": "hunt_boar",
+        "server_kills": 7,
+        "by_monster": {
+          "B1": 5,
+          "B1G": 2
+        },
+        "quest_credited": 3,
+        "additional_kills": 4,
+        "kills_while_level_training_status_displayed": 4,
+        "gross_kill_xp": 840
+      }
+    ],
+    "server_field_kills": 24,
+    "quest_credited_kills": 13,
+    "additional_kills": 11,
+    "xp_for_quest_credited_kills": 1090,
+    "xp_from_completed_quest_rewards": 20,
+    "xp_from_all_kills_and_quest_rewards_before_cap": 2070,
+    "final_total_xp_after_cap": 2040,
+    "classification": "처치 수는 서버 사망 이벤트와 SQLite 처치 행동 집계의 교차 확인 값이다. 추가 처치는 구역별 전체에서 저장된 의뢰 실적을 뺀 값이다. HUD 상태 기준 숫자는 각 처치 직전의 마지막 클라이언트 관측값을 사용하며 통신 시차가 포함될 수 있다."
+  },
+  "server_kill_timeline": [
+    {
+      "elapsed_seconds": 28.756,
+      "monster": "A1",
+      "last_observed_client_status": "능선의 위협 · 0/1"
+    },
+    {
+      "elapsed_seconds": 34.436,
+      "monster": "A1",
+      "last_observed_client_status": "다음 의뢰 준비 · Lv.3까지 사냥"
+    },
+    {
+      "elapsed_seconds": 101.246,
+      "monster": "A2",
+      "last_observed_client_status": "잿불이 번지기 전에 · 0/2"
+    },
+    {
+      "elapsed_seconds": 107.106,
+      "monster": "A2",
+      "last_observed_client_status": "잿불이 번지기 전에 · 1/2"
+    },
+    {
+      "elapsed_seconds": 114.266,
+      "monster": "A2",
+      "last_observed_client_status": "다음 의뢰 준비 · Lv.5까지 사냥"
+    },
+    {
+      "elapsed_seconds": 233.068,
+      "monster": "A3",
+      "last_observed_client_status": "독안개 속의 발자국 · 0/3"
+    },
+    {
+      "elapsed_seconds": 239.565,
+      "monster": "A3",
+      "last_observed_client_status": "독안개 속의 발자국 · 1/3"
+    },
+    {
+      "elapsed_seconds": 246.725,
+      "monster": "A3",
+      "last_observed_client_status": "독안개 속의 발자국 · 2/3"
+    },
+    {
+      "elapsed_seconds": 253.765,
+      "monster": "A3",
+      "last_observed_client_status": "다음 의뢰 준비 · Lv.10까지 사냥"
+    },
+    {
+      "elapsed_seconds": 261.184,
+      "monster": "A3",
+      "last_observed_client_status": "다음 의뢰 준비 · Lv.10까지 사냥"
+    },
+    {
+      "elapsed_seconds": 268.205,
+      "monster": "A3",
+      "last_observed_client_status": "다음 의뢰 준비 · Lv.10까지 사냥"
+    },
+    {
+      "elapsed_seconds": 437.443,
+      "monster": "A4",
+      "last_observed_client_status": "얼어붙은 고갯길 · 0/4"
+    },
+    {
+      "elapsed_seconds": 444.223,
+      "monster": "A4",
+      "last_observed_client_status": "얼어붙은 고갯길 · 1/4"
+    },
+    {
+      "elapsed_seconds": 451.563,
+      "monster": "A4",
+      "last_observed_client_status": "얼어붙은 고갯길 · 2/4"
+    },
+    {
+      "elapsed_seconds": 458.023,
+      "monster": "A4",
+      "last_observed_client_status": "얼어붙은 고갯길 · 3/4"
+    },
+    {
+      "elapsed_seconds": 465.383,
+      "monster": "A4",
+      "last_observed_client_status": "다음 의뢰 준비 · Lv.15까지 사냥"
+    },
+    {
+      "elapsed_seconds": 472.323,
+      "monster": "A4",
+      "last_observed_client_status": "다음 의뢰 준비 · Lv.15까지 사냥"
+    },
+    {
+      "elapsed_seconds": 695.984,
+      "monster": "B1",
+      "last_observed_client_status": "관문 앞의 엄니 · 0/3"
+    },
+    {
+      "elapsed_seconds": 833.123,
+      "monster": "B1G",
+      "last_observed_client_status": "관문 앞의 엄니 · 1/3"
+    },
+    {
+      "elapsed_seconds": 840.063,
+      "monster": "B1",
+      "last_observed_client_status": "관문 앞의 엄니 · 2/3"
+    },
+    {
+      "elapsed_seconds": 845.51,
+      "monster": "B1",
+      "last_observed_client_status": "다음 의뢰 준비 · Lv.20까지 사냥"
+    },
+    {
+      "elapsed_seconds": 854.343,
+      "monster": "B1G",
+      "last_observed_client_status": "다음 의뢰 준비 · Lv.20까지 사냥"
+    },
+    {
+      "elapsed_seconds": 863.163,
+      "monster": "B1",
+      "last_observed_client_status": "다음 의뢰 준비 · Lv.20까지 사냥"
+    },
+    {
+      "elapsed_seconds": 872.423,
+      "monster": "B1",
+      "last_observed_client_status": "다음 의뢰 준비 · Lv.20까지 사냥"
+    }
+  ],
+  "level_training_status_intervals": [
+    {
+      "status": "다음 의뢰 준비 · Lv.3까지 사냥",
+      "first_observed_seconds": 29.023,
+      "last_interval_end_seconds": 34.69
+    },
+    {
+      "status": "다음 의뢰 준비 · Lv.5까지 사냥",
+      "first_observed_seconds": 107.183,
+      "last_interval_end_seconds": 114.317
+    },
+    {
+      "status": "다음 의뢰 준비 · Lv.10까지 사냥",
+      "first_observed_seconds": 247.036,
+      "last_interval_end_seconds": 268.37
+    },
+    {
+      "status": "다음 의뢰 준비 · Lv.15까지 사냥",
+      "first_observed_seconds": 458.278,
+      "last_interval_end_seconds": 472.644
+    },
+    {
+      "status": "다음 의뢰 준비 · Lv.20까지 사냥",
+      "first_observed_seconds": 840.22,
+      "last_interval_end_seconds": 872.654
+    }
+  ],
+  "player_deaths": {
+    "server_count": 1,
+    "revivals": [
+      {
+        "death_seconds": 702.383,
+        "status_before_death": "관문 앞의 엄니 · 1/3",
+        "revived_in_village_with_auto_on_seconds": 704.992,
+        "returned_to_field_with_auto_on_seconds": 713.152,
+        "next_field_kill_seconds": 833.123
+      }
+    ],
+    "timed_run_observation": "사망 뒤 부활과 자동 사냥 재개 시각을 각 이벤트에 표시한다."
+  },
+  "map_transitions": [
+    {
+      "map": "village",
+      "first_observed_seconds": 0.001
+    },
+    {
+      "map": "HuntingField",
+      "first_observed_seconds": 12.736
+    },
+    {
+      "map": "village",
+      "first_observed_seconds": 52.294
+    },
+    {
+      "map": "HuntingField",
+      "first_observed_seconds": 62.127
+    },
+    {
+      "map": "village",
+      "first_observed_seconds": 154.252
+    },
+    {
+      "map": "HuntingField",
+      "first_observed_seconds": 164.373
+    },
+    {
+      "map": "village",
+      "first_observed_seconds": 334.039
+    },
+    {
+      "map": "HuntingField",
+      "first_observed_seconds": 344.207
+    },
+    {
+      "map": "village",
+      "first_observed_seconds": 565.119
+    },
+    {
+      "map": "HuntingField",
+      "first_observed_seconds": 575.21
+    },
+    {
+      "map": "village",
+      "first_observed_seconds": 704.992
+    },
+    {
+      "map": "HuntingField",
+      "first_observed_seconds": 713.152
+    },
+    {
+      "map": "village",
+      "first_observed_seconds": 991.016
+    },
+    {
+      "map": "HuntingField",
+      "first_observed_seconds": 1000.999
+    }
+  ],
+  "sampled_seconds_by_phase": {
+    "village_travel_and_interaction": 67.186,
+    "loading": 6.141,
+    "other_field_travel_and_interaction": 919.33,
+    "field_combat_for_quests": 56.198,
+    "level_training_including_travel": 80.934,
+    "revival_wait": 2.402
+  },
+  "timing_notes": "레벨·의뢰·지도 시각은 원본 단조 시계의 최초 클라이언트 관측을 초 단위로 기록했다. 단계별 소요 시간은 연속 관측값 사이에서 앞의 상태가 지속됐다고 본 추정치다. 서버 사망 시각은 같은 Mac의 UTC 시계로 측정 구간에 맞췄다.",
+  "server_checks": {
+    "revision": 41,
+    "gold": 1689,
+    "objective": "boss",
+    "saved_quest_count": 9,
+    "saved_completed_count": 8,
+    "boss_attempts_started": 0,
+    "boss_discovered": false,
+    "saved_field_kill_rewards": 24,
+    "committed_actions": 41,
+    "equipped_balance_sword_count": 1
+  },
+  "gate_hud": {
+    "map": "HuntingField",
+    "level": 20,
+    "auto_progress_active": false,
+    "button_label": "자동 진행 중지",
+    "status": "보스 도전 준비 완료",
+    "at_gate": true,
+    "distance_to_marker_m": 2.735,
+    "gate_button_clickable": true,
+    "topmost_pointer_target": "OpenBossGate",
+    "captured_game_view": "gate.png",
+    "pixels": [
+      1280,
+      720
+    ],
+    "image_sha256": "641bbd62046509fcfa2ebbc77dbc8b651a8d6dc1cbc8fbad34511f57c11cb85b",
+    "screenshot_visible_labels": {
+      "auto_progress_button": "자동 진행 중지",
+      "auto_progress_caption": "최종 보스 관문으로 이동",
+      "gate_button": "보스 관문",
+      "combat_toggle": "자동 전투 꺼짐",
+      "quest": "능선의 주인",
+      "quest_goal_count": "0/1"
+    },
+    "last_client_sample": {
+      "seconds_after_timed_finish": 4.612,
+      "button_label": "자동 진행",
+      "status": "보스 도전 준비 완료",
+      "auto_progress_active": false,
+      "gate_button_clickable": true,
+      "distance_to_marker_m": 1.122
+    },
+    "capture_method": "종료를 감지한 LateUpdate에서 시계를 멈춘 직후 카메라와 HUD를 임시 렌더 타깃에 그렸다. 자동 진행 상태는 이미 꺼졌고 화면의 버튼과 설명은 이전 HUD 갱신 문구를 표시한다. 이후 클라이언트 관측에서 정지 상태의 버튼 문구를 확인했다."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "vertices": 53095,
+  "triangles": 104262,
+  "mesh_objects": 211,
+  "rig": false,
+  "animations": false,
+  "purpose": "Static visual study; not retopologized or mobile-optimized. Procedural Blender bump nodes do not export to FBX/GLB."
+}

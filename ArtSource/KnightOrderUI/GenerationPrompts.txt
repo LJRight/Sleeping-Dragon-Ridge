@@ -1,0 +1,100 @@
+용흔의 능선 UI · 내장 ImageGen 제작 프롬프트
+
+전투 조작
+
+Use case: ui-mockup. Single finished production in-game action HUD icon for an original Korean dark high-fantasy mobile RPG, The Ashen Knight Order. Front-facing orthographic perfect circle, never tilted; circular diameter 82% of a square canvas. A quiet paired hairline rim in moonlit silver (#acb9c6), blue-black oxidized iron (#152332), four tiny champagne silver rivets at 45 degree intervals; extremely restrained relief detail, no ornate projections. Physically painted steel and realistic illustration with broad confident forms suitable for mobile screens. Muted elegant knight armor craft, cold highlights from upper left. ONE single centered isolated sprite on genuine RGBA transparency. Absolutely nothing outside round silhouette, no shadow underneath, no vignette, no checkerboard, no text, no numbers, no label, no copyright marks. 
+
+attack_basic
+Single basic-attack button, circular opaque midnight enamel face with one large bright handpainted silver knight broadsword angled bottom left to top right. Master-crafted simple silver blade with warm champagne hilt, tall cross guard, black wrapped handgrip, no particles, no trails. Sword thick enough to read at 48px.
+
+skill_thrust
+Piercing thrust skill button. Circular opaque midnight enamel face with one large silver lance-like SWORD TIP violently thrusting up toward frame right at a shallow 35 degree angle, dynamic tapered long straight pale blue speed trails behind it, dark space around clear tip silhouette. Closeup of very wide faceted icy blade tip, NO HILT. Crisp high contrast at 48px. Not lightning.
+
+skill_sweep
+Whirlwind/radial sweep skill button. Circular opaque midnight enamel face with two bold pale icy-blue crescent sword arcs curling in a C around an empty center, sharp tapered ends implying one continuous spinning lateral sweep. Beautiful painterly kinetic slash, no sword object and no hilt, no stars. Brightest crescent fills 65% face.
+
+heal_potion
+Healing potion button. Circular opaque midnight enamel face with one large centered faceted ruby red glass bottle sealed with a brass stopper, white specular glint, vivid crimson liquid, small gold collar. Distinct large silhouette, no clutter and no surrounding particles.
+
+joystick_base
+Virtual joystick OUTER MOVEMENT WELL on left side of HUD. Simple fine open circular band of chased silver steel, restrained mechanical compass incisions and four SMALL subtle inward-facing angular silver tick marks on the four inside cardinal edges. Outer 10% radius contains the ring; entire center 76% diameter TRUE TRANSPARENT empty hole, showing the scene underneath. No middle puck or medallion, no text or letters, no interior fill. Delicate understated contour.
+
+joystick_thumb
+Virtual joystick moving thumb cap. Single solid low-profile convex slate-blue brushed steel disc, plain broad thumb-rest face with subtle four-point kite compass emboss and a single champagne pin at its center. Fine silver bevel rim, slightly lighter at upper left, subdued metal with broad smooth face. No arrows, no directional words or lettering, no extra rings outside the disc.
+
+공통 창과 결과 문장식
+
+Common assets
+The built-in image_gen tool produced each sprite with transparent_background enabled. For the first six originals, prepend the following shared prompt to each listed subject.
+
+Use case: ui-mockup. Create exactly one production-ready painted/realistically rendered bitmap sprite for a premium Korean medieval fantasy mobile RPG's black-iron and silver knight-order UI kit. Orthographic strictly front view, level no angle, perfectly centered, complete silhouette surrounded by open true transparent background. Light from upper left. Strong contrast between an engraved bright silver edge and cool desaturated blue-black steel. Precise craftsmanship, realistic materials, minimal ornament, rich restrained colors. No writing, typography, characters, scene, mockup, boxes, outer shadow, glow, checker grid, or watermark. Subject:
+
+panel_common.png
+A large blank rectangular dialog panel for a knight order RPG; object silhouette two units wide and one unit high (2:1), dead-straight horizontal rails, sharp small clipped corners, a continuous nearly-black matte blue-steel face with an even subtle grain, edge bevel a slender silver hairline and another black rail with four tiny fish-scale-shaped champagne brass corner ornaments. At least 80% usable empty center. Quiet and restrained. No decorative centerpiece in edge middles. Full panel must be opaque inside; genuine alpha transparent outside.
+
+input_field.png
+One blank recessed text input slot, very long horizontal 6:1 rectangle; front face near-black navy charcoal, a crisp thin inverted silver-black bevel, two tiny silver notches at straight clipped corners. Recessed appearance, understated brushed gunmetal, exact horizontal top and bottom. Wide blank solid center for text. Full object opaque inside, transparent outside.
+
+button_primary.png
+One wide horizontal 4.8:1 rectangular primary action button. The physical button has subtly luminous deep petrol-blue enamel body, slender brushed black-iron double bevel, one very thin aged champagne-gold inner hairline, tiny discreet gold pointed inlay on two ends, mostly straight silver bevels, clipped square corners, no center ornament. No text. Strong wide unadorned opaque central field, true alpha outside.
+
+button_secondary.png
+One wide horizontal 4.8:1 rectangular secondary action button. Brushed low-gloss midnight blue-black iron face, silver thin double edge highlights and subtle small clipped corners; simple understated silver end caps. Broad UNMARKED blank text field; no symbol whatever. Full object opaque inside its bounds and actually transparent around it.
+
+crest_victory.png, original
+One compact high-end heraldic victory crest in the silhouette of a straight vertical upward-pointing bright silver sword with two prominent compact spreading silver wings. A small champagne-gold jewel on the guard and navy steel shadow planes. Hand-built asymmetric tiny sculpted details and bold overall symmetrical silhouette. Broad elegant silver scales form art-deco feather shapes. Faceted metal, readable at 64 pixels, no text, no banner, no disk or backdrop, isolated on transparent alpha.
+
+crest_defeat.png
+One compact heraldic defeat icon. A battle-dented dark blue iron kite shield with a single decisive jagged split diagonally across its middle. Two close separated pieces, lit worn silver edges, one muted ember glint inside the fracture, a few crisp dark blue facets. Restrained original heraldry; readable at 64px. No added weapons, no wings, no text, no banner, no disk or backdrop. Truly transparent outside shield.
+
+crest_victory.png final edit using the isolated original crest as the reference (standalone prompt)
+Use case: precise-object-edit. Correct only the vertical sword in this crest. Reverse the orientation of just the sword, making the pointed metal spear-shaped tip of the blade at the very top center and the rounded grip/pommel at the very bottom center. The blade points to the sky. Keep both elegant metal feather wings in their current upward-curving poses and keep the small champagne-gold center. Preserve the original silver black-iron materials, proportions, symmetry, beveled illumination, front view and transparent alpha. Do not rotate the wings. No letters, banner or backing disk.
+
+pause.png (standalone prompt)
+Use case: ui-mockup. Design one small circular pause control for the black-iron and silver knight-order game UI: two broad silver upright parallel bars, same height, on a nearly-black blue gunmetal round face. A fine brushed double silver rim with two almost invisible champagne-gold small-scale metal fasteners. Symmetrical, face on, flat orthographic, completely isolated object and true transparent alpha outside the circle. No text, no glow, no perspective, no other elements. Big clean bars must stay readily legible when this button is shown at 32 pixels.
+
+장비와 상태 표시
+
+장비·상태 이미지 프롬프트
+모든 12종은 built-in image_gen을 각각 호출했다. transparent_background=true. 내보내기 때 투명 여백을 다듬고 픽셀 규격에 맞춰 리샘플했다. 슬롯에 잔류한 1~2/255 알파는 0으로 정리했다.
+
+slot_common.png
+Use case: ui-mockup. Create one production 2D sprite: an EMPTY, exactly square inventory item-slot border for a premium medieval Korean fantasy action RPG UI. Real transparent background both OUTSIDE and in the empty CENTER so a sword icon can be placed underneath. Orthographic perfectly front-on with straight squared-up geometry, identical symmetric thickness, square aspect. Four little overlapping dragon-scale shaped hammered silver rivet plates at the corners worked into the frame, slender double silver bevel with cool midnight-blue black steel core with subtle engraving and a very tiny champagne brass accent. Upper left studio light. Thin, disciplined forged-metal construction that could be read easily on phone. Frame only 8% of total width each side, at least 75% opening at center. No extra objects, no text, no runes, no item, no background, no smoky effects, no cast shadows. Entire silhouette centered in square canvas with only a modest safe margin. Truly transparent alpha.
+
+다음 5개 요청의 공통 앞부분
+Production game UI sprite from a sophisticated original high fantasy knight order in a mobile action RPG. Actual transparent background. Blue-black steel, silver fine double trim, subtle champagne hardware, dragon-scale details, a physically rendered forged-metal surface with restrained worn edges. Precise orthographic front elevation, aligned straight horizontal/vertical, isolated, clean silhouette, centered with sufficient margin, fully visible. No text, no letters, no labels, no watermark, no vignette or atmosphere. For square inventory frames, both canvas exterior and entire central opening must be truly transparent. The asset requested is
+
+slot_rare.png
+a RARE-tier blue silver empty inventory frame. Narrow midnight blue gunmetal border, brighter glacier-blue luminous edge inlay, silver dragon-scale corner armor with a single SMALL clean faceted sapphire flush-set into the top center. Rarity should be recognizable even on a phone. Full empty square opening occupies 79 percent of the width.
+slot_legendary.png
+a legendary tier golden inventory frame. Thin engraved pale gold border with dragon scale armor at four corners, small elegant crown / three tapered points integrated at top center. Thin amber-gold accents on deep steel understructure. Frame is square and its empty center occupies 79 percent of the width.
+equipped_badge.png
+a distinctive readable EQUIPPED glyph. A bold ivory check mark inlaid into the dark green lacquer field of a small knight's shield medallion, simple chunky metal backing with two cut corners, thin silver rim and one champagne gold stud. One bold diagonal check centered and huge. Front-on.
+player_hp_track.png
+one very long horizontal empty health bar track for a medieval fantasy warrior UI, symmetrical. Flat 2D orthographic, long straight black-navy empty inset SLOT with a rectangular cross section, a narrow double silver metallic rail top and bottom; champion's tiny stylized angular kite shield at left end and tiny pointed cap at right, subtle champagne hardware accent, absolutely no fill, near-black center kept straight and unobstructed edge to edge between ends. Track overall W:H about 9:1, centered across a WIDE canvas, bold readable end ornaments only. Full silhouette entirely visible.
+boss_hp_track.png
+one long horizontal empty dragon boss health bar track with a pair of SMALL opposing folded segmented dragon wings and angular horn accents decorating the END CAPS, bright silver bevel and muted champagne gold enamel, dark blue-black hammered steel, readable straight hollow navy slot between end caps. Strict front on, axis-aligned, a single unfilled dark inset straight band, width to height 10:1 overall, small wings relative to the wide gauge. This is a compact in-game meter, no labels and no meter fill. Wide canvas, full silhouette.
+
+다음 4개 요청의 공통 앞부분
+Use case: ui-mockup. Production game sprite on genuine transparent background, entire isolated object fully visible. Original medieval high fantasy mobile action RPG knight order art direction: dark midnight blued steel, silver double trim and subtle champagne-gold hardware, disciplined decoration and upper-left lighting. Crisp readable edges. No shadow, atmosphere, particle effects or typography.
+
+experience_track.png
+A single long horizontal XP meter track belonging to a solemn medieval knight order, front-on flattened game sprite. The long straight dark blue-black empty continuous interior well is bounded with very slender double silver-line metal rails, and minute diamond champagne metal end caps. An extremely light, slim XP bar for bottom of a mobile HUD, no shield and no wings. Unfilled. Stretches across the canvas horizontally, width:height near 14:1.
+objective_panel.png
+A single rectangular objective text backplate for the outer edge of a mobile action RPG. Horizontal flat frontal metal plaque, four times as wide as tall, blue-black semi-opaque matte field with a very subdued surface grain, essentially clear blank writing area across the whole plaque; hairline silver double edge, gentle chamfered corners, tiny etched dragon-scale corner plates and a small restrained ivory inlay at the left extremity. Header and body will be live text; do not render any letters or icons or divisions. Functional minimalist finely made medieval armor UI, the plaque alone isolated.
+comparison_panel.png
+A single large empty equipment-comparison window, displayed orthographically as a regular rectangular UI panel. Subdued near-black midnight blue parchment-steel inset matte field, silver hairline double border with four restrained engraved corner pieces in the shape of overlapping dragon scales, a tiny ivory quatrefoil at the middle top edge, champagne gold rivets. Subtle material detail, all middle field blank and smooth and spacious for future columns of text. Horizontal 4:3 aspect panel. No bars, no divisions, no items, no text, no symbols in center. Quiet bespoke knight armorer look, original and premium.
+player_hp_fill.png
+One clean uninterrupted horizontal RUBY ENAMEL health bar FILL strip for a medieval mobile RPG. Just a rich crimson red narrow perfectly rectangular stripe of red polished lacquer inlaid into metal, featuring a restrained pale crimson highlight on its upper third, richer darker bottom bevel and almost invisible hammered grain, with a flat well-lit middle. ABSOLUTELY NO frame, no housing, no icons, no words, no caps, no ornaments. Flat front facing axis-aligned rectangle centered across canvas. Right-angle corners. Ratio 12:1. The red lacquer is consistent edge to edge so a dynamic left-to-right crop will work at every percentage.
+
+다음 2개 요청의 공통 앞부분
+Use case: ui-mockup. Isolated production game sprite, a game HUD gauge fill. Render true transparent background, square front orthographic with the narrow wide object entirely visible.
+
+boss_hp_fill.png
+A single long deep garnet red lacquer fill strip, suggesting dragon-blood red with a controlled warm red upper sheen, compared to ruby red player health. Quiet subtle forged grain. Deep red mid-tone reads clearly against dark navy. Just one solid continuous wide horizontal 12:1 rectangle, straight square ends. No frame or metal edge, no end caps, no border, no symbols, no lettering.
+experience_fill.png
+A single long refined champagne-gold metallic horizontal fill strip intended for a game experience meter, with a soft pale yellow highlight near the upper third and a deeper antique gold bottom edge. One uninterrupted rectangular strip. Excellent readability when downscaled, uniform from left to right. No frame, end caps, motifs, or words. Ratio of visible object 15:1.
+
+전투 배치 시안의 배경
+
+Use case: stylized-concept. Asset: world plate behind a mobile action RPG combat UI layout concept. A wide panoramic landscape 19.5:9 (minimum 16:9), full bleed, NO interface, captions, arrows, borders, signage, or drawn attack circle. Actual 3D in-game orthographic-ish camera, steep downward 55° isometric view from behind a small silver armored knight. Environment occupies most of the image, with NO sky or horizon visible. A well lit evocative weathered stone ridge in a ruined mountain watchpost, pale warm grey broken slate flagstones with muted moss and dry grasses, blue mountain mist beyond the top left ledge, scattered ruined masonry. Small knight with pale steel cuirass, a short dark desaturated blue cloak, sword in right hand, near frame x=46%, y=56%; a single red charcoal drake with clear, restrained crimson leathery wings, two horns and a long tail, uphill facing him at x=59%, y=42%, its full wingspan about 17% of frame. Visually readable faceted stylized 3D fantasy game art for a low-spec mobile diorama, artistic soft directional light, simple clean forms, natural sophisticated stone colors, grounded clear silhouettes. Wide camera, quiet periphery, neutral empty ground in the bottom corners for touch controls, quiet top for health bars. A believable moment in a third-person tactical mobile ARPG, not a movie poster; both combatants clearly separated and small enough for a legible mobile HUD. No text, no emblem, no vignette, no minimap or UI.

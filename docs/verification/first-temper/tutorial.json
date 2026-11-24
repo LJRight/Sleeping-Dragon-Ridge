@@ -1,0 +1,114 @@
+{
+  "scenario": "신규 게스트의 첫 담금질과 검 장착",
+  "tutorial_result": "passed",
+  "whole_playthrough_result": "interrupted",
+  "measurement": {
+    "clock": "마을에서 실제 자동 진행 HUD 버튼의 포인터 입력 직전에 시작한 클라이언트 Stopwatch의 최초 관측 시간(초).",
+    "start_utc": "2026-11-22T02:51:32.3039160Z",
+    "time_scale": 1,
+    "driver_inputs_after_hud_tap": 0,
+    "through_equipped_sword_seconds": 9.008
+  },
+  "tutorial_sequence": [
+    {
+      "event": "원정 준비 완료·균형의 검 지급",
+      "seconds": 3.069,
+      "revision": 2,
+      "gold": 10,
+      "ore": 0,
+      "sword_enhancement": 0,
+      "sword_equipped": false,
+      "quest_state": "available",
+      "map": "village",
+      "distance_to_smith_m": 6.128
+    },
+    {
+      "event": "대장간 보급 전달 완료",
+      "seconds": 5.044,
+      "revision": 4,
+      "gold": 25,
+      "ore": 0,
+      "sword_enhancement": 0,
+      "sword_equipped": false,
+      "quest_state": "available",
+      "map": "village",
+      "distance_to_smith_m": 2.646
+    },
+    {
+      "event": "첫 담금질 수락·강화석 지급",
+      "seconds": 5.507,
+      "revision": 5,
+      "gold": 25,
+      "ore": 1,
+      "sword_enhancement": 0,
+      "sword_equipped": false,
+      "quest_state": "active",
+      "map": "village",
+      "distance_to_smith_m": 2.613
+    },
+    {
+      "event": "대장간 강화 확인창 표시",
+      "seconds": 5.693,
+      "revision": 5,
+      "gold": 25,
+      "ore": 1,
+      "sword_enhancement": 0,
+      "sword_equipped": false,
+      "quest_state": "active",
+      "map": "village",
+      "distance_to_smith_m": 2.613
+    },
+    {
+      "event": "지급 검 +1 강화 성공·첫 담금질 완료",
+      "seconds": 7.216,
+      "revision": 6,
+      "gold": 15,
+      "ore": 0,
+      "sword_enhancement": 1,
+      "sword_equipped": false,
+      "quest_state": "completed",
+      "map": "village",
+      "distance_to_smith_m": 2.613
+    },
+    {
+      "event": "같은 검 장착·첫 검을 차고 완료",
+      "seconds": 9.008,
+      "revision": 8,
+      "gold": 15,
+      "ore": 1,
+      "sword_enhancement": 1,
+      "sword_equipped": true,
+      "quest_state": "completed",
+      "map": "village",
+      "distance_to_smith_m": 5.151
+    }
+  ],
+  "cross_checked_with_sqlite": {
+    "guest_accounts": 1,
+    "first_temper_accepts": 1,
+    "ore_granted_on_accept": 1,
+    "gold_spent": 10,
+    "ore_spent": 1,
+    "starter_definition": "balance_sword",
+    "same_granted_upgraded_equipped_instance": true,
+    "client_response_matches_database_action": true,
+    "result": "success",
+    "enhancement_before": 0,
+    "enhancement_after": 1,
+    "committed_auto_temper_actions": 1,
+    "committed_manual_enhance_actions": 0,
+    "additional_committed_enhancements": 0,
+    "saved_goal_count": 1,
+    "verified_until": "측정 중단 시점 DB의 모든 행동 가운데 강화 결과는 이 1건이었다. watch 보상 ID, 장비 ID, 서버 결과 및 클라이언트 응답 ID가 일치했다. 개별 식별자는 이 기록에서 생략했다."
+  },
+  "interruption": {
+    "last_recorded_elapsed_seconds": 101.468,
+    "last_recorded_level": 3,
+    "last_recorded_quest_status": "잿불이 번지기 전에 · 0/2",
+    "connected": false,
+    "client_scene": "Login Scene",
+    "gate_endpoint_observed": false,
+    "boss_attempts_started": 0,
+    "reason": "게임 연결이 끊겨 로그인 씬으로 돌아간 뒤 이 실행을 종료했다. 이 기록은 레벨 20 보스 관문 도착 시간을 제공하지 않는다."
+  }
+}

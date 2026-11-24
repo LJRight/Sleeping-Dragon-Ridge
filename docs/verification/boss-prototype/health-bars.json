@@ -1,0 +1,201 @@
+{
+  "verifiedAtKST": "2026-11-20T12:42:27+09:00",
+  "unity": "6000.3.10f1",
+  "passed": true,
+  "method": "Isolated macOS standalone Unity client builds sampling the real uGUI fill anchors and parsed TMP text every frame in headless mode. Two guests connected to one server. Offline samples used the Player Controll Test scene.",
+  "scope": "The five health presentation source files were identical to the release project. The fixture project used the earlier arena boss and direct server HP/max-HP changes for deterministic frame comparisons. The boss combat integration has separate evidence.",
+  "hudSourceManifestSHA256": "a53949f1b846e05686385e8b3a5327d3863f9f4b7bf4306bb1973bfc31d54994",
+  "fixtureSteps": [
+    "100 HP, then set raw server HP to 60 and 38 (92 ms apart).",
+    "Set HP to 66 and 90 with 500 ms between recovery changes, then 97/150. Monster targets used the same fractions of their initial maximum.",
+    "Apply lethal damage, wait for native town revival. Kill a field monster, wait for native despawn and respawn. Disable and reactivate an offline actor."
+  ],
+  "smoothingSeconds": {
+    "damage": 0.18,
+    "healing": 0.26
+  },
+  "cases": [
+    {
+      "case": "A network player HP",
+      "bar": "topFill",
+      "frames": 75,
+      "intermediate": 38,
+      "last": "97/150",
+      "numericStates": 37
+    },
+    {
+      "case": "B network player HP",
+      "bar": "overFill",
+      "frames": 74,
+      "intermediate": 41,
+      "last": "97/150",
+      "numericStates": 36
+    },
+    {
+      "case": "death and town revival",
+      "frames": 125,
+      "final": "150/150"
+    },
+    {
+      "case": "field monster",
+      "frames": 74,
+      "intermediate": 41
+    },
+    {
+      "case": "server field monster despawn and respawn",
+      "oldNetId": 2,
+      "newNetId": 7,
+      "hp": 28,
+      "firstReadout": "28/28",
+      "frames": 14
+    },
+    {
+      "case": "boss HUD and overhead",
+      "frames": 75,
+      "topIntermediate": 37,
+      "overheadIntermediate": 41,
+      "last": "능선의 수문장   97/150"
+    },
+    {
+      "case": "offline combat debug and overhead",
+      "frames": 48,
+      "intermediate": 24
+    },
+    {
+      "case": "pooled local actor starts a fresh display",
+      "frames": 51,
+      "hp": 100,
+      "shown": 100.0
+    }
+  ],
+  "networkPlayerSamples": [
+    {
+      "t": 0.372,
+      "authoritativeHP": 60,
+      "authoritativeMax": 100,
+      "visibleHP": 100.0,
+      "fill": 1.0,
+      "text": "100/100"
+    },
+    {
+      "t": 0.43,
+      "authoritativeHP": 60,
+      "authoritativeMax": 100,
+      "visibleHP": 87.3,
+      "fill": 0.873,
+      "text": "94/100"
+    },
+    {
+      "t": 0.487,
+      "authoritativeHP": 38,
+      "authoritativeMax": 100,
+      "visibleHP": 74.5,
+      "fill": 0.745,
+      "text": "81/100"
+    },
+    {
+      "t": 0.487,
+      "authoritativeHP": 38,
+      "authoritativeMax": 100,
+      "visibleHP": 74.5,
+      "fill": 0.745,
+      "text": "81/100"
+    },
+    {
+      "t": 0.544,
+      "authoritativeHP": 38,
+      "authoritativeMax": 100,
+      "visibleHP": 62.9,
+      "fill": 0.629,
+      "text": "69/100"
+    },
+    {
+      "t": 0.602,
+      "authoritativeHP": 38,
+      "authoritativeMax": 100,
+      "visibleHP": 51.2,
+      "fill": 0.512,
+      "text": "57/100"
+    },
+    {
+      "t": 0.861,
+      "authoritativeHP": 66,
+      "authoritativeMax": 100,
+      "visibleHP": 38.0,
+      "fill": 0.38,
+      "text": "38/100"
+    },
+    {
+      "t": 0.919,
+      "authoritativeHP": 66,
+      "authoritativeMax": 100,
+      "visibleHP": 44.2,
+      "fill": 0.442,
+      "text": "41/100"
+    },
+    {
+      "t": 0.976,
+      "authoritativeHP": 66,
+      "authoritativeMax": 100,
+      "visibleHP": 50.4,
+      "fill": 0.504,
+      "text": "47/100"
+    },
+    {
+      "t": 1.387,
+      "authoritativeHP": 90,
+      "authoritativeMax": 100,
+      "visibleHP": 66.0,
+      "fill": 0.66,
+      "text": "66/100"
+    },
+    {
+      "t": 1.446,
+      "authoritativeHP": 90,
+      "authoritativeMax": 100,
+      "visibleHP": 71.5,
+      "fill": 0.715,
+      "text": "69/100"
+    },
+    {
+      "t": 1.504,
+      "authoritativeHP": 90,
+      "authoritativeMax": 100,
+      "visibleHP": 76.9,
+      "fill": 0.769,
+      "text": "74/100"
+    },
+    {
+      "t": 1.799,
+      "authoritativeHP": 97,
+      "authoritativeMax": 150,
+      "visibleHP": 90.0,
+      "fill": 0.9,
+      "text": "90/100"
+    },
+    {
+      "t": 1.857,
+      "authoritativeHP": 97,
+      "authoritativeMax": 150,
+      "visibleHP": 91.5,
+      "fill": 0.825,
+      "text": "91/105"
+    },
+    {
+      "t": 1.914,
+      "authoritativeHP": 97,
+      "authoritativeMax": 150,
+      "visibleHP": 93.1,
+      "fill": 0.763,
+      "text": "92/116"
+    }
+  ],
+  "firstFrameAfterOfflineReactivate": {
+    "hp": 100,
+    "shown": 100.0,
+    "max": 100
+  },
+  "limits": [
+    "Headless Canvas and text state data only. No mobile device profiling or GPU screenshots in this run."
+  ]
+}

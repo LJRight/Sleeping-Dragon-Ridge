@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-18",
+  "backend": "isolated SQLite and production ServerBuild_2",
+  "client": "isolated QA player, normal Login Scene TMP_InputField and Submit Btn raycast; input fields populated through Unity UI API",
+  "account": "ridge_form_1b8cc573",
+  "verification": [
+    "Opened existing account form from the login scene",
+    "Submission with wrong password stayed on the login form",
+    "Valid submission entered Prototype and matched entire pre-existing snapshot"
+  ],
+  "databaseCounts": {
+    "users": 1,
+    "guest_keys": 0,
+    "user_progress": 1
+  },
+  "level": 2,
+  "totalXp": 20.0,
+  "gold": 12,
+  "revision": 1,
+  "priorAndRestoredSnapshotsEqual": true
+}

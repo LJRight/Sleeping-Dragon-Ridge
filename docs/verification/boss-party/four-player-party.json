@@ -1,0 +1,348 @@
+{
+  "date": "2026-11-20",
+  "platform": "macOS Apple Silicon",
+  "unity": "6000.3.10f1",
+  "completed": true,
+  "scope": "Five headless Unity clients, separate game server and temporary SQLite. The QA driver positions the characters, supplies prerequisite quests and trial armor, and uses owner requests for invitations and readiness. Both bosses fell to attacks from the HUD.",
+  "cases": [
+    {
+      "case": "A prerequisite fixture: backend progression actions",
+      "quest": "active"
+    },
+    {
+      "case": "B prerequisite fixture: backend progression actions",
+      "quest": "active"
+    },
+    {
+      "case": "C prerequisite fixture: backend progression actions",
+      "quest": "active"
+    },
+    {
+      "case": "E prerequisite fixture: backend progression actions",
+      "quest": "active"
+    },
+    {
+      "case": "four clients share roster and fifth invitation is rejected",
+      "party": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "outsider": 5,
+      "leaderStatus": "현재 이 기사에게 파티 초대를 보낼 수 없습니다.",
+      "outsiderParty": {
+        "members": [],
+        "ready": [],
+        "leader": 0,
+        "inviter": 0,
+        "invited": false,
+        "preparing": false,
+        "source": "",
+        "token": ""
+      },
+      "input": "real authenticated player request; general QA covers field hit selection"
+    },
+    {
+      "case": "four enter one room, three accepted at entry",
+      "room": 1,
+      "roles": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "eligible": [
+        "A",
+        "B",
+        "C"
+      ],
+      "fourthQuest": "available"
+    },
+    {
+      "case": "fifth client reconnects after group entry and starts separate solo challenge",
+      "fieldPlayers": [
+        0,
+        6
+      ],
+      "partyRoom": 1,
+      "soloRoom": 2,
+      "partyBoss": 10,
+      "soloBoss": 12,
+      "soloHP": 84
+    },
+    {
+      "case": "non-attacking B dies and revives at camp before boss is killed",
+      "damage": "boss AI",
+      "hpReadings": [
+        112,
+        103,
+        94,
+        85,
+        76,
+        67,
+        58,
+        49,
+        40,
+        31,
+        22,
+        13,
+        4,
+        0
+      ],
+      "respawn": {
+        "id": 2,
+        "kind": "player",
+        "hp": 112,
+        "room": 0,
+        "x": -3.0,
+        "y": 1.0070793628692627,
+        "z": -4.0
+      },
+      "bossHpBefore": 84,
+      "bossHpAfter": 84,
+      "bossQuest": "active"
+    },
+    {
+      "case": "A boss kill",
+      "path": "HUD combat; QA positioning",
+      "actions": 11,
+      "bossHpAfterInputs": [
+        [
+          72
+        ],
+        [
+          72
+        ],
+        [
+          72
+        ],
+        [
+          60
+        ],
+        [
+          48
+        ],
+        [
+          36
+        ],
+        [
+          36
+        ],
+        [
+          36
+        ],
+        [
+          24
+        ],
+        [
+          12
+        ],
+        []
+      ]
+    },
+    {
+      "case": "A victory before individual report",
+      "quest": "ready",
+      "owner": {
+        "id": 1,
+        "kind": "player",
+        "hp": 58,
+        "room": 0,
+        "x": -1.2000000476837158,
+        "y": 1.0761439800262451,
+        "z": -4.0
+      },
+      "victories": 1,
+      "balances": {
+        "ridge_sword": 0,
+        "ore": 0,
+        "rare_ore": 0,
+        "gold": 47
+      }
+    },
+    {
+      "case": "B victory before individual report",
+      "quest": "ready",
+      "owner": {
+        "id": 2,
+        "kind": "player",
+        "hp": 112,
+        "room": 0,
+        "x": -3.0,
+        "y": 1.0754203796386719,
+        "z": -4.0
+      },
+      "victories": 1,
+      "balances": {
+        "ridge_sword": 0,
+        "ore": 1,
+        "rare_ore": 0,
+        "gold": 47
+      }
+    },
+    {
+      "case": "C victory before individual report",
+      "quest": "ready",
+      "owner": {
+        "id": 3,
+        "kind": "player",
+        "hp": 112,
+        "room": 0,
+        "x": -3.0,
+        "y": 1.0752335786819458,
+        "z": -2.200000047683716
+      },
+      "victories": 1,
+      "balances": {
+        "ridge_sword": 0,
+        "ore": 1,
+        "rare_ore": 0,
+        "gold": 47
+      }
+    },
+    {
+      "case": "D victory before individual report",
+      "quest": "available",
+      "owner": {
+        "id": 4,
+        "kind": "player",
+        "hp": 112,
+        "room": 0,
+        "x": -4.800000190734863,
+        "y": 1.0760135650634766,
+        "z": -4.0
+      },
+      "victories": 1,
+      "balances": {
+        "ridge_sword": 0,
+        "ore": 1,
+        "rare_ore": 0,
+        "gold": 47
+      }
+    },
+    {
+      "case": "no quest or reward for unaccepted party member even when attempting report",
+      "balances": {
+        "ridge_sword": 0,
+        "ore": 1,
+        "rare_ore": 0,
+        "gold": 47
+      }
+    },
+    {
+      "case": "survivor claims quest reward after camp return",
+      "reward": "용흔의 검",
+      "balances": {
+        "ridge_sword": 1,
+        "ore": 10,
+        "rare_ore": 1,
+        "gold": 147
+      }
+    },
+    {
+      "case": "inventory equips actual quest sword with test armor and activates two sets",
+      "fixtureArmor": {
+        "fury_helm": "d0794c0b4c67485eb8ab802aa3af6cfa",
+        "vital_armor": "b6bd0fe610674deba36e81c0600a91c4"
+      },
+      "questSword": "3e94026d455c46db96b193a1685eb2f7",
+      "counts": {
+        "fury": 2,
+        "vital": 2,
+        "balance": 1
+      },
+      "statGain": {
+        "hp": 12,
+        "attack": 19,
+        "defense": 2
+      },
+      "before": {
+        "hp": 132,
+        "attack": 14,
+        "defense": 6
+      },
+      "after": {
+        "hp": 144,
+        "attack": 33,
+        "defense": 8
+      }
+    },
+    {
+      "case": "E boss kill",
+      "path": "HUD combat; QA positioning",
+      "actions": 11,
+      "bossHpAfterInputs": [
+        [
+          72
+        ],
+        [
+          72
+        ],
+        [
+          72
+        ],
+        [
+          60
+        ],
+        [
+          48
+        ],
+        [
+          36
+        ],
+        [
+          36
+        ],
+        [
+          36
+        ],
+        [
+          24
+        ],
+        [
+          12
+        ],
+        []
+      ]
+    },
+    {
+      "case": "all four persisted snapshots unchanged by solo victory and claim",
+      "revisions": {
+        "A": 13,
+        "B": 8,
+        "C": 8,
+        "D": 6
+      },
+      "soloRevision": 9
+    },
+    {
+      "case": "solo and party rooms both cleared; solo victory and claim leave all four party snapshots unchanged",
+      "soloBossInitialHp": 84,
+      "soloBossHpAfterPartyVictory": 84,
+      "clearedRosterSizes": [
+        1,
+        4
+      ],
+      "soloBalances": {
+        "ridge_sword": 1,
+        "ore": 11,
+        "rare_ore": 1,
+        "gold": 147
+      },
+      "partyLeaderBalances": {
+        "ridge_sword": 1,
+        "ore": 10,
+        "rare_ore": 1,
+        "gold": 147
+      },
+      "partyLeaderRevision": 13,
+      "partyQuestStates": {
+        "A": "completed",
+        "B": "ready",
+        "C": "ready",
+        "D": "available"
+      }
+    }
+  ]
+}

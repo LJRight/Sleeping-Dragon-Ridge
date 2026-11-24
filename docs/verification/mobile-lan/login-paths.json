@@ -1,0 +1,366 @@
+{
+  "passed": true,
+  "timeKST": "2026-11-20T13:10:43+09:00",
+  "unity": "6000.3.10f1 bundled Roslyn and Mono",
+  "scope": "Isolated control-flow check of compiled LoginClient.Start, GuestLogin, Login and SignUp with synchronous Unity UI, frame timer, session and network transport substitutes. The StreamingAssets fixture actually opens the simulated iOS file or reads the simulated Android APK ZIP entry. REST calls return fixture responses. This does not execute UnityWebRequest native platform IO or connect a phone/server.",
+  "sourceSHA256": {
+    "NetmarbleNeo/Assets/Scripts/LoginClient.cs": "514e278ee46f17449e4c9a5aed2b602f1560a944fb8549a10661c7459574f1af",
+    "NetmarbleNeo/Assets/Scripts/MobileLanEndpoint.cs": "f790758d1d4cfbba69e11c8ea6b936e798f3d224a8ae1226c7fedc159cc41885"
+  },
+  "assertions": [
+    "No guest, login or signup HTTP call can start before the packaged address read finishes.",
+    "iOS uses an absolute escaped file URL; Android preserves the APK jar URL.",
+    "Changing the stored IPv4 between packages redirects both auth HTTP and the game session; gates for missing and malformed data reject subsequent input.",
+    "Existing environment overrides keep precedence for URL/address/port after reading a valid package.",
+    "Both mobile release variants, mobile editor and development standalone run the original endpoint without reading a package file."
+  ],
+  "variants": [
+    {
+      "variant": "android-dev",
+      "defines": [
+        "UNITY_ANDROID",
+        "DEVELOPMENT_BUILD"
+      ],
+      "cases": [
+        {
+          "fixture": "first",
+          "flow": "guest",
+          "envOverrides": false,
+          "assetRead": 1,
+          "posts": [
+            "http://192.168.201.14:8080/auth/guest/create"
+          ],
+          "gameHost": "192.168.201.14",
+          "gamePort": 7777
+        },
+        {
+          "fixture": "second",
+          "flow": "login",
+          "envOverrides": false,
+          "assetRead": 1,
+          "posts": [
+            "http://10.20.30.45:8080/auth/login"
+          ],
+          "gameHost": "10.20.30.45",
+          "gamePort": 7777
+        },
+        {
+          "fixture": "second",
+          "flow": "signup",
+          "envOverrides": false,
+          "assetRead": 1,
+          "posts": [
+            "http://10.20.30.45:8080/auth/register",
+            "http://10.20.30.45:8080/auth/login"
+          ],
+          "gameHost": "10.20.30.45",
+          "gamePort": 7777
+        },
+        {
+          "fixture": "first",
+          "flow": "guest",
+          "envOverrides": true,
+          "assetRead": 1,
+          "posts": [
+            "http://login-override.test:8181/auth/guest/create"
+          ],
+          "gameHost": "override.test",
+          "gamePort": 7788
+        },
+        {
+          "fixture": "missing",
+          "flow": "blocked",
+          "assetRead": 1,
+          "posts": 0
+        },
+        {
+          "fixture": "invalid",
+          "flow": "blocked",
+          "assetRead": 1,
+          "posts": 0
+        }
+      ]
+    },
+    {
+      "variant": "ios-dev",
+      "defines": [
+        "UNITY_IOS",
+        "DEVELOPMENT_BUILD"
+      ],
+      "cases": [
+        {
+          "fixture": "first",
+          "flow": "guest",
+          "envOverrides": false,
+          "assetRead": 1,
+          "posts": [
+            "http://192.168.201.14:8080/auth/guest/create"
+          ],
+          "gameHost": "192.168.201.14",
+          "gamePort": 7777
+        },
+        {
+          "fixture": "second",
+          "flow": "login",
+          "envOverrides": false,
+          "assetRead": 1,
+          "posts": [
+            "http://10.20.30.45:8080/auth/login"
+          ],
+          "gameHost": "10.20.30.45",
+          "gamePort": 7777
+        },
+        {
+          "fixture": "second",
+          "flow": "signup",
+          "envOverrides": false,
+          "assetRead": 1,
+          "posts": [
+            "http://10.20.30.45:8080/auth/register",
+            "http://10.20.30.45:8080/auth/login"
+          ],
+          "gameHost": "10.20.30.45",
+          "gamePort": 7777
+        },
+        {
+          "fixture": "first",
+          "flow": "guest",
+          "envOverrides": true,
+          "assetRead": 1,
+          "posts": [
+            "http://login-override.test:8181/auth/guest/create"
+          ],
+          "gameHost": "override.test",
+          "gamePort": 7788
+        },
+        {
+          "fixture": "missing",
+          "flow": "blocked",
+          "assetRead": 1,
+          "posts": 0
+        },
+        {
+          "fixture": "invalid",
+          "flow": "blocked",
+          "assetRead": 1,
+          "posts": 0
+        }
+      ]
+    },
+    {
+      "variant": "android-release",
+      "defines": [
+        "UNITY_ANDROID"
+      ],
+      "cases": [
+        {
+          "fixture": "first",
+          "flow": "guest",
+          "envOverrides": false,
+          "assetRead": 0,
+          "posts": [
+            "http://10.0.8.5:8080/auth/guest/create"
+          ],
+          "gameHost": "10.0.8.5",
+          "gamePort": 7777
+        },
+        {
+          "fixture": "second",
+          "flow": "login",
+          "envOverrides": false,
+          "assetRead": 0,
+          "posts": [
+            "http://10.0.8.5:8080/auth/login"
+          ],
+          "gameHost": "10.0.8.5",
+          "gamePort": 7777
+        },
+        {
+          "fixture": "second",
+          "flow": "signup",
+          "envOverrides": false,
+          "assetRead": 0,
+          "posts": [
+            "http://10.0.8.5:8080/auth/register",
+            "http://10.0.8.5:8080/auth/login"
+          ],
+          "gameHost": "10.0.8.5",
+          "gamePort": 7777
+        },
+        {
+          "fixture": "first",
+          "flow": "guest",
+          "envOverrides": true,
+          "assetRead": 0,
+          "posts": [
+            "http://login-override.test:8181/auth/guest/create"
+          ],
+          "gameHost": "override.test",
+          "gamePort": 7788
+        }
+      ]
+    },
+    {
+      "variant": "ios-release",
+      "defines": [
+        "UNITY_IOS"
+      ],
+      "cases": [
+        {
+          "fixture": "first",
+          "flow": "guest",
+          "envOverrides": false,
+          "assetRead": 0,
+          "posts": [
+            "http://10.0.8.5:8080/auth/guest/create"
+          ],
+          "gameHost": "10.0.8.5",
+          "gamePort": 7777
+        },
+        {
+          "fixture": "second",
+          "flow": "login",
+          "envOverrides": false,
+          "assetRead": 0,
+          "posts": [
+            "http://10.0.8.5:8080/auth/login"
+          ],
+          "gameHost": "10.0.8.5",
+          "gamePort": 7777
+        },
+        {
+          "fixture": "second",
+          "flow": "signup",
+          "envOverrides": false,
+          "assetRead": 0,
+          "posts": [
+            "http://10.0.8.5:8080/auth/register",
+            "http://10.0.8.5:8080/auth/login"
+          ],
+          "gameHost": "10.0.8.5",
+          "gamePort": 7777
+        },
+        {
+          "fixture": "first",
+          "flow": "guest",
+          "envOverrides": true,
+          "assetRead": 0,
+          "posts": [
+            "http://login-override.test:8181/auth/guest/create"
+          ],
+          "gameHost": "override.test",
+          "gamePort": 7788
+        }
+      ]
+    },
+    {
+      "variant": "editor-mobile-dev",
+      "defines": [
+        "UNITY_EDITOR",
+        "UNITY_ANDROID",
+        "DEVELOPMENT_BUILD"
+      ],
+      "cases": [
+        {
+          "fixture": "first",
+          "flow": "guest",
+          "envOverrides": false,
+          "assetRead": 0,
+          "posts": [
+            "http://10.0.8.5:8080/auth/guest/create"
+          ],
+          "gameHost": "10.0.8.5",
+          "gamePort": 7777
+        },
+        {
+          "fixture": "second",
+          "flow": "login",
+          "envOverrides": false,
+          "assetRead": 0,
+          "posts": [
+            "http://10.0.8.5:8080/auth/login"
+          ],
+          "gameHost": "10.0.8.5",
+          "gamePort": 7777
+        },
+        {
+          "fixture": "second",
+          "flow": "signup",
+          "envOverrides": false,
+          "assetRead": 0,
+          "posts": [
+            "http://10.0.8.5:8080/auth/register",
+            "http://10.0.8.5:8080/auth/login"
+          ],
+          "gameHost": "10.0.8.5",
+          "gamePort": 7777
+        },
+        {
+          "fixture": "first",
+          "flow": "guest",
+          "envOverrides": true,
+          "assetRead": 0,
+          "posts": [
+            "http://login-override.test:8181/auth/guest/create"
+          ],
+          "gameHost": "override.test",
+          "gamePort": 7788
+        }
+      ]
+    },
+    {
+      "variant": "standalone-dev",
+      "defines": [
+        "UNITY_STANDALONE_OSX",
+        "DEVELOPMENT_BUILD"
+      ],
+      "cases": [
+        {
+          "fixture": "first",
+          "flow": "guest",
+          "envOverrides": false,
+          "assetRead": 0,
+          "posts": [
+            "http://10.0.8.5:8080/auth/guest/create"
+          ],
+          "gameHost": "10.0.8.5",
+          "gamePort": 7777
+        },
+        {
+          "fixture": "second",
+          "flow": "login",
+          "envOverrides": false,
+          "assetRead": 0,
+          "posts": [
+            "http://10.0.8.5:8080/auth/login"
+          ],
+          "gameHost": "10.0.8.5",
+          "gamePort": 7777
+        },
+        {
+          "fixture": "second",
+          "flow": "signup",
+          "envOverrides": false,
+          "assetRead": 0,
+          "posts": [
+            "http://10.0.8.5:8080/auth/register",
+            "http://10.0.8.5:8080/auth/login"
+          ],
+          "gameHost": "10.0.8.5",
+          "gamePort": 7777
+        },
+        {
+          "fixture": "first",
+          "flow": "guest",
+          "envOverrides": true,
+          "assetRead": 0,
+          "posts": [
+            "http://login-override.test:8181/auth/guest/create"
+          ],
+          "gameHost": "override.test",
+          "gamePort": 7788
+        }
+      ]
+    }
+  ]
+}

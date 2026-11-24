@@ -1,0 +1,111 @@
+{
+  "separateFreshGuest": true,
+  "result": "PASS",
+  "steps": [
+    {
+      "elapsed": 13.3052364,
+      "level": 1,
+      "revision": 7,
+      "position": {
+        "x": 360.4053649902344,
+        "y": 5.3462958335876465,
+        "z": -128.2451934814453
+      },
+      "map": "HuntingField",
+      "active": true,
+      "enabledCombat": false,
+      "quests": "watch:completed:1|supplies:completed:1|equip_sword:completed:1|hunt:active:0|hunt_a2:locked:0|hunt_a3:locked:0|hunt_a4:locked:0|hunt_boar:locked:0|ridge_boss:locked:0",
+      "observation": "Walk before OFF: 3.26m; three quests completed"
+    },
+    {
+      "elapsed": 16.4383798,
+      "level": 1,
+      "revision": 7,
+      "position": {
+        "x": 360.7219543457031,
+        "y": 5.344052314758301,
+        "z": -127.58222961425781
+      },
+      "map": "HuntingField",
+      "active": false,
+      "enabledCombat": false,
+      "quests": "watch:completed:1|supplies:completed:1|equip_sword:completed:1|hunt:active:0|hunt_a2:locked:0|hunt_a3:locked:0|hunt_a4:locked:0|hunt_boar:locked:0|ridge_boss:locked:0",
+      "observation": "OFF persisted: displacement=0.000m; combat off; quest revision stable"
+    },
+    {
+      "elapsed": 16.8717799,
+      "level": 1,
+      "revision": 7,
+      "position": {
+        "x": 361.3791809082031,
+        "y": 5.337264537811279,
+        "z": -126.44538116455078
+      },
+      "map": "HuntingField",
+      "active": true,
+      "enabledCombat": false,
+      "quests": "watch:completed:1|supplies:completed:1|equip_sword:completed:1|hunt:active:0|hunt_a2:locked:0|hunt_a3:locked:0|hunt_a4:locked:0|hunt_boar:locked:0|ridge_boss:locked:0",
+      "observation": "ON resumed prior hunt; walk before joystick=1.31m"
+    },
+    {
+      "elapsed": 16.8717799,
+      "level": 1,
+      "revision": 7,
+      "position": {
+        "x": 361.3791809082031,
+        "y": 5.337264537811279,
+        "z": -126.44538116455078
+      },
+      "map": "HuntingField",
+      "active": true,
+      "enabledCombat": false,
+      "quests": "watch:completed:1|supplies:completed:1|equip_sword:completed:1|hunt:active:0|hunt_a2:locked:0|hunt_a3:locked:0|hunt_a4:locked:0|hunt_boar:locked:0|ridge_boss:locked:0",
+      "observation": "Batch Editor has no foreground window: forwarded a focus-gained lifecycle event before joystick pointer input"
+    },
+    {
+      "elapsed": 17.1049842,
+      "level": 1,
+      "revision": 7,
+      "position": {
+        "x": 362.14453125,
+        "y": 5.334714889526367,
+        "z": -125.72479248046875
+      },
+      "map": "HuntingField",
+      "active": false,
+      "enabledCombat": false,
+      "quests": "watch:completed:1|supplies:completed:1|equip_sword:completed:1|hunt:active:0|hunt_a2:locked:0|hunt_a3:locked:0|hunt_a4:locked:0|hunt_boar:locked:0|ridge_boss:locked:0",
+      "observation": "Joystick pointer drag: auto cancelled, manual movement=1.05m; same saved quest"
+    },
+    {
+      "elapsed": 18.2050833,
+      "level": 1,
+      "revision": 7,
+      "position": {
+        "x": 362.9173278808594,
+        "y": 5.331968784332275,
+        "z": -125.57379913330078
+      },
+      "map": "HuntingField",
+      "active": false,
+      "enabledCombat": false,
+      "quests": "watch:completed:1|supplies:completed:1|equip_sword:completed:1|hunt:active:0|hunt_a2:locked:0|hunt_a3:locked:0|hunt_a4:locked:0|hunt_boar:locked:0|ridge_boss:locked:0",
+      "observation": "Joystick released; auto stayed OFF, quest revision and checkpoint preserved"
+    },
+    {
+      "elapsed": 32.838795499999996,
+      "level": 2,
+      "revision": 8,
+      "position": {
+        "x": 400.66021728515625,
+        "y": 6.355022430419922,
+        "z": -86.1151351928711
+      },
+      "map": "HuntingField",
+      "active": true,
+      "enabledCombat": true,
+      "quests": "watch:completed:1|supplies:completed:1|equip_sword:completed:1|hunt:ready:1|hunt_a2:locked:0|hunt_a3:locked:0|hunt_a4:locked:0|hunt_boar:locked:0|ridge_boss:locked:0",
+      "observation": "Resumed existing hunt via HUD; authoritative kill advanced its quest objective"
+    }
+  ]
+}

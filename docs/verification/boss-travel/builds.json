@@ -1,0 +1,31 @@
+{
+  "Unity": "6000.3.10f1",
+  "platform": "macOS standalone, Apple Silicon",
+  "sourceFileCount": 103,
+  "sourceManifestSHA256": "ea0900ccef7169625a6a310c5641d9e606d570fd1d9d99c5f2514c3d7596ec9f",
+  "builds": [
+    {
+      "role": "QA client",
+      "buildReportTotalBytes": 141977055,
+      "assemblySHA256": "9b888773a0bfafbb35339c84db07f239931acc0a875d1fa48da58a0a4dd404c9",
+      "captureProbe": true
+    },
+    {
+      "role": "macOS dedicated server",
+      "buildReportTotalBytes": 83583250,
+      "assemblySHA256": "8f09daa35989b39ce4bf96049d12cdc4a45b08c415b80f1180a668d9bed4ed35",
+      "captureProbe": false
+    },
+    {
+      "role": "macOS player",
+      "buildReportTotalBytes": 141748510,
+      "assemblySHA256": "4d5de1d9efaf7db72dfab3a8d3576afa5694f1546f6ca1afa3cf5cedfa02b48e",
+      "captureProbe": false
+    }
+  ],
+  "gameServer": "Bootstrap: Server → Prototype",
+  "cleanPlayerGuestConnection": "플레이 준비 완료",
+  "backendTestsPassed": 10,
+  "developmentDbSHA256BeforeAndAfter": "0b980618b666941925f80d4cb7abfb67fc5600873a502b4b7478f05bb80d0d2a",
+  "videoSHA256": "4dc58f58ace2b60bb131fcb830d6b97340fb54dc9580d1d54bb5322440ed170a"
+}

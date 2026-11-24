@@ -1,0 +1,48 @@
+{
+  "weighted_vertices": 1386,
+  "unweighted": 0,
+  "max_weight_sum_error": 2.9802322387695312e-08,
+  "max_influences": 2,
+  "materials": 1,
+  "walk_loop_max_matrix_error": 0.0,
+  "root_max_displacement": 0,
+  "fbx_roundtrip": [
+    {
+      "file": "Model",
+      "armatures": 1,
+      "bones": 18,
+      "meshes": 1,
+      "actions": []
+    },
+    {
+      "file": "Walk",
+      "armatures": 1,
+      "bones": 18,
+      "meshes": 1,
+      "actions": [
+        {
+          "name": "Goblin_Rig|Scene",
+          "range": [
+            2.0,
+            34.0
+          ]
+        }
+      ]
+    },
+    {
+      "file": "Attack",
+      "armatures": 1,
+      "bones": 18,
+      "meshes": 1,
+      "actions": [
+        {
+          "name": "Goblin_Rig|Scene.001",
+          "range": [
+            2.0,
+            47.0
+          ]
+        }
+      ]
+    }
+  ]
+}

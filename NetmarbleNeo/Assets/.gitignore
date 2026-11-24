@@ -1,0 +1,869 @@
+# 배포 씬 여섯 개에서 쓰지 않는 에셋과 대응하는 Unity 메타데이터.
+# 제외한 자산을 게임에서 다시 사용할 때에는 해당 경로와 .meta 규칙을 함께 지운다.
+# 목록에 없는 새 파일은 일반 Git 규칙을 따른다.
+
+# AllSkyFree
+/AllSkyFree/
+/AllSkyFree.meta
+
+# Animation
+/Animation/Mixamo/
+/Animation/Mixamo.meta
+/Animation/Player/Paladin WProp J Nordstrom@Standing Melee Run Jump Attack.fbx
+/Animation/Player/Paladin WProp J Nordstrom@Standing Melee Run Jump Attack.fbx.meta
+
+# Art
+/Art/AI Generated/LoginKnight.png
+/Art/AI Generated/LoginKnight.png.meta
+/Art/Environment/Texture/Base House Textures/M_Base_01_Roughness.png
+/Art/Environment/Texture/Base House Textures/M_Base_01_Roughness.png.meta
+/Art/Environment/Texture/Base House Textures/M_Base_02_Roughness.png
+/Art/Environment/Texture/Base House Textures/M_Base_02_Roughness.png.meta
+/Art/Environment/Texture/Base House Textures/M_Base_03_Roughness.png
+/Art/Environment/Texture/Base House Textures/M_Base_03_Roughness.png.meta
+/Art/Environment/Texture/Base House Textures/M_Base_04.1_Roughness.png
+/Art/Environment/Texture/Base House Textures/M_Base_04.1_Roughness.png.meta
+/Art/Environment/Texture/Base House Textures/M_Base_04_Roughness.png
+/Art/Environment/Texture/Base House Textures/M_Base_04_Roughness.png.meta
+/Art/Environment/Texture/Base House Textures/desktop.ini
+/Art/Environment/Texture/Base House Textures/desktop.ini.meta
+/Art/Environment/Texture/Door/M_Door_Roughness.png
+/Art/Environment/Texture/Door/M_Door_Roughness.png.meta
+/Art/Environment/Texture/Stairs/M_WoodStairs_Roughness.png
+/Art/Environment/Texture/Stairs/M_WoodStairs_Roughness.png.meta
+/Art/Environment/Texture/Textures MedievalHouse 2/M_Floor_Base_Color.png
+/Art/Environment/Texture/Textures MedievalHouse 2/M_Floor_Base_Color.png.meta
+/Art/Environment/Texture/Textures MedievalHouse 2/M_Floor_Roughness.png
+/Art/Environment/Texture/Textures MedievalHouse 2/M_Floor_Roughness.png.meta
+/Art/Environment/Texture/Textures MedievalHouse 2/M_Roof_IN_Roughness.png
+/Art/Environment/Texture/Textures MedievalHouse 2/M_Roof_IN_Roughness.png.meta
+/Art/Environment/Texture/Textures MedievalHouse 2/M_Roof_Mixed_AO.png
+/Art/Environment/Texture/Textures MedievalHouse 2/M_Roof_Mixed_AO.png.meta
+/Art/Environment/Texture/Textures MedievalHouse 2/M_Roof_Normal_DirectX.png
+/Art/Environment/Texture/Textures MedievalHouse 2/M_Roof_Normal_DirectX.png.meta
+/Art/Environment/Texture/Textures MedievalHouse 2/M_Roof_Roughness.png
+/Art/Environment/Texture/Textures MedievalHouse 2/M_Roof_Roughness.png.meta
+/Art/Environment/Texture/Textures MedievalHouse 2/M_WoodRoof_01_Roughness.png
+/Art/Environment/Texture/Textures MedievalHouse 2/M_WoodRoof_01_Roughness.png.meta
+/Art/Environment/Texture/Textures MedievalHouse 2/M_WoodRoof_02_Roughness.png
+/Art/Environment/Texture/Textures MedievalHouse 2/M_WoodRoof_02_Roughness.png.meta
+/Art/Environment/Texture/Textures MedievalHouse 2/M_Wood_IN_Roughness.png
+/Art/Environment/Texture/Textures MedievalHouse 2/M_Wood_IN_Roughness.png.meta
+/Art/Environment/Texture/Textures MedievalHouse 2/M_Wood_Roughness.png
+/Art/Environment/Texture/Textures MedievalHouse 2/M_Wood_Roughness.png.meta
+/Art/Expedition UI/combat_basic.png
+/Art/Expedition UI/combat_basic.png.meta
+/Art/Expedition UI/combat_spin.png
+/Art/Expedition UI/combat_spin.png.meta
+
+# Audio
+/Audio/Monster Roars/
+/Audio/Monster Roars.meta
+/Audio/Monster SFX - 111518/monster/
+/Audio/Monster SFX - 111518/monster.meta
+/Audio/Monster SFX - 111518/roar/
+/Audio/Monster SFX - 111518/roar.meta
+/Audio/AI Generated/DragonAwakens.wav
+/Audio/AI Generated/DragonAwakens.wav.meta
+/Audio/AI Generated/RidgeHunt.wav
+/Audio/AI Generated/RidgeHunt.wav.meta
+/Audio/Combat/Enemy/06. Battle Roar.wav
+/Audio/Combat/Enemy/06. Battle Roar.wav.meta
+/Audio/Combat/Enemy/Boss/Boss_Damaged_2.mp3
+/Audio/Combat/Enemy/Boss/Boss_Damaged_2.mp3.meta
+/Audio/Combat/Enemy/Enemy_Damaged_1.mp3
+/Audio/Combat/Enemy/Enemy_Damaged_1.mp3.meta
+/Audio/Combat/Player/Male_Fighter_Voice_3.mp3
+/Audio/Combat/Player/Male_Fighter_Voice_3.mp3.meta
+
+# DoubleL
+/DoubleL/Demo/Animator/
+/DoubleL/Demo/Animator.meta
+/DoubleL/FBX Unity/
+/DoubleL/FBX Unity.meta
+/DoubleL/Demo/Anim/Action_A_4_1.anim
+/DoubleL/Demo/Anim/Action_A_4_1.anim.meta
+/DoubleL/Demo/Anim/Action_A_5_1.anim
+/DoubleL/Demo/Anim/Action_A_5_1.anim.meta
+/DoubleL/Demo/Anim/Action_A_5_2.anim
+/DoubleL/Demo/Anim/Action_A_5_2.anim.meta
+/DoubleL/Demo/Anim/Dialogue_1.anim
+/DoubleL/Demo/Anim/Dialogue_1.anim.meta
+/DoubleL/Demo/Anim/Dialogue_2.anim
+/DoubleL/Demo/Anim/Dialogue_2.anim.meta
+/DoubleL/Demo/Anim/Dialogue_3.anim
+/DoubleL/Demo/Anim/Dialogue_3.anim.meta
+/DoubleL/Demo/Anim/Dialogue_4.anim
+/DoubleL/Demo/Anim/Dialogue_4.anim.meta
+/DoubleL/Demo/Anim/Dialogue_5.anim
+/DoubleL/Demo/Anim/Dialogue_5.anim.meta
+/DoubleL/Demo/Anim/Enemy_Attack_1.anim
+/DoubleL/Demo/Anim/Enemy_Attack_1.anim.meta
+/DoubleL/Demo/Anim/Enemy_Attack_1_InPlace.anim
+/DoubleL/Demo/Anim/Enemy_Attack_1_InPlace.anim.meta
+/DoubleL/Demo/Anim/Enemy_Attack_1_Run.anim
+/DoubleL/Demo/Anim/Enemy_Attack_1_Run.anim.meta
+/DoubleL/Demo/Anim/Enemy_Attack_1_Run_InPlace.anim
+/DoubleL/Demo/Anim/Enemy_Attack_1_Run_InPlace.anim.meta
+/DoubleL/Demo/Anim/Hit_F_1.anim
+/DoubleL/Demo/Anim/Hit_F_1.anim.meta
+/DoubleL/Demo/Anim/Hit_F_1_InPlace.anim
+/DoubleL/Demo/Anim/Hit_F_1_InPlace.anim.meta
+/DoubleL/Demo/Anim/Hit_F_2.anim
+/DoubleL/Demo/Anim/Hit_F_2.anim.meta
+/DoubleL/Demo/Anim/Hit_F_2_InPlace.anim
+/DoubleL/Demo/Anim/Hit_F_2_InPlace.anim.meta
+/DoubleL/Demo/Anim/Ladder_Down_End.anim
+/DoubleL/Demo/Anim/Ladder_Down_End.anim.meta
+/DoubleL/Demo/Anim/Ladder_Down_End_InPlace.anim
+/DoubleL/Demo/Anim/Ladder_Down_End_InPlace.anim.meta
+/DoubleL/Demo/Anim/Ladder_Down_Play.anim
+/DoubleL/Demo/Anim/Ladder_Down_Play.anim.meta
+/DoubleL/Demo/Anim/Ladder_Down_Play_InPlace.anim
+/DoubleL/Demo/Anim/Ladder_Down_Play_InPlace.anim.meta
+/DoubleL/Demo/Anim/Ladder_Down_Start.anim
+/DoubleL/Demo/Anim/Ladder_Down_Start.anim.meta
+/DoubleL/Demo/Anim/Ladder_Down_Start_InPlace.anim
+/DoubleL/Demo/Anim/Ladder_Down_Start_InPlace.anim.meta
+/DoubleL/Demo/Anim/Ladder_Idle.anim
+/DoubleL/Demo/Anim/Ladder_Idle.anim.meta
+/DoubleL/Demo/Anim/Ladder_Up_End.anim
+/DoubleL/Demo/Anim/Ladder_Up_End.anim.meta
+/DoubleL/Demo/Anim/Ladder_Up_End_InPlace.anim
+/DoubleL/Demo/Anim/Ladder_Up_End_InPlace.anim.meta
+/DoubleL/Demo/Anim/Ladder_Up_Play.anim
+/DoubleL/Demo/Anim/Ladder_Up_Play.anim.meta
+/DoubleL/Demo/Anim/Ladder_Up_Play_InPlace.anim
+/DoubleL/Demo/Anim/Ladder_Up_Play_InPlace.anim.meta
+/DoubleL/Demo/Anim/Ladder_Up_Start.anim
+/DoubleL/Demo/Anim/Ladder_Up_Start.anim.meta
+/DoubleL/Demo/Anim/Ladder_Up_Start_InPlace.anim
+/DoubleL/Demo/Anim/Ladder_Up_Start_InPlace.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Attack_1.anim
+/DoubleL/Demo/Anim/OneHand_Up_Attack_1.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Attack_2.anim
+/DoubleL/Demo/Anim/OneHand_Up_Attack_2.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Attack_3.anim
+/DoubleL/Demo/Anim/OneHand_Up_Attack_3.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Attack_B_1.anim
+/DoubleL/Demo/Anim/OneHand_Up_Attack_B_1.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Attack_B_1_InPlace.anim
+/DoubleL/Demo/Anim/OneHand_Up_Attack_B_1_InPlace.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Attack_B_2.anim
+/DoubleL/Demo/Anim/OneHand_Up_Attack_B_2.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Attack_B_2_InPlace.anim
+/DoubleL/Demo/Anim/OneHand_Up_Attack_B_2_InPlace.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Attack_B_3.anim
+/DoubleL/Demo/Anim/OneHand_Up_Attack_B_3.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Attack_B_3_InPlace.anim
+/DoubleL/Demo/Anim/OneHand_Up_Attack_B_3_InPlace.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Jump_B.anim
+/DoubleL/Demo/Anim/OneHand_Up_Jump_B.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Jump_B_InPlace.anim
+/DoubleL/Demo/Anim/OneHand_Up_Jump_B_InPlace.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Run_B.anim
+/DoubleL/Demo/Anim/OneHand_Up_Run_B.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Run_B_InPlace.anim
+/DoubleL/Demo/Anim/OneHand_Up_Run_B_InPlace.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Run_F.anim
+/DoubleL/Demo/Anim/OneHand_Up_Run_F.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Run_L.anim
+/DoubleL/Demo/Anim/OneHand_Up_Run_L.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Run_L_InPlace.anim
+/DoubleL/Demo/Anim/OneHand_Up_Run_L_InPlace.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Run_R.anim
+/DoubleL/Demo/Anim/OneHand_Up_Run_R.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Run_R_InPlace.anim
+/DoubleL/Demo/Anim/OneHand_Up_Run_R_InPlace.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Shield_Block_Hit_1.anim
+/DoubleL/Demo/Anim/OneHand_Up_Shield_Block_Hit_1.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Shield_Block_Hit_1_InPlace.anim
+/DoubleL/Demo/Anim/OneHand_Up_Shield_Block_Hit_1_InPlace.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Shield_Block_Idle.anim
+/DoubleL/Demo/Anim/OneHand_Up_Shield_Block_Idle.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Sprint.anim
+/DoubleL/Demo/Anim/OneHand_Up_Sprint.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Walk_B.anim
+/DoubleL/Demo/Anim/OneHand_Up_Walk_B.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Walk_B_InPlace.anim
+/DoubleL/Demo/Anim/OneHand_Up_Walk_B_InPlace.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Walk_F.anim
+/DoubleL/Demo/Anim/OneHand_Up_Walk_F.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Walk_L.anim
+/DoubleL/Demo/Anim/OneHand_Up_Walk_L.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Walk_L_InPlace.anim
+/DoubleL/Demo/Anim/OneHand_Up_Walk_L_InPlace.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Walk_R.anim
+/DoubleL/Demo/Anim/OneHand_Up_Walk_R.anim.meta
+/DoubleL/Demo/Anim/OneHand_Up_Walk_R_InPlace.anim
+/DoubleL/Demo/Anim/OneHand_Up_Walk_R_InPlace.anim.meta
+/DoubleL/Demo/Demo.unity
+/DoubleL/Demo/Demo.unity.meta
+/DoubleL/Demo/DemoCameraController.cs
+/DoubleL/Demo/DemoCameraController.cs.meta
+/DoubleL/Model/Armature (1).prefab
+/DoubleL/Model/Armature (1).prefab.meta
+/DoubleL/Model/Floor.mat
+/DoubleL/Model/Floor.mat.meta
+/DoubleL/Model/Grid_01_BaseMap.png
+/DoubleL/Model/Grid_01_BaseMap.png.meta
+/DoubleL/Model/T-Pose.fbx
+/DoubleL/Model/T-Pose.fbx.meta
+/DoubleL/Model/Unreal_Base.fbx
+/DoubleL/Model/Unreal_Base.fbx.meta
+/DoubleL/RPG_Animations_Pack Document.pdf.pdf
+/DoubleL/RPG_Animations_Pack Document.pdf.pdf.meta
+
+# Editor
+/Editor/SpinningSlashPreviewBuilder.cs
+/Editor/SpinningSlashPreviewBuilder.cs.meta
+
+# Eric VFX Studio
+/Eric VFX Studio/Free Game VFX/Prefab/
+/Eric VFX Studio/Free Game VFX/Prefab.meta
+/Eric VFX Studio/Free Game VFX/Scene/
+/Eric VFX Studio/Free Game VFX/Scene.meta
+/Eric VFX Studio/Resource/Materials/Aura_Flame_001.mat
+/Eric VFX Studio/Resource/Materials/Aura_Flame_001.mat.meta
+/Eric VFX Studio/Resource/Materials/Back Glow.mat
+/Eric VFX Studio/Resource/Materials/Back Glow.mat.meta
+/Eric VFX Studio/Resource/Materials/Background_paticle_purple_W01.mat
+/Eric VFX Studio/Resource/Materials/Background_paticle_purple_W01.mat.meta
+/Eric VFX Studio/Resource/Materials/Color_Ring_003.mat
+/Eric VFX Studio/Resource/Materials/Color_Ring_003.mat.meta
+/Eric VFX Studio/Resource/Materials/DungeonRingGuid.mat
+/Eric VFX Studio/Resource/Materials/DungeonRingGuid.mat.meta
+/Eric VFX Studio/Resource/Materials/Dust54.mat
+/Eric VFX Studio/Resource/Materials/Dust54.mat.meta
+/Eric VFX Studio/Resource/Materials/Epic Pulse.mat
+/Eric VFX Studio/Resource/Materials/Epic Pulse.mat.meta
+/Eric VFX Studio/Resource/Materials/Front Glow.mat
+/Eric VFX Studio/Resource/Materials/Front Glow.mat.meta
+/Eric VFX Studio/Resource/Materials/Fx_Rin022.mat
+/Eric VFX Studio/Resource/Materials/Fx_Rin022.mat.meta
+/Eric VFX Studio/Resource/Materials/Glow_004.mat
+/Eric VFX Studio/Resource/Materials/Glow_004.mat.meta
+/Eric VFX Studio/Resource/Materials/Gradient_Beam_007.mat
+/Eric VFX Studio/Resource/Materials/Gradient_Beam_007.mat.meta
+/Eric VFX Studio/Resource/Materials/M_2D_Ray_01.mat
+/Eric VFX Studio/Resource/Materials/M_2D_Ray_01.mat.meta
+/Eric VFX Studio/Resource/Materials/M_Glow_01C.mat
+/Eric VFX Studio/Resource/Materials/M_Glow_01C.mat.meta
+/Eric VFX Studio/Resource/Materials/Plane.mat
+/Eric VFX Studio/Resource/Materials/Plane.mat.meta
+/Eric VFX Studio/Resource/Materials/Sheet_purple_W01.mat
+/Eric VFX Studio/Resource/Materials/Sheet_purple_W01.mat.meta
+/Eric VFX Studio/Resource/Materials/Shock_05.mat
+/Eric VFX Studio/Resource/Materials/Shock_05.mat.meta
+/Eric VFX Studio/Resource/Materials/Spark Blur.mat
+/Eric VFX Studio/Resource/Materials/Spark Blur.mat.meta
+/Eric VFX Studio/Resource/Materials/Sparkle_Ink_008.mat
+/Eric VFX Studio/Resource/Materials/Sparkle_Ink_008.mat.meta
+/Eric VFX Studio/Resource/Materials/alpha_ball4.mat
+/Eric VFX Studio/Resource/Materials/alpha_ball4.mat.meta
+/Eric VFX Studio/Resource/Materials/bl_02-4.mat
+/Eric VFX Studio/Resource/Materials/bl_02-4.mat.meta
+/Eric VFX Studio/Resource/Materials/decal_fire10.mat
+/Eric VFX Studio/Resource/Materials/decal_fire10.mat.meta
+/Eric VFX Studio/Resource/Materials/firerock 2.mat
+/Eric VFX Studio/Resource/Materials/firerock 2.mat.meta
+/Eric VFX Studio/Resource/Materials/firerock 3.mat
+/Eric VFX Studio/Resource/Materials/firerock 3.mat.meta
+/Eric VFX Studio/Resource/Materials/flare.mat
+/Eric VFX Studio/Resource/Materials/flare.mat.meta
+/Eric VFX Studio/Resource/Materials/flare_b_W01.mat
+/Eric VFX Studio/Resource/Materials/flare_b_W01.mat.meta
+/Eric VFX Studio/Resource/Materials/fm-g01-06.mat
+/Eric VFX Studio/Resource/Materials/fm-g01-06.mat.meta
+/Eric VFX Studio/Resource/Materials/glow_ball2_grey_3 1.mat
+/Eric VFX Studio/Resource/Materials/glow_ball2_grey_3 1.mat.meta
+/Eric VFX Studio/Resource/Materials/glow_ball2_grey_5.mat
+/Eric VFX Studio/Resource/Materials/glow_ball2_grey_5.mat.meta
+/Eric VFX Studio/Resource/Materials/glow_green3tail_2.mat
+/Eric VFX Studio/Resource/Materials/glow_green3tail_2.mat.meta
+/Eric VFX Studio/Resource/Materials/glowa_hot_grey_9.mat
+/Eric VFX Studio/Resource/Materials/glowa_hot_grey_9.mat.meta
+/Eric VFX Studio/Resource/Materials/grad10_08.mat
+/Eric VFX Studio/Resource/Materials/grad10_08.mat.meta
+/Eric VFX Studio/Resource/Materials/grad10_09.mat
+/Eric VFX Studio/Resource/Materials/grad10_09.mat.meta
+/Eric VFX Studio/Resource/Materials/hit_02.mat
+/Eric VFX Studio/Resource/Materials/hit_02.mat.meta
+/Eric VFX Studio/Resource/Materials/light_Y.mat
+/Eric VFX Studio/Resource/Materials/light_Y.mat.meta
+/Eric VFX Studio/Resource/Materials/lightning01_02_22.mat
+/Eric VFX Studio/Resource/Materials/lightning01_02_22.mat.meta
+/Eric VFX Studio/Resource/Materials/particle_sprite_01.mat
+/Eric VFX Studio/Resource/Materials/particle_sprite_01.mat.meta
+/Eric VFX Studio/Resource/Materials/particle_sprite_droplet.mat
+/Eric VFX Studio/Resource/Materials/particle_sprite_droplet.mat.meta
+/Eric VFX Studio/Resource/Materials/pd_07a_3.mat
+/Eric VFX Studio/Resource/Materials/pd_07a_3.mat.meta
+/Eric VFX Studio/Resource/Materials/ring_03a.mat
+/Eric VFX Studio/Resource/Materials/ring_03a.mat.meta
+/Eric VFX Studio/Resource/Materials/sd_21a_9.mat
+/Eric VFX Studio/Resource/Materials/sd_21a_9.mat.meta
+/Eric VFX Studio/Resource/Materials/star_CPdr_wyy_006_alpha_01.mat
+/Eric VFX Studio/Resource/Materials/star_CPdr_wyy_006_alpha_01.mat.meta
+/Eric VFX Studio/Resource/Materials/suipianlizi_001.mat
+/Eric VFX Studio/Resource/Materials/suipianlizi_001.mat.meta
+/Eric VFX Studio/Resource/Materials/tf-28.mat
+/Eric VFX Studio/Resource/Materials/tf-28.mat.meta
+/Eric VFX Studio/Resource/Materials/trail05.mat
+/Eric VFX Studio/Resource/Materials/trail05.mat.meta
+/Eric VFX Studio/Resource/Materials/vfx_twinkle-blurred-add-\[1.0\] 1.mat
+/Eric VFX Studio/Resource/Materials/vfx_twinkle-blurred-add-\[1.0\] 1.mat.meta
+/Eric VFX Studio/Resource/Mesh/Eric_Cylinder 1.FBX
+/Eric VFX Studio/Resource/Mesh/Eric_Cylinder 1.FBX.meta
+/Eric VFX Studio/Resource/Mesh/Eric_HalfSphere000.FBX
+/Eric VFX Studio/Resource/Mesh/Eric_HalfSphere000.FBX.meta
+/Eric VFX Studio/Resource/Mesh/Eric_PlaneDownCenter.FBX
+/Eric VFX Studio/Resource/Mesh/Eric_PlaneDownCenter.FBX.meta
+/Eric VFX Studio/Resource/Mesh/Eric_PlaneDownCenter02.FBX
+/Eric VFX Studio/Resource/Mesh/Eric_PlaneDownCenter02.FBX.meta
+/Eric VFX Studio/Resource/Mesh/FX_Eric_Plane001.FBX
+/Eric VFX Studio/Resource/Mesh/FX_Eric_Plane001.FBX.meta
+/Eric VFX Studio/Resource/Mesh/Summon_Cylinder01.FBX
+/Eric VFX Studio/Resource/Mesh/Summon_Cylinder01.FBX.meta
+/Eric VFX Studio/Resource/Mesh/pzplane2.FBX
+/Eric VFX Studio/Resource/Mesh/pzplane2.FBX.meta
+/Eric VFX Studio/Resource/Mesh/sphere_12pl.fbx
+/Eric VFX Studio/Resource/Mesh/sphere_12pl.fbx.meta
+/Eric VFX Studio/Resource/Mesh/sphere_8pl.fbx
+/Eric VFX Studio/Resource/Mesh/sphere_8pl.fbx.meta
+/Eric VFX Studio/Resource/Textures/Aura_Flame_000.tga
+/Eric VFX Studio/Resource/Textures/Aura_Flame_000.tga.meta
+/Eric VFX Studio/Resource/Textures/Background_paticle_purple_W01.png
+/Eric VFX Studio/Resource/Textures/Background_paticle_purple_W01.png.meta
+/Eric VFX Studio/Resource/Textures/Color_Ring_002.tga
+/Eric VFX Studio/Resource/Textures/Color_Ring_002.tga.meta
+/Eric VFX Studio/Resource/Textures/DungeonRingGuid.png
+/Eric VFX Studio/Resource/Textures/DungeonRingGuid.png.meta
+/Eric VFX Studio/Resource/Textures/Flow_001.png
+/Eric VFX Studio/Resource/Textures/Flow_001.png.meta
+/Eric VFX Studio/Resource/Textures/Fx_Glow_004.png
+/Eric VFX Studio/Resource/Textures/Fx_Glow_004.png.meta
+/Eric VFX Studio/Resource/Textures/Fx_Rin022.png
+/Eric VFX Studio/Resource/Textures/Fx_Rin022.png.meta
+/Eric VFX Studio/Resource/Textures/Gradient_Beam_007.tga
+/Eric VFX Studio/Resource/Textures/Gradient_Beam_007.tga.meta
+/Eric VFX Studio/Resource/Textures/M_2D_Ray_01.tga
+/Eric VFX Studio/Resource/Textures/M_2D_Ray_01.tga.meta
+/Eric VFX Studio/Resource/Textures/M_Glow_01A.tga
+/Eric VFX Studio/Resource/Textures/M_Glow_01A.tga.meta
+/Eric VFX Studio/Resource/Textures/Noise_02.png
+/Eric VFX Studio/Resource/Textures/Noise_02.png.meta
+/Eric VFX Studio/Resource/Textures/Particle_Circle_07_Noise.png
+/Eric VFX Studio/Resource/Textures/Particle_Circle_07_Noise.png.meta
+/Eric VFX Studio/Resource/Textures/Radial Glow.png
+/Eric VFX Studio/Resource/Textures/Radial Glow.png.meta
+/Eric VFX Studio/Resource/Textures/Sheet_purple_W01.png
+/Eric VFX Studio/Resource/Textures/Sheet_purple_W01.png.meta
+/Eric VFX Studio/Resource/Textures/Soft Circle Pulse.png
+/Eric VFX Studio/Resource/Textures/Soft Circle Pulse.png.meta
+/Eric VFX Studio/Resource/Textures/Spark Blur.png
+/Eric VFX Studio/Resource/Textures/Spark Blur.png.meta
+/Eric VFX Studio/Resource/Textures/Sparkle_Ink_001.png
+/Eric VFX Studio/Resource/Textures/Sparkle_Ink_001.png.meta
+/Eric VFX Studio/Resource/Textures/alpha_ball2.png
+/Eric VFX Studio/Resource/Textures/alpha_ball2.png.meta
+/Eric VFX Studio/Resource/Textures/bl_02-3.png
+/Eric VFX Studio/Resource/Textures/bl_02-3.png.meta
+/Eric VFX Studio/Resource/Textures/decal_fire10.png
+/Eric VFX Studio/Resource/Textures/decal_fire10.png.meta
+/Eric VFX Studio/Resource/Textures/dust54.png
+/Eric VFX Studio/Resource/Textures/dust54.png.meta
+/Eric VFX Studio/Resource/Textures/firerock.png
+/Eric VFX Studio/Resource/Textures/firerock.png.meta
+/Eric VFX Studio/Resource/Textures/flare08.png
+/Eric VFX Studio/Resource/Textures/flare08.png.meta
+/Eric VFX Studio/Resource/Textures/flare_29.png
+/Eric VFX Studio/Resource/Textures/flare_29.png.meta
+/Eric VFX Studio/Resource/Textures/fm-g01-02.png
+/Eric VFX Studio/Resource/Textures/fm-g01-02.png.meta
+/Eric VFX Studio/Resource/Textures/glow_ball2_grey.png
+/Eric VFX Studio/Resource/Textures/glow_ball2_grey.png.meta
+/Eric VFX Studio/Resource/Textures/glow_point2_purple.png
+/Eric VFX Studio/Resource/Textures/glow_point2_purple.png.meta
+/Eric VFX Studio/Resource/Textures/glowa_hot_grey.png
+/Eric VFX Studio/Resource/Textures/glowa_hot_grey.png.meta
+/Eric VFX Studio/Resource/Textures/grad10_07.png
+/Eric VFX Studio/Resource/Textures/grad10_07.png.meta
+/Eric VFX Studio/Resource/Textures/hit_02.png
+/Eric VFX Studio/Resource/Textures/hit_02.png.meta
+/Eric VFX Studio/Resource/Textures/light_Y.png
+/Eric VFX Studio/Resource/Textures/light_Y.png.meta
+/Eric VFX Studio/Resource/Textures/lightning01_02.png
+/Eric VFX Studio/Resource/Textures/lightning01_02.png.meta
+/Eric VFX Studio/Resource/Textures/noise_03.png
+/Eric VFX Studio/Resource/Textures/noise_03.png.meta
+/Eric VFX Studio/Resource/Textures/particle_sprite_01.png
+/Eric VFX Studio/Resource/Textures/particle_sprite_01.png.meta
+/Eric VFX Studio/Resource/Textures/pd_07a.png
+/Eric VFX Studio/Resource/Textures/pd_07a.png.meta
+/Eric VFX Studio/Resource/Textures/piaodaiAlpha_00003_W.png
+/Eric VFX Studio/Resource/Textures/piaodaiAlpha_00003_W.png.meta
+/Eric VFX Studio/Resource/Textures/ring02_00_2.png
+/Eric VFX Studio/Resource/Textures/ring02_00_2.png.meta
+/Eric VFX Studio/Resource/Textures/sd_21a.png
+/Eric VFX Studio/Resource/Textures/sd_21a.png.meta
+/Eric VFX Studio/Resource/Textures/star_06.png
+/Eric VFX Studio/Resource/Textures/star_06.png.meta
+/Eric VFX Studio/Resource/Textures/suipianlizi_001.png
+/Eric VFX Studio/Resource/Textures/suipianlizi_001.png.meta
+/Eric VFX Studio/Resource/Textures/tex_vfx-ult_particle_sprite_blurred 1.png
+/Eric VFX Studio/Resource/Textures/tex_vfx-ult_particle_sprite_blurred 1.png.meta
+/Eric VFX Studio/Resource/Textures/tf-28.png
+/Eric VFX Studio/Resource/Textures/tf-28.png.meta
+/Eric VFX Studio/Resource/Textures/trail_CPdr_Rm_01.png
+/Eric VFX Studio/Resource/Textures/trail_CPdr_Rm_01.png.meta
+
+# Fire
+/Fire/FreeQuickEffectsVol1/Materials/Scene/
+/Fire/FreeQuickEffectsVol1/Materials/Scene.meta
+/Fire/FreeQuickEffectsVol1/Models/
+/Fire/FreeQuickEffectsVol1/Models.meta
+/Fire/FreeQuickEffectsVol1/Prefabs/
+/Fire/FreeQuickEffectsVol1/Prefabs.meta
+/Fire/FreeQuickEffectsVol1/Scenes/
+/Fire/FreeQuickEffectsVol1/Scenes.meta
+/Fire/FreeQuickEffectsVol1/Settings/
+/Fire/FreeQuickEffectsVol1/Settings.meta
+/Fire/Hovl Studio/
+/Fire/Hovl Studio.meta
+/Fire/FreeQuickEffectsVol1/Materials/Circle01_AB.mat
+/Fire/FreeQuickEffectsVol1/Materials/Circle01_AB.mat.meta
+/Fire/FreeQuickEffectsVol1/Materials/Circle01_AB_2.mat
+/Fire/FreeQuickEffectsVol1/Materials/Circle01_AB_2.mat.meta
+/Fire/FreeQuickEffectsVol1/Materials/DistortedFlare01_AB.mat
+/Fire/FreeQuickEffectsVol1/Materials/DistortedFlare01_AB.mat.meta
+/Fire/FreeQuickEffectsVol1/Materials/Flame02_AB.mat
+/Fire/FreeQuickEffectsVol1/Materials/Flame02_AB.mat.meta
+/Fire/FreeQuickEffectsVol1/Materials/Flame02_AB_2.mat
+/Fire/FreeQuickEffectsVol1/Materials/Flame02_AB_2.mat.meta
+/Fire/FreeQuickEffectsVol1/Materials/Flare00_AB.mat
+/Fire/FreeQuickEffectsVol1/Materials/Flare00_AB.mat.meta
+/Fire/FreeQuickEffectsVol1/Materials/Swirl01_AB.mat
+/Fire/FreeQuickEffectsVol1/Materials/Swirl01_AB.mat.meta
+/Fire/FreeQuickEffectsVol1/Materials/Swirl01_AB_2.mat
+/Fire/FreeQuickEffectsVol1/Materials/Swirl01_AB_2.mat.meta
+/Fire/FreeQuickEffectsVol1/Textures/Circle01_v1.png
+/Fire/FreeQuickEffectsVol1/Textures/Circle01_v1.png.meta
+/Fire/FreeQuickEffectsVol1/Textures/Flame02.png
+/Fire/FreeQuickEffectsVol1/Textures/Flame02.png.meta
+/Fire/FreeQuickEffectsVol1/Textures/Swirl01.png
+/Fire/FreeQuickEffectsVol1/Textures/Swirl01.png.meta
+
+# Footsteps - Essentials
+/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Land/
+/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Land.meta
+/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/
+/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run.meta
+/Footsteps - Essentials/Footsteps_Grass/
+/Footsteps - Essentials/Footsteps_Grass.meta
+/Footsteps - Essentials/Footsteps_Gravel/
+/Footsteps - Essentials/Footsteps_Gravel.meta
+/Footsteps - Essentials/Footsteps_Leaves/
+/Footsteps - Essentials/Footsteps_Leaves.meta
+/Footsteps - Essentials/Footsteps_Metal/
+/Footsteps - Essentials/Footsteps_Metal.meta
+/Footsteps - Essentials/Footsteps_Mud/
+/Footsteps - Essentials/Footsteps_Mud.meta
+/Footsteps - Essentials/Footsteps_Rock/
+/Footsteps - Essentials/Footsteps_Rock.meta
+/Footsteps - Essentials/Footsteps_Sand/
+/Footsteps - Essentials/Footsteps_Sand.meta
+/Footsteps - Essentials/Footsteps_Snow/
+/Footsteps - Essentials/Footsteps_Snow.meta
+/Footsteps - Essentials/Footsteps_Tile/
+/Footsteps - Essentials/Footsteps_Tile.meta
+/Footsteps - Essentials/Footsteps_Water/
+/Footsteps - Essentials/Footsteps_Water.meta
+/Footsteps - Essentials/Footsteps_Wood/
+/Footsteps - Essentials/Footsteps_Wood.meta
+
+# FreeDragons
+/FreeDragons/Animations/DragonBoar/
+/FreeDragons/Animations/DragonBoar.meta
+/FreeDragons/Animators/
+/FreeDragons/Animators.meta
+/FreeDragons/Materials/DragonNightmare/
+/FreeDragons/Materials/DragonNightmare.meta
+/FreeDragons/Materials/DragonSoulEaterHP/
+/FreeDragons/Materials/DragonSoulEaterHP.meta
+/FreeDragons/Materials/DragonTerrorBringer/
+/FreeDragons/Materials/DragonTerrorBringer.meta
+/FreeDragons/Prefab/
+/FreeDragons/Prefab.meta
+/FreeDragons/Scene/
+/FreeDragons/Scene.meta
+/FreeDragons/Texture/DragonBoarPBR/Red/
+/FreeDragons/Texture/DragonBoarPBR/Red.meta
+/FreeDragons/Texture/DragonNightmare/
+/FreeDragons/Texture/DragonNightmare.meta
+/FreeDragons/Texture/DragonTerrorBringer/
+/FreeDragons/Texture/DragonTerrorBringer.meta
+/FreeDragons/Texture/DragonUsurper/Albino/
+/FreeDragons/Texture/DragonUsurper/Albino.meta
+/FreeDragons/Texture/DragonUsurper/Blue/
+/FreeDragons/Texture/DragonUsurper/Blue.meta
+/FreeDragons/Texture/DragonUsurper/Dark/
+/FreeDragons/Texture/DragonUsurper/Dark.meta
+/FreeDragons/Animations/DragonSoulEater/Defend.fbx
+/FreeDragons/Animations/DragonSoulEater/Defend.fbx.meta
+/FreeDragons/Animations/DragonSoulEater/Fireball Shoot.fbx
+/FreeDragons/Animations/DragonSoulEater/Fireball Shoot.fbx.meta
+/FreeDragons/Animations/DragonSoulEater/Fly Fireball Shoot.fbx
+/FreeDragons/Animations/DragonSoulEater/Fly Fireball Shoot.fbx.meta
+/FreeDragons/Animations/DragonSoulEater/Fly Float.fbx
+/FreeDragons/Animations/DragonSoulEater/Fly Float.fbx.meta
+/FreeDragons/Animations/DragonSoulEater/Fly Forward.fbx
+/FreeDragons/Animations/DragonSoulEater/Fly Forward.fbx.meta
+/FreeDragons/Animations/DragonSoulEater/Fly Glide.fbx
+/FreeDragons/Animations/DragonSoulEater/Fly Glide.fbx.meta
+/FreeDragons/Animations/DragonSoulEater/Land.fbx
+/FreeDragons/Animations/DragonSoulEater/Land.fbx.meta
+/FreeDragons/Animations/DragonSoulEater/Tail Attack.fbx
+/FreeDragons/Animations/DragonSoulEater/Tail Attack.fbx.meta
+/FreeDragons/Animations/DragonSoulEater/Take Off.fbx
+/FreeDragons/Animations/DragonSoulEater/Take Off.fbx.meta
+/FreeDragons/Animations/DragonUsurper/Defend.fbx
+/FreeDragons/Animations/DragonUsurper/Defend.fbx.meta
+/FreeDragons/Animations/DragonUsurper/FlyForward.fbx
+/FreeDragons/Animations/DragonUsurper/FlyForward.fbx.meta
+/FreeDragons/Animations/DragonUsurper/FlyGlide.fbx
+/FreeDragons/Animations/DragonUsurper/FlyGlide.fbx.meta
+/FreeDragons/Animations/DragonUsurper/Sleep.fbx
+/FreeDragons/Animations/DragonUsurper/Sleep.fbx.meta
+/FreeDragons/Animations/DragonUsurper/Walk.fbx
+/FreeDragons/Animations/DragonUsurper/Walk.fbx.meta
+/FreeDragons/Animations/DragonUsurper/idle02.fbx
+/FreeDragons/Animations/DragonUsurper/idle02.fbx.meta
+/FreeDragons/Materials/DragonBoarPBR/GreenPBR.mat
+/FreeDragons/Materials/DragonBoarPBR/GreenPBR.mat.meta
+/FreeDragons/Materials/DragonBoarPBR/RedPBR.mat
+/FreeDragons/Materials/DragonBoarPBR/RedPBR.mat.meta
+/FreeDragons/Materials/DragonUsurper/AlbinoPBR.mat
+/FreeDragons/Materials/DragonUsurper/AlbinoPBR.mat.meta
+/FreeDragons/Materials/DragonUsurper/BluePBR.mat
+/FreeDragons/Materials/DragonUsurper/BluePBR.mat.meta
+/FreeDragons/Materials/DragonUsurper/DarkPBR.mat
+/FreeDragons/Materials/DragonUsurper/DarkPBR.mat.meta
+/FreeDragons/Materials/Skybox_Mat.mat
+/FreeDragons/Materials/Skybox_Mat.mat.meta
+/FreeDragons/Materials/Stage.mat
+/FreeDragons/Materials/Stage.mat.meta
+/FreeDragons/Mesh/DragonTerrorBringerMesh.fbx
+/FreeDragons/Mesh/DragonTerrorBringerMesh.fbx.meta
+/FreeDragons/Mesh/DragonTheNightmareMesh.fbx
+/FreeDragons/Mesh/DragonTheNightmareMesh.fbx.meta
+/FreeDragons/Mesh/Stage.fbx
+/FreeDragons/Mesh/Stage.fbx.meta
+/FreeDragons/Texture/DragonBoarPBR/Green/Albedo.png
+/FreeDragons/Texture/DragonBoarPBR/Green/Albedo.png.meta
+/FreeDragons/Texture/DragonBoarPBR/Green/Normal.png
+/FreeDragons/Texture/DragonBoarPBR/Green/Normal.png.meta
+
+# Joystick Pack
+/Joystick Pack/Examples/
+/Joystick Pack/Examples.meta
+/Joystick Pack/Sprites/Horizontal Backgrounds/
+/Joystick Pack/Sprites/Horizontal Backgrounds.meta
+/Joystick Pack/Sprites/Vertical Backgrounds/
+/Joystick Pack/Sprites/Vertical Backgrounds.meta
+/Joystick Pack/Documentaion.pdf
+/Joystick Pack/Documentaion.pdf.meta
+/Joystick Pack/Prefabs/Dynamic Joystick.prefab
+/Joystick Pack/Prefabs/Dynamic Joystick.prefab.meta
+/Joystick Pack/Prefabs/Fixed Joystick.prefab
+/Joystick Pack/Prefabs/Fixed Joystick.prefab.meta
+/Joystick Pack/Prefabs/Floating Joystick.prefab
+/Joystick Pack/Prefabs/Floating Joystick.prefab.meta
+/Joystick Pack/Scripts/Editor/DynamicJoystickEditor.cs
+/Joystick Pack/Scripts/Editor/DynamicJoystickEditor.cs.meta
+/Joystick Pack/Scripts/Editor/FloatingJoystickEditor.cs
+/Joystick Pack/Scripts/Editor/FloatingJoystickEditor.cs.meta
+/Joystick Pack/Scripts/Joysticks/DynamicJoystick.cs
+/Joystick Pack/Scripts/Joysticks/DynamicJoystick.cs.meta
+/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs
+/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs.meta
+/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs
+/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs.meta
+/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline_Arrows.png
+/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline_Arrows.png.meta
+/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Plain.png
+/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Plain.png.meta
+/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Plain_Arrows.png
+/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Plain_Arrows.png.meta
+/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Ridged.png
+/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Ridged.png.meta
+/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Ridged_Arrows.png
+/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Ridged_Arrows.png.meta
+/Joystick Pack/Sprites/Handles/Handle_Outline.png
+/Joystick Pack/Sprites/Handles/Handle_Outline.png.meta
+/Joystick Pack/Sprites/Handles/Handle_Outline_Arrows.png
+/Joystick Pack/Sprites/Handles/Handle_Outline_Arrows.png.meta
+/Joystick Pack/Sprites/Handles/Handle_Plain_Arrows.png
+/Joystick Pack/Sprites/Handles/Handle_Plain_Arrows.png.meta
+/Joystick Pack/Sprites/Handles/Handle_Ridged.png
+/Joystick Pack/Sprites/Handles/Handle_Ridged.png.meta
+/Joystick Pack/Sprites/Handles/Handle_Ridged_Arrows.png
+/Joystick Pack/Sprites/Handles/Handle_Ridged_Arrows.png.meta
+
+# Materials
+/Materials/
+/Materials.meta
+
+# Prefabs
+/Prefabs/Portal_Boss.prefab
+/Prefabs/Portal_Boss.prefab.meta
+/Prefabs/Portal_field.prefab
+/Prefabs/Portal_field.prefab.meta
+
+# Resources
+/Resources/PerformanceTestRunInfo.json
+/Resources/PerformanceTestRunInfo.json.meta
+/Resources/PerformanceTestRunSettings.json
+/Resources/PerformanceTestRunSettings.json.meta
+/Resources/UI/HUD/PrototypeNameplate.prefab
+/Resources/UI/HUD/PrototypeNameplate.prefab.meta
+
+# Scenes
+/Scenes/Player Controll Test.unity
+/Scenes/Player Controll Test.unity.meta
+/Scenes/Prototype.unity
+/Scenes/Prototype.unity.meta
+/Scenes/Spinning Slash Preview.unity
+/Scenes/Spinning Slash Preview.unity.meta
+/Scenes/TerrainTestScene.unity
+/Scenes/TerrainTestScene.unity.meta
+/Scenes/TerrainTestScene/DragonValley.asset
+/Scenes/TerrainTestScene/DragonValley.asset.meta
+
+# Scripts
+/Scripts/VFX/SpinningSlashPreview.cs
+/Scripts/VFX/SpinningSlashPreview.cs.meta
+/Scripts/VFX/SwordSlashTrail.cs
+/Scripts/VFX/SwordSlashTrail.cs.meta
+
+# TerrainSampleAssets
+/TerrainSampleAssets/Materials/
+/TerrainSampleAssets/Materials.meta
+/TerrainSampleAssets/Prefabs/
+/TerrainSampleAssets/Prefabs.meta
+/TerrainSampleAssets/Settings/
+/TerrainSampleAssets/Settings.meta
+/TerrainSampleAssets/ShaderGraphs/
+/TerrainSampleAssets/ShaderGraphs.meta
+/TerrainSampleAssets/TerrainBrushes/
+/TerrainSampleAssets/TerrainBrushes.meta
+/TerrainSampleAssets/TerrainLayers/
+/TerrainSampleAssets/TerrainLayers.meta
+/TerrainSampleAssets/Textures/Heightmaps/
+/TerrainSampleAssets/Textures/Heightmaps.meta
+/TerrainSampleAssets/Models/Bush_A.asset
+/TerrainSampleAssets/Models/Bush_A.asset.meta
+/TerrainSampleAssets/Models/Bush_B.asset
+/TerrainSampleAssets/Models/Bush_B.asset.meta
+/TerrainSampleAssets/Models/Fern_B.asset
+/TerrainSampleAssets/Models/Fern_B.asset.meta
+/TerrainSampleAssets/Models/Fern_C.asset
+/TerrainSampleAssets/Models/Fern_C.asset.meta
+/TerrainSampleAssets/Models/Grass_A.asset
+/TerrainSampleAssets/Models/Grass_A.asset.meta
+/TerrainSampleAssets/Models/Grass_B.asset
+/TerrainSampleAssets/Models/Grass_B.asset.meta
+/TerrainSampleAssets/Models/Grass_C.asset
+/TerrainSampleAssets/Models/Grass_C.asset.meta
+/TerrainSampleAssets/Models/Grass_D.asset
+/TerrainSampleAssets/Models/Grass_D.asset.meta
+/TerrainSampleAssets/Models/Plant_A.asset
+/TerrainSampleAssets/Models/Plant_A.asset.meta
+/TerrainSampleAssets/Models/Plant_B.asset
+/TerrainSampleAssets/Models/Plant_B.asset.meta
+/TerrainSampleAssets/Models/Plant_C.asset
+/TerrainSampleAssets/Models/Plant_C.asset.meta
+/TerrainSampleAssets/Models/Plant_D.asset
+/TerrainSampleAssets/Models/Plant_D.asset.meta
+/TerrainSampleAssets/README.pdf
+/TerrainSampleAssets/README.pdf.meta
+/TerrainSampleAssets/Textures/Details/BushDry_MaskMap.tif
+/TerrainSampleAssets/Textures/Details/BushDry_MaskMap.tif.meta
+/TerrainSampleAssets/Textures/Details/BushDry_Normal.tif
+/TerrainSampleAssets/Textures/Details/BushDry_Normal.tif.meta
+/TerrainSampleAssets/Textures/Details/BushDry_Thickness.tif
+/TerrainSampleAssets/Textures/Details/BushDry_Thickness.tif.meta
+/TerrainSampleAssets/Textures/Details/Bush_A_MaskMap.tif
+/TerrainSampleAssets/Textures/Details/Bush_A_MaskMap.tif.meta
+/TerrainSampleAssets/Textures/Details/Bush_A_Normal.tif
+/TerrainSampleAssets/Textures/Details/Bush_A_Normal.tif.meta
+/TerrainSampleAssets/Textures/Details/Fern_MaskMap.tif
+/TerrainSampleAssets/Textures/Details/Fern_MaskMap.tif.meta
+/TerrainSampleAssets/Textures/Details/Fern_Normal.tif
+/TerrainSampleAssets/Textures/Details/Fern_Normal.tif.meta
+/TerrainSampleAssets/Textures/Details/Fern_Thickness.tif
+/TerrainSampleAssets/Textures/Details/Fern_Thickness.tif.meta
+/TerrainSampleAssets/Textures/Details/GrassDry_MaskMap.tif
+/TerrainSampleAssets/Textures/Details/GrassDry_MaskMap.tif.meta
+/TerrainSampleAssets/Textures/Details/GrassDry_Normal.tif
+/TerrainSampleAssets/Textures/Details/GrassDry_Normal.tif.meta
+/TerrainSampleAssets/Textures/Details/GrassDry_Thickness.tif
+/TerrainSampleAssets/Textures/Details/GrassDry_Thickness.tif.meta
+/TerrainSampleAssets/Textures/Details/Grass_A_BaseColor.tif
+/TerrainSampleAssets/Textures/Details/Grass_A_BaseColor.tif.meta
+/TerrainSampleAssets/Textures/Details/Grass_A_MaskMap.tif
+/TerrainSampleAssets/Textures/Details/Grass_A_MaskMap.tif.meta
+/TerrainSampleAssets/Textures/Details/Grass_A_Normal.tif
+/TerrainSampleAssets/Textures/Details/Grass_A_Normal.tif.meta
+/TerrainSampleAssets/Textures/Details/Grass_A_Thickness.tif
+/TerrainSampleAssets/Textures/Details/Grass_A_Thickness.tif.meta
+/TerrainSampleAssets/Textures/Details/Grass_C_BaseColor.tif
+/TerrainSampleAssets/Textures/Details/Grass_C_BaseColor.tif.meta
+/TerrainSampleAssets/Textures/Details/Grass_C_MaskMap.tif
+/TerrainSampleAssets/Textures/Details/Grass_C_MaskMap.tif.meta
+/TerrainSampleAssets/Textures/Details/Grass_C_Normal.tif
+/TerrainSampleAssets/Textures/Details/Grass_C_Normal.tif.meta
+/TerrainSampleAssets/Textures/Details/Grass_C_Thickness.tif
+/TerrainSampleAssets/Textures/Details/Grass_C_Thickness.tif.meta
+/TerrainSampleAssets/Textures/Details/Heather_A_MaskMap.tif
+/TerrainSampleAssets/Textures/Details/Heather_A_MaskMap.tif.meta
+/TerrainSampleAssets/Textures/Details/Heather_A_Normal.tif
+/TerrainSampleAssets/Textures/Details/Heather_A_Normal.tif.meta
+/TerrainSampleAssets/Textures/Details/Heather_A_Thickness.tif
+/TerrainSampleAssets/Textures/Details/Heather_A_Thickness.tif.meta
+/TerrainSampleAssets/Textures/Details/Plant_BaseColor.tif
+/TerrainSampleAssets/Textures/Details/Plant_BaseColor.tif.meta
+/TerrainSampleAssets/Textures/Details/Plant_MaskMap.tif
+/TerrainSampleAssets/Textures/Details/Plant_MaskMap.tif.meta
+/TerrainSampleAssets/Textures/Details/Plant_Normal.tif
+/TerrainSampleAssets/Textures/Details/Plant_Normal.tif.meta
+/TerrainSampleAssets/Textures/Details/Plant_Thickness.tif
+/TerrainSampleAssets/Textures/Details/Plant_Thickness.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Black_Sand_BaseColor.tif
+/TerrainSampleAssets/Textures/Terrain/Black_Sand_BaseColor.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Black_Sand_MaskMap.tif
+/TerrainSampleAssets/Textures/Terrain/Black_Sand_MaskMap.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Black_Sand_Normal.tif
+/TerrainSampleAssets/Textures/Terrain/Black_Sand_Normal.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Grass_A_BaseColor.tif
+/TerrainSampleAssets/Textures/Terrain/Grass_A_BaseColor.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Grass_A_MaskMap.tif
+/TerrainSampleAssets/Textures/Terrain/Grass_A_MaskMap.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Grass_A_Normal.tif
+/TerrainSampleAssets/Textures/Terrain/Grass_A_Normal.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Grass_B_BaseColor.tif
+/TerrainSampleAssets/Textures/Terrain/Grass_B_BaseColor.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Grass_B_MaskMap.tif
+/TerrainSampleAssets/Textures/Terrain/Grass_B_MaskMap.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Grass_B_Normal.tif
+/TerrainSampleAssets/Textures/Terrain/Grass_B_Normal.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Grass_Dry_BaseColor.tif
+/TerrainSampleAssets/Textures/Terrain/Grass_Dry_BaseColor.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Grass_Dry_MaskMap.tif
+/TerrainSampleAssets/Textures/Terrain/Grass_Dry_MaskMap.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Grass_Dry_Normal.tif
+/TerrainSampleAssets/Textures/Terrain/Grass_Dry_Normal.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Grass_Soil_BaseColor.tif
+/TerrainSampleAssets/Textures/Terrain/Grass_Soil_BaseColor.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Grass_Soil_MaskMap.tif
+/TerrainSampleAssets/Textures/Terrain/Grass_Soil_MaskMap.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Grass_Soil_Normal.tif
+/TerrainSampleAssets/Textures/Terrain/Grass_Soil_Normal.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Heather_BaseColor.tif
+/TerrainSampleAssets/Textures/Terrain/Heather_BaseColor.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Heather_MaskMap.tif
+/TerrainSampleAssets/Textures/Terrain/Heather_MaskMap.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Heather_Normal.tif
+/TerrainSampleAssets/Textures/Terrain/Heather_Normal.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Muddy_BaseColor.tif
+/TerrainSampleAssets/Textures/Terrain/Muddy_BaseColor.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Muddy_MaskMap.tif
+/TerrainSampleAssets/Textures/Terrain/Muddy_MaskMap.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Muddy_Normal.tif
+/TerrainSampleAssets/Textures/Terrain/Muddy_Normal.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Pebbles_A_BaseColor.tif
+/TerrainSampleAssets/Textures/Terrain/Pebbles_A_BaseColor.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Pebbles_A_MaskMap.tif
+/TerrainSampleAssets/Textures/Terrain/Pebbles_A_MaskMap.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Pebbles_A_Normal.tif
+/TerrainSampleAssets/Textures/Terrain/Pebbles_A_Normal.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Pebbles_B_BaseColor.tif
+/TerrainSampleAssets/Textures/Terrain/Pebbles_B_BaseColor.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Pebbles_B_MaskMap.tif
+/TerrainSampleAssets/Textures/Terrain/Pebbles_B_MaskMap.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Pebbles_B_Normal.tif
+/TerrainSampleAssets/Textures/Terrain/Pebbles_B_Normal.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Sand_BaseColor.tif
+/TerrainSampleAssets/Textures/Terrain/Sand_BaseColor.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Sand_MaskMap.tif
+/TerrainSampleAssets/Textures/Terrain/Sand_MaskMap.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Sand_Normal.tif
+/TerrainSampleAssets/Textures/Terrain/Sand_Normal.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Snow_BaseColor.tif
+/TerrainSampleAssets/Textures/Terrain/Snow_BaseColor.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Snow_MaskMap.tif
+/TerrainSampleAssets/Textures/Terrain/Snow_MaskMap.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Snow_Normal.tif
+/TerrainSampleAssets/Textures/Terrain/Snow_Normal.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Tidal_Pools_BaseColor.tif
+/TerrainSampleAssets/Textures/Terrain/Tidal_Pools_BaseColor.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Tidal_Pools_MaskMap.tif
+/TerrainSampleAssets/Textures/Terrain/Tidal_Pools_MaskMap.tif.meta
+/TerrainSampleAssets/Textures/Terrain/Tidal_Pools_Normal.tif
+/TerrainSampleAssets/Textures/Terrain/Tidal_Pools_Normal.tif.meta
+
+# TextMesh Pro
+/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat.meta
+/TextMesh Pro/Shaders/SDFFunctions.hlsl
+/TextMesh Pro/Shaders/SDFFunctions.hlsl.meta
+/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader
+/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta
+/TextMesh Pro/Shaders/TMP_Bitmap.shader
+/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta
+/TextMesh Pro/Shaders/TMP_SDF Overlay.shader
+/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta
+/TextMesh Pro/Shaders/TMP_SDF SSD.shader
+/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta
+/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph
+/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph.meta
+/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph
+/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph.meta
+/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader
+/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta
+/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader
+/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta
+/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader
+/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta
+/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader
+/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader.meta
+/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader
+/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta
+/TextMesh Pro/Shaders/TMP_SDF-Surface.shader
+/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta
+/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph
+/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph.meta
+/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph
+/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph.meta
+/TextMesh Pro/Shaders/TMP_SDF.shader
+/TextMesh Pro/Shaders/TMP_SDF.shader.meta
+/TextMesh Pro/Shaders/TMPro.cginc
+/TextMesh Pro/Shaders/TMPro.cginc.meta
+/TextMesh Pro/Shaders/TMPro_Mobile.cginc
+/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta
+/TextMesh Pro/Shaders/TMPro_Surface.cginc
+/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta
+/TextMesh Pro/Sprites/EmojiOne.json
+/TextMesh Pro/Sprites/EmojiOne.json.meta
+
+# TutorialInfo
+/TutorialInfo/
+/TutorialInfo.meta
+
+# VFX
+/VFX/
+/VFX.meta
+
+# 최상위 파일
+/Readme.asset
+/Readme.asset.meta

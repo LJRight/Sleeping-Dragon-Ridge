@@ -1,0 +1,1399 @@
+{
+  "completed": true,
+  "scenario": "two guests enter through the gate; natural pattern sequence plus labelled targeted fixtures",
+  "platform": "macOS standalone; local dedicated game-server role",
+  "cases": [
+    {
+      "case": "A prerequisite fixture: backend progression actions",
+      "quest": "active"
+    },
+    {
+      "case": "B prerequisite fixture: backend progression actions",
+      "quest": "active"
+    },
+    {
+      "case": "authenticated party enters",
+      "source": "gate",
+      "room": 1,
+      "members": {
+        "A": 1,
+        "B": 2
+      }
+    },
+    {
+      "case": "natural cooldowns, ground and airborne state progression",
+      "phaseSequence": [
+        "Run",
+        "Basic",
+        "Claw",
+        "Basic",
+        "Claw",
+        "Basic",
+        "Claw",
+        "Scream",
+        "Flame",
+        "Claw",
+        "Basic",
+        "Claw",
+        "Basic",
+        "Claw",
+        "Scream",
+        "Flame",
+        "Defend",
+        "TakeOff",
+        "Float",
+        "FlyFlame",
+        "Land",
+        "Scream"
+      ],
+      "changes": [
+        {
+          "secondsSinceFirstObservation": 0.081,
+          "phase": "Run",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": -827840423,
+          "sequence": 2,
+          "elapsed": 0.4642910957336426,
+          "fill": 0.0,
+          "cue": false,
+          "danger": false,
+          "canTarget": true,
+          "players": {
+            "A": 112,
+            "B": 112
+          }
+        },
+        {
+          "secondsSinceFirstObservation": 1.862,
+          "phase": "Basic",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": 488442069,
+          "sequence": 3,
+          "elapsed": 0.25393423438072205,
+          "fill": 0.0,
+          "cue": false,
+          "danger": false,
+          "canTarget": true,
+          "players": {
+            "A": 112,
+            "B": 112
+          }
+        },
+        {
+          "secondsSinceFirstObservation": 4.559,
+          "phase": "Claw",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": -2087726331,
+          "sequence": 7,
+          "elapsed": 0.059046629816293716,
+          "fill": 0.05061139911413193,
+          "cue": true,
+          "danger": false,
+          "canTarget": true,
+          "players": {
+            "A": 94,
+            "B": 112
+          }
+        },
+        {
+          "secondsSinceFirstObservation": 7.578,
+          "phase": "Basic",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": 488442069,
+          "sequence": 9,
+          "elapsed": 0.057381995022296906,
+          "fill": 0.0,
+          "cue": false,
+          "danger": false,
+          "canTarget": true,
+          "players": {
+            "A": 79,
+            "B": 112
+          }
+        },
+        {
+          "secondsSinceFirstObservation": 9.087,
+          "phase": "Claw",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": -2087726331,
+          "sequence": 11,
+          "elapsed": 0.19950096309185028,
+          "fill": 0.17100083827972412,
+          "cue": true,
+          "danger": false,
+          "canTarget": true,
+          "players": {
+            "A": 70,
+            "B": 112
+          }
+        },
+        {
+          "secondsSinceFirstObservation": 11.832,
+          "phase": "Basic",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": 488442069,
+          "sequence": 13,
+          "elapsed": 0.057271137833595276,
+          "fill": 0.0,
+          "cue": false,
+          "danger": false,
+          "canTarget": true,
+          "players": {
+            "A": 55,
+            "B": 112
+          }
+        },
+        {
+          "secondsSinceFirstObservation": 13.018,
+          "phase": "Claw",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": -2087726331,
+          "sequence": 15,
+          "elapsed": 0.029338309541344643,
+          "fill": 0.025147123262286186,
+          "cue": true,
+          "danger": false,
+          "canTarget": true,
+          "players": {
+            "A": 46,
+            "B": 112
+          }
+        },
+        {
+          "secondsSinceFirstObservation": 16.109,
+          "phase": "Scream",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": 1742313746,
+          "sequence": 17,
+          "elapsed": 0.11607544124126434,
+          "fill": 0.0,
+          "cue": false,
+          "danger": false,
+          "canTarget": true,
+          "players": {
+            "A": 112,
+            "B": 112
+          }
+        },
+        {
+          "secondsSinceFirstObservation": 19.464,
+          "phase": "Flame",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": 355731920,
+          "sequence": 18,
+          "elapsed": 0.057292141020298004,
+          "fill": 0.11458428204059601,
+          "cue": true,
+          "danger": false,
+          "canTarget": true,
+          "players": {
+            "A": 112,
+            "B": 112
+          }
+        },
+        {
+          "secondsSinceFirstObservation": 22.16,
+          "phase": "Claw",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": -2087726331,
+          "sequence": 20,
+          "elapsed": 0.05752912908792496,
+          "fill": 0.04931068420410156,
+          "cue": true,
+          "danger": false,
+          "canTarget": true,
+          "players": {
+            "A": 92,
+            "B": 92
+          }
+        },
+        {
+          "secondsSinceFirstObservation": 25.162,
+          "phase": "Basic",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": 488442069,
+          "sequence": 22,
+          "elapsed": 0.057791903614997864,
+          "fill": 0.0,
+          "cue": false,
+          "danger": false,
+          "canTarget": true,
+          "players": {
+            "A": 77,
+            "B": 92
+          }
+        },
+        {
+          "secondsSinceFirstObservation": 26.352,
+          "phase": "Claw",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": -2087726331,
+          "sequence": 24,
+          "elapsed": 0.05714308097958565,
+          "fill": 0.04897978529334068,
+          "cue": true,
+          "danger": false,
+          "canTarget": true,
+          "players": {
+            "A": 68,
+            "B": 92
+          }
+        },
+        {
+          "secondsSinceFirstObservation": 29.405,
+          "phase": "Basic",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": 488442069,
+          "sequence": 26,
+          "elapsed": 0.059039708226919174,
+          "fill": 0.0,
+          "cue": false,
+          "danger": false,
+          "canTarget": true,
+          "players": {
+            "A": 53,
+            "B": 92
+          }
+        },
+        {
+          "secondsSinceFirstObservation": 30.616,
+          "phase": "Claw",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": -2087726331,
+          "sequence": 28,
+          "elapsed": 0.05760044604539871,
+          "fill": 0.049371812492609024,
+          "cue": true,
+          "danger": false,
+          "canTarget": true,
+          "players": {
+            "A": 44,
+            "B": 92
+          }
+        },
+        {
+          "secondsSinceFirstObservation": 33.59,
+          "phase": "Scream",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": 1742313746,
+          "sequence": 30,
+          "elapsed": 0.08785488456487656,
+          "fill": 0.0,
+          "cue": false,
+          "danger": false,
+          "canTarget": true,
+          "players": {
+            "A": 112,
+            "B": 92
+          }
+        },
+        {
+          "secondsSinceFirstObservation": 36.955,
+          "phase": "Flame",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": 355731920,
+          "sequence": 31,
+          "elapsed": 0.029174866154789925,
+          "fill": 0.05834973230957985,
+          "cue": true,
+          "danger": false,
+          "canTarget": true,
+          "players": {
+            "A": 112,
+            "B": 92
+          }
+        },
+        {
+          "secondsSinceFirstObservation": 39.583,
+          "phase": "Defend",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": -1776615973,
+          "sequence": 33,
+          "elapsed": 0.029788479208946228,
+          "fill": 0.0,
+          "cue": false,
+          "danger": false,
+          "canTarget": true,
+          "players": {
+            "A": 92,
+            "B": 72
+          }
+        },
+        {
+          "secondsSinceFirstObservation": 41.249,
+          "phase": "TakeOff",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": 78026850,
+          "sequence": 35,
+          "elapsed": 0.05916620045900345,
+          "fill": 0.0,
+          "cue": false,
+          "danger": false,
+          "canTarget": false,
+          "players": {
+            "A": 92,
+            "B": 72
+          }
+        },
+        {
+          "secondsSinceFirstObservation": 45.221,
+          "phase": "Float",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": 1951447599,
+          "sequence": 36,
+          "elapsed": 0.05714847519993782,
+          "fill": 0.02857423759996891,
+          "cue": true,
+          "danger": false,
+          "canTarget": false,
+          "players": {
+            "A": 92,
+            "B": 72
+          }
+        },
+        {
+          "secondsSinceFirstObservation": 47.193,
+          "phase": "FlyFlame",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": -1250354120,
+          "sequence": 37,
+          "elapsed": 0.028935233131051064,
+          "fill": 1.0,
+          "cue": true,
+          "danger": false,
+          "canTarget": false,
+          "players": {
+            "A": 92,
+            "B": 72
+          }
+        },
+        {
+          "secondsSinceFirstObservation": 50.222,
+          "phase": "Land",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": 310015938,
+          "sequence": 38,
+          "elapsed": 0.028355993330478668,
+          "fill": 0.0,
+          "cue": false,
+          "danger": false,
+          "canTarget": false,
+          "players": {
+            "A": 72,
+            "B": 52
+          }
+        },
+        {
+          "secondsSinceFirstObservation": 54.223,
+          "phase": "Scream",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 480,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": 1742313746,
+          "sequence": 40,
+          "elapsed": 0.028364116325974464,
+          "fill": 0.0,
+          "cue": false,
+          "danger": false,
+          "canTarget": true,
+          "players": {
+            "A": 72,
+            "B": 52
+          }
+        }
+      ],
+      "clientAnimatorMatches": {
+        "Run": {
+          "elapsed": 0.5329229831695557,
+          "sequence": 2,
+          "fullPathHash": -827840423
+        },
+        "Basic": {
+          "elapsed": 0.4124450981616974,
+          "sequence": 5,
+          "fullPathHash": 488442069
+        },
+        "Claw": {
+          "elapsed": 0.42736130952835083,
+          "sequence": 7,
+          "fullPathHash": -2087726331
+        },
+        "Scream": {
+          "elapsed": 0.4146989583969116,
+          "sequence": 17,
+          "fullPathHash": 1742313746
+        },
+        "Flame": {
+          "elapsed": 0.38480713963508606,
+          "sequence": 18,
+          "fullPathHash": 355731920
+        },
+        "Defend": {
+          "elapsed": 1.0024278163909912,
+          "sequence": 33,
+          "fullPathHash": -1776615973
+        },
+        "TakeOff": {
+          "elapsed": 0.4551622271537781,
+          "sequence": 35,
+          "fullPathHash": 78026850
+        },
+        "Float": {
+          "elapsed": 0.40038228034973145,
+          "sequence": 36,
+          "fullPathHash": 1951447599
+        },
+        "FlyFlame": {
+          "elapsed": 0.4262945055961609,
+          "sequence": 37,
+          "fullPathHash": -1250354120
+        },
+        "Land": {
+          "elapsed": 0.4877629578113556,
+          "sequence": 38,
+          "fullPathHash": 310015938
+        }
+      },
+      "fixture": "HP restored only to sustain observation; no forced phases"
+    },
+    {
+      "case": "basic reselects at impact and displays no ground cue",
+      "before": {
+        "phase": "Basic",
+        "defense": 30,
+        "breaks": 0,
+        "hp": 480,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": 488442069,
+        "sequence": 42,
+        "elapsed": 0.0,
+        "fill": 0.0,
+        "cue": false,
+        "danger": false,
+        "canTarget": true,
+        "players": {
+          "A": 112,
+          "B": 112
+        }
+      },
+      "after": {
+        "phase": "Basic",
+        "defense": 30,
+        "breaks": 0,
+        "hp": 480,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": 488442069,
+        "sequence": 42,
+        "elapsed": 0.8499271869659424,
+        "fill": 0.0,
+        "cue": false,
+        "danger": false,
+        "canTarget": true,
+        "players": {
+          "A": 112,
+          "B": 103
+        }
+      },
+      "fixture": "forced basic, changed positions during windup"
+    },
+    {
+      "case": "claw rectangle single strike with two victims",
+      "before": {
+        "phase": "Claw",
+        "defense": 30,
+        "breaks": 0,
+        "hp": 480,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": -2087726331,
+        "sequence": 43,
+        "elapsed": 0.7737882733345032,
+        "fill": 0.6632471084594727,
+        "cue": true,
+        "danger": false,
+        "canTarget": true,
+        "players": {
+          "A": 112,
+          "B": 112
+        }
+      },
+      "after": {
+        "phase": "Claw",
+        "defense": 30,
+        "breaks": 0,
+        "hp": 480,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": -2087726331,
+        "sequence": 43,
+        "elapsed": 1.4748826026916504,
+        "fill": 0.0,
+        "cue": false,
+        "danger": false,
+        "canTarget": true,
+        "players": {
+          "A": 97,
+          "B": 97
+        }
+      },
+      "recovery": {
+        "phase": "Claw",
+        "defense": 30,
+        "breaks": 0,
+        "hp": 480,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": -2087726331,
+        "sequence": 43,
+        "elapsed": 2.4024507999420166,
+        "fill": 0.0,
+        "cue": false,
+        "danger": false,
+        "canTarget": true,
+        "players": {
+          "A": 97,
+          "B": 97
+        }
+      },
+      "fixture": "forced claw; positions set relative to locked footprint"
+    },
+    {
+      "case": "claw rectangle single strike with sidestep",
+      "before": {
+        "phase": "Claw",
+        "defense": 30,
+        "breaks": 0,
+        "hp": 480,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": -2087726331,
+        "sequence": 44,
+        "elapsed": 0.7606641054153442,
+        "fill": 0.6519978046417236,
+        "cue": true,
+        "danger": false,
+        "canTarget": true,
+        "players": {
+          "A": 112,
+          "B": 112
+        }
+      },
+      "after": {
+        "phase": "Claw",
+        "defense": 30,
+        "breaks": 0,
+        "hp": 480,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": -2087726331,
+        "sequence": 44,
+        "elapsed": 1.4272792339324951,
+        "fill": 0.0,
+        "cue": false,
+        "danger": false,
+        "canTarget": true,
+        "players": {
+          "A": 97,
+          "B": 112
+        }
+      },
+      "recovery": {
+        "phase": "Claw",
+        "defense": 30,
+        "breaks": 0,
+        "hp": 480,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": -2087726331,
+        "sequence": 44,
+        "elapsed": 2.392144203186035,
+        "fill": 0.0,
+        "cue": false,
+        "danger": false,
+        "canTarget": true,
+        "players": {
+          "A": 97,
+          "B": 112
+        }
+      },
+      "fixture": "forced claw; positions set relative to locked footprint"
+    },
+    {
+      "case": "5 ground flame ticks, one versus two victims, fractional healing",
+      "before": {
+        "phase": "Flame",
+        "defense": 30,
+        "breaks": 0,
+        "hp": 380,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": 355731920,
+        "sequence": 46,
+        "elapsed": 0.0,
+        "fill": 0.0,
+        "cue": true,
+        "danger": false,
+        "canTarget": true,
+        "players": {
+          "A": 112,
+          "B": 112
+        }
+      },
+      "ticks": [
+        {
+          "phase": "Flame",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 394,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": 355731920,
+          "sequence": 46,
+          "elapsed": 0.6004021167755127,
+          "fill": 1.0,
+          "cue": true,
+          "danger": true,
+          "canTarget": true,
+          "players": {
+            "A": 108,
+            "B": 108
+          }
+        },
+        {
+          "phase": "Flame",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 408,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": 355731920,
+          "sequence": 46,
+          "elapsed": 1.0287564992904663,
+          "fill": 1.0,
+          "cue": true,
+          "danger": true,
+          "canTarget": true,
+          "players": {
+            "A": 104,
+            "B": 108
+          }
+        },
+        {
+          "phase": "Flame",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 423,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": 355731920,
+          "sequence": 46,
+          "elapsed": 1.5436092615127563,
+          "fill": 1.0,
+          "cue": true,
+          "danger": true,
+          "canTarget": true,
+          "players": {
+            "A": 100,
+            "B": 108
+          }
+        },
+        {
+          "phase": "Flame",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 437,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": 355731920,
+          "sequence": 46,
+          "elapsed": 2.0593104362487793,
+          "fill": 1.0,
+          "cue": true,
+          "danger": true,
+          "canTarget": true,
+          "players": {
+            "A": 96,
+            "B": 104
+          }
+        },
+        {
+          "phase": "Flame",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 452,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": 355731920,
+          "sequence": 46,
+          "elapsed": 2.5811173915863037,
+          "fill": 1.0,
+          "cue": true,
+          "danger": true,
+          "canTarget": true,
+          "players": {
+            "A": 92,
+            "B": 100
+          }
+        }
+      ],
+      "fixture": "forced cast; B stepped outside for ticks 2 and 3; A stayed inside"
+    },
+    {
+      "case": "empty locked sector neither hurts nor restores HP",
+      "before": {
+        "phase": "Flame",
+        "defense": 30,
+        "breaks": 0,
+        "hp": 452,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": 355731920,
+        "sequence": 49,
+        "elapsed": 0.1761171519756317,
+        "fill": 0.3522343039512634,
+        "cue": true,
+        "danger": false,
+        "canTarget": true,
+        "players": {
+          "A": 112,
+          "B": 112
+        }
+      },
+      "after": {
+        "phase": "Flame",
+        "defense": 30,
+        "breaks": 0,
+        "hp": 452,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": 355731920,
+        "sequence": 49,
+        "elapsed": 2.5262887477874756,
+        "fill": 1.0,
+        "cue": true,
+        "danger": true,
+        "canTarget": true,
+        "players": {
+          "A": 112,
+          "B": 112
+        }
+      },
+      "fixture": "forced flame, both moved out before tick one"
+    },
+    {
+      "case": "flight through landing is untargetable; float fills across two loops; five airborne damage/heal ticks",
+      "takeoff": {
+        "phase": "TakeOff",
+        "defense": 30,
+        "breaks": 0,
+        "hp": 380,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": 78026850,
+        "sequence": 54,
+        "elapsed": 0.08666469901800156,
+        "fill": 0.0,
+        "cue": false,
+        "danger": false,
+        "canTarget": false,
+        "players": {
+          "A": 112,
+          "B": 112
+        }
+      },
+      "earlyFloat": {
+        "phase": "Float",
+        "defense": 30,
+        "breaks": 0,
+        "hp": 380,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": 1951447599,
+        "sequence": 55,
+        "elapsed": 0.17143064737319946,
+        "fill": 0.08571532368659973,
+        "cue": true,
+        "danger": false,
+        "canTarget": false,
+        "players": {
+          "A": 112,
+          "B": 112
+        }
+      },
+      "lateFloat": {
+        "phase": "Float",
+        "defense": 30,
+        "breaks": 0,
+        "hp": 380,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": 1951447599,
+        "sequence": 55,
+        "elapsed": 1.4569109678268433,
+        "fill": 0.7284554839134216,
+        "cue": true,
+        "danger": false,
+        "canTarget": false,
+        "players": {
+          "A": 112,
+          "B": 112
+        }
+      },
+      "prefire": {
+        "phase": "FlyFlame",
+        "defense": 30,
+        "breaks": 0,
+        "hp": 380,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": -1250354120,
+        "sequence": 56,
+        "elapsed": 0.057143375277519226,
+        "fill": 1.0,
+        "cue": true,
+        "danger": false,
+        "canTarget": false,
+        "players": {
+          "A": 112,
+          "B": 112
+        }
+      },
+      "ticks": [
+        {
+          "phase": "FlyFlame",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 394,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": -1250354120,
+          "sequence": 56,
+          "elapsed": 0.5714481472969055,
+          "fill": 1.0,
+          "cue": true,
+          "danger": true,
+          "canTarget": false,
+          "players": {
+            "A": 108,
+            "B": 108
+          }
+        },
+        {
+          "phase": "FlyFlame",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 408,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": -1250354120,
+          "sequence": 56,
+          "elapsed": 1.0858370065689087,
+          "fill": 1.0,
+          "cue": true,
+          "danger": true,
+          "canTarget": false,
+          "players": {
+            "A": 104,
+            "B": 104
+          }
+        },
+        {
+          "phase": "FlyFlame",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 423,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": -1250354120,
+          "sequence": 56,
+          "elapsed": 1.6002141237258911,
+          "fill": 1.0,
+          "cue": true,
+          "danger": true,
+          "canTarget": false,
+          "players": {
+            "A": 100,
+            "B": 100
+          }
+        },
+        {
+          "phase": "FlyFlame",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 437,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": -1250354120,
+          "sequence": 56,
+          "elapsed": 2.0286097526550293,
+          "fill": 1.0,
+          "cue": true,
+          "danger": true,
+          "canTarget": false,
+          "players": {
+            "A": 96,
+            "B": 96
+          }
+        },
+        {
+          "phase": "FlyFlame",
+          "defense": 30,
+          "breaks": 0,
+          "hp": 452,
+          "max": 480,
+          "animHash": 0,
+          "expectedHash": -1250354120,
+          "sequence": 56,
+          "elapsed": 2.543098211288452,
+          "fill": 1.0,
+          "cue": true,
+          "danger": true,
+          "canTarget": false,
+          "players": {
+            "A": 92,
+            "B": 92
+          }
+        }
+      ],
+      "land": {
+        "phase": "Land",
+        "defense": 30,
+        "breaks": 0,
+        "hp": 452,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": 310015938,
+        "sequence": 57,
+        "elapsed": 0.31587719917297363,
+        "fill": 0.0,
+        "cue": false,
+        "danger": false,
+        "canTarget": false,
+        "players": {
+          "A": 92,
+          "B": 92
+        }
+      },
+      "groundedHit": {
+        "phase": "Scream",
+        "defense": 30,
+        "breaks": 0,
+        "hp": 470,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": 1742313746,
+        "sequence": 66,
+        "elapsed": 0.14260464906692505,
+        "fill": 0.0,
+        "cue": false,
+        "danger": false,
+        "canTarget": true,
+        "players": {
+          "A": 72,
+          "B": 72
+        }
+      },
+      "fixture": "forced takeoff only; all subsequent four states advance naturally"
+    },
+    {
+      "case": "defense reflects fixed eight per striker, with zero boss damage",
+      "before": {
+        "phase": "Defend",
+        "defense": 30,
+        "breaks": 0,
+        "hp": 470,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": -1776615973,
+        "sequence": 67,
+        "elapsed": 0.0,
+        "fill": 0.0,
+        "cue": false,
+        "danger": false,
+        "canTarget": true,
+        "players": {
+          "A": 112,
+          "B": 112
+        }
+      },
+      "first": {
+        "phase": "Defend",
+        "defense": 30,
+        "breaks": 0,
+        "hp": 470,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": -1776615973,
+        "sequence": 67,
+        "elapsed": 0.08542899787425995,
+        "fill": 0.0,
+        "cue": false,
+        "danger": false,
+        "canTarget": true,
+        "players": {
+          "A": 104,
+          "B": 112
+        }
+      },
+      "second": {
+        "phase": "Defend",
+        "defense": 30,
+        "breaks": 0,
+        "hp": 470,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": -1776615973,
+        "sequence": 67,
+        "elapsed": 0.17142949998378754,
+        "fill": 0.0,
+        "cue": false,
+        "danger": false,
+        "canTarget": true,
+        "players": {
+          "A": 104,
+          "B": 104
+        }
+      },
+      "fixture": "forced defense and two ordinary server damage calls"
+    },
+    {
+      "case": "one-time health thresholds interrupt windups; committed ground flame defers one hit",
+      "firstClawInterrupt": {
+        "phase": "Hit",
+        "defense": 20,
+        "breaks": 1,
+        "hp": 348,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": -1701742234,
+        "sequence": 69,
+        "elapsed": 0.0,
+        "fill": 0.0,
+        "cue": false,
+        "danger": false,
+        "canTarget": true,
+        "players": {
+          "A": 112,
+          "B": 112
+        }
+      },
+      "healedOver75": {
+        "phase": "Flame",
+        "defense": 20,
+        "breaks": 1,
+        "hp": 376,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": 355731920,
+        "sequence": 71,
+        "elapsed": 1.1146217584609985,
+        "fill": 1.0,
+        "cue": true,
+        "danger": true,
+        "canTarget": true,
+        "players": {
+          "A": 104,
+          "B": 104
+        }
+      },
+      "repeatedCrossing": {
+        "phase": "Scream",
+        "defense": 20,
+        "breaks": 1,
+        "hp": 348,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": 1742313746,
+        "sequence": 72,
+        "elapsed": 0.17142891883850098,
+        "fill": 0.0,
+        "cue": false,
+        "danger": false,
+        "canTarget": true,
+        "players": {
+          "A": 104,
+          "B": 104
+        }
+      },
+      "screamInterrupted": {
+        "phase": "Hit",
+        "defense": 10,
+        "breaks": 2,
+        "hp": 230,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": -1701742234,
+        "sequence": 73,
+        "elapsed": 0.0,
+        "fill": 0.0,
+        "cue": false,
+        "danger": false,
+        "canTarget": true,
+        "players": {
+          "A": 104,
+          "B": 104
+        }
+      },
+      "inGroundFlame": {
+        "phase": "Flame",
+        "defense": 0,
+        "breaks": 3,
+        "hp": 112,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": 355731920,
+        "sequence": 74,
+        "elapsed": 0.17148306965827942,
+        "fill": 0.34296613931655884,
+        "cue": true,
+        "danger": false,
+        "canTarget": true,
+        "players": {
+          "A": 112,
+          "B": 112
+        }
+      },
+      "deferredHit": {
+        "phase": "Hit",
+        "defense": 0,
+        "breaks": 3,
+        "hp": 184,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": -1701742234,
+        "sequence": 75,
+        "elapsed": 0.058266498148441315,
+        "fill": 0.0,
+        "cue": false,
+        "danger": false,
+        "canTarget": true,
+        "players": {
+          "A": 92,
+          "B": 92
+        }
+      },
+      "fixture": "HP boundaries exercised using ordinary damage on server"
+    },
+    {
+      "case": "A victory",
+      "room": 0,
+      "quest": "ready",
+      "victories": 1
+    },
+    {
+      "case": "B victory",
+      "room": 0,
+      "quest": "ready",
+      "victories": 1
+    },
+    {
+      "case": "lethal damage immediately stops flame and same death animation reaches both observers",
+      "server": {
+        "phase": "Die",
+        "defense": 0,
+        "breaks": 3,
+        "hp": 0,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": -1482263730,
+        "sequence": 77,
+        "elapsed": 0.0,
+        "fill": 0.0,
+        "cue": false,
+        "danger": false,
+        "canTarget": false,
+        "players": {
+          "A": 112,
+          "B": 112
+        }
+      },
+      "A": {
+        "phase": "Die",
+        "defense": 0,
+        "breaks": 3,
+        "hp": 0,
+        "max": 480,
+        "animHash": -1482263730,
+        "expectedHash": -1482263730,
+        "sequence": 77,
+        "elapsed": 0.367801696062088,
+        "fill": 0.0,
+        "cue": false,
+        "danger": false,
+        "canTarget": false,
+        "players": {
+          "A": 112,
+          "B": 112
+        }
+      },
+      "B": {
+        "phase": "Die",
+        "defense": 0,
+        "breaks": 3,
+        "hp": 0,
+        "max": 480,
+        "animHash": -1482263730,
+        "expectedHash": -1482263730,
+        "sequence": 77,
+        "elapsed": 0.4071865975856781,
+        "fill": 0.0,
+        "cue": false,
+        "danger": false,
+        "canTarget": false,
+        "players": {
+          "A": 112,
+          "B": 112
+        }
+      },
+      "fixture": "lethal damage via server ApplyDamage"
+    },
+    {
+      "case": "authenticated party enters",
+      "source": "town",
+      "room": 1,
+      "members": {
+        "A": 1,
+        "B": 2
+      }
+    },
+    {
+      "case": "single large blow crosses all three thresholds but plays one hit",
+      "initial": {
+        "phase": "Hit",
+        "defense": 0,
+        "breaks": 3,
+        "hp": 102,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": -1701742234,
+        "sequence": 4,
+        "elapsed": 0.0,
+        "fill": 0.0,
+        "cue": false,
+        "danger": false,
+        "canTarget": true,
+        "players": {
+          "A": 112,
+          "B": 112
+        }
+      },
+      "later": {
+        "phase": "Hit",
+        "defense": 0,
+        "breaks": 3,
+        "hp": 102,
+        "max": 480,
+        "animHash": 0,
+        "expectedHash": -1701742234,
+        "sequence": 4,
+        "elapsed": 0.6871011853218079,
+        "fill": 0.0,
+        "cue": false,
+        "danger": false,
+        "canTarget": true,
+        "players": {
+          "A": 112,
+          "B": 112
+        }
+      },
+      "fixture": "fresh real town retry; one server damage event"
+    }
+  ],
+  "recordedAt": "2026-11-20T12:43:01+09:00",
+  "unity": "6000.3.10f1",
+  "os": "macOS 26.5.2 arm64",
+  "run": "run-3nq8n0uh",
+  "clients": 2,
+  "qaAssemblySHA256": "36cc9dc886d9e4f157bd396c6cb2b25144c399c5968b3fa01931a516f8f20377",
+  "harness": "Separate temporary SQLite and guest profiles; field gate and town retry through authenticated owner requests. Initial quest setup, direct placement, player health top-ups, explicit phases and directed raw damage are labelled in individual cases. No mobile hardware was used.",
+  "timingEvidence": "Elapsed values are observed server times, sampled asynchronously. Impact frame and tick schedule are expressed by the configured 30 fps clip time; sampling delay is visible in each record.",
+  "earlierRun": "A first run reached landing but used a 7 s grounded observation window after a forced takeoff; the normally scheduled flight immediately took priority. The completed full rerun waited for a stable ground attack."
+}

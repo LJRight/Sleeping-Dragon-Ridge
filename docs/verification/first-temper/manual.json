@@ -1,0 +1,135 @@
+{
+  "result": "passed",
+  "environment": "macOS, Unity 6000.3.10f1 독립 게임 서버·클라이언트, 별도 신규 게스트 및 로컬 저장 서버",
+  "interaction": "UI 버튼 중심에서 uGUI 포인터 레이캐스트의 첫 입력 대상을 확인한 뒤 실제 버튼 핸들러에 클릭을 전달했다. 거리 검증에서는 서버에 직접 게임 요청을 보냈고 이동은 조이스틱으로 수행했다.",
+  "steps": [
+    {
+      "check": "stop-button-pressed-in-auto-confirmation",
+      "elapsed_seconds": 5.942,
+      "level": 1,
+      "revision": 5,
+      "distance_to_smith_m": 2.722,
+      "gold": 25,
+      "ore": 1,
+      "reward_sword_level": 0,
+      "quest_state": "active"
+    },
+    {
+      "check": "stopped-before-cost",
+      "elapsed_seconds": 6.995,
+      "level": 1,
+      "revision": 5,
+      "distance_to_smith_m": 2.722,
+      "gold": 25,
+      "ore": 1,
+      "reward_sword_level": 0,
+      "quest_state": "active"
+    },
+    {
+      "check": "auto-confirmation-cancel-stops-mode-without-cost",
+      "elapsed_seconds": 7.729,
+      "level": 1,
+      "revision": 5,
+      "distance_to_smith_m": 2.722,
+      "gold": 25,
+      "ore": 1,
+      "reward_sword_level": 0,
+      "quest_state": "active"
+    },
+    {
+      "check": "manual-smith-dialogue",
+      "elapsed_seconds": 7.996,
+      "level": 1,
+      "revision": 5,
+      "distance_to_smith_m": 2.722,
+      "gold": 25,
+      "ore": 1,
+      "reward_sword_level": 0,
+      "quest_state": "active"
+    },
+    {
+      "check": "manual-forge-list",
+      "elapsed_seconds": 10.801,
+      "level": 1,
+      "revision": 5,
+      "distance_to_smith_m": 2.722,
+      "gold": 25,
+      "ore": 1,
+      "reward_sword_level": 0,
+      "quest_state": "active"
+    },
+    {
+      "check": "manual-forge-confirm",
+      "elapsed_seconds": 11.126,
+      "level": 1,
+      "revision": 5,
+      "distance_to_smith_m": 2.722,
+      "gold": 25,
+      "ore": 1,
+      "reward_sword_level": 0,
+      "quest_state": "active"
+    },
+    {
+      "check": "cancelled-without-cost",
+      "elapsed_seconds": 11.715,
+      "level": 1,
+      "revision": 5,
+      "distance_to_smith_m": 2.722,
+      "gold": 25,
+      "ore": 1,
+      "reward_sword_level": 0,
+      "quest_state": "active"
+    },
+    {
+      "check": "wrong-npc-at-forge-rejected",
+      "elapsed_seconds": 12.382,
+      "level": 1,
+      "revision": 5,
+      "distance_to_smith_m": 2.722,
+      "gold": 25,
+      "ore": 1,
+      "reward_sword_level": 0,
+      "quest_state": "active"
+    },
+    {
+      "check": "outside-four-metres-denied",
+      "elapsed_seconds": 15.315,
+      "level": 1,
+      "revision": 5,
+      "distance_to_smith_m": 6.517,
+      "gold": 25,
+      "ore": 1,
+      "reward_sword_level": 0,
+      "quest_state": "active"
+    },
+    {
+      "check": "bag-detail-no-forge-action",
+      "elapsed_seconds": 15.849,
+      "level": 1,
+      "revision": 5,
+      "distance_to_smith_m": 6.517,
+      "gold": 25,
+      "ore": 1,
+      "reward_sword_level": 0,
+      "quest_state": "active"
+    },
+    {
+      "check": "manual-confirm-succeeded-once-and-completed-tutorial",
+      "elapsed_seconds": 19.115,
+      "level": 1,
+      "revision": 6,
+      "distance_to_smith_m": 1.795,
+      "gold": 15,
+      "ore": 0,
+      "reward_sword_level": 1,
+      "quest_state": "completed"
+    }
+  ],
+  "read_only_database_check": {
+    "first_temper_completed": true,
+    "original_reward_sword_enhancement": 1,
+    "gold": 15,
+    "ore": 0,
+    "saved_enhancement_receipts": 1
+  }
+}

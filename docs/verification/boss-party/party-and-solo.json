@@ -1,0 +1,266 @@
+{
+  "date": "2026-11-20",
+  "platform": "macOS Apple Silicon",
+  "unity": "6000.3.10f1",
+  "completed": true,
+  "scope": "Dedicated server, three Unity clients, isolated guest database. QA positions characters and invokes actual combat/inventory/dialogue buttons. B/C prerequisites use progression actions. Records extracted from the verification run.",
+  "cases": [
+    {
+      "case": "A hunt kill",
+      "path": "HUD combat; QA positioning",
+      "actions": 4,
+      "targetHpAfterInputs": [
+        [
+          14,
+          100
+        ],
+        [
+          14,
+          100
+        ],
+        [
+          14,
+          100
+        ],
+        [
+          0,
+          100
+        ]
+      ]
+    },
+    {
+      "case": "A fresh guest reached boss quest",
+      "progress": {
+        "objective": "boss",
+        "revision": 7,
+        "gold": 47,
+        "bossDiscovered": false,
+        "stats": {
+          "hp": 116,
+          "attack": 16,
+          "defense": 2
+        }
+      },
+      "questStates": {
+        "watch": "completed",
+        "supplies": "available",
+        "hunt": "completed",
+        "ridge_boss": "active"
+      }
+    },
+    {
+      "case": "B prerequisite fixture: backend progression actions",
+      "quest": "active"
+    },
+    {
+      "case": "C prerequisite fixture: backend progression actions",
+      "quest": "active"
+    },
+    {
+      "case": "field selection, decline and accept",
+      "members": [
+        1,
+        2
+      ]
+    },
+    {
+      "case": "A room visibility",
+      "room": 1,
+      "actors": [
+        {
+          "id": 1,
+          "kind": "player",
+          "hp": 116,
+          "room": 1,
+          "x": 56.0,
+          "y": 1.0763599872589111,
+          "z": -36.0
+        },
+        {
+          "id": 2,
+          "kind": "player",
+          "hp": 112,
+          "room": 1,
+          "x": 57.79999923706055,
+          "y": 1.0763599872589111,
+          "z": -36.0
+        },
+        {
+          "id": 9,
+          "kind": "boss",
+          "hp": 84,
+          "room": 1,
+          "x": 56.0,
+          "y": 0.08408960700035095,
+          "z": -27.0
+        }
+      ]
+    },
+    {
+      "case": "B room visibility",
+      "room": 1,
+      "actors": [
+        {
+          "id": 1,
+          "kind": "player",
+          "hp": 116,
+          "room": 1,
+          "x": 56.0,
+          "y": 1.0755969285964966,
+          "z": -36.0
+        },
+        {
+          "id": 2,
+          "kind": "player",
+          "hp": 112,
+          "room": 1,
+          "x": 57.79999923706055,
+          "y": 1.0755969285964966,
+          "z": -36.0
+        },
+        {
+          "id": 9,
+          "kind": "boss",
+          "hp": 84,
+          "room": 1,
+          "x": 56.0,
+          "y": 0.0836380198597908,
+          "z": -27.0
+        }
+      ]
+    },
+    {
+      "case": "C room visibility",
+      "room": 2,
+      "actors": [
+        {
+          "id": 3,
+          "kind": "player",
+          "hp": 112,
+          "room": 2,
+          "x": 143.0,
+          "y": 1.0656591653823853,
+          "z": -39.0
+        },
+        {
+          "id": 10,
+          "kind": "boss",
+          "hp": 84,
+          "room": 2,
+          "x": 152.0,
+          "y": 0.6320106387138367,
+          "z": -27.0
+        }
+      ]
+    },
+    {
+      "case": "server observed member disconnected before final strike",
+      "departedClient": 2
+    },
+    {
+      "case": "A boss kill",
+      "path": "HUD combat; QA positioning",
+      "actions": 10,
+      "targetHpAfterInputs": [
+        [
+          68
+        ],
+        [
+          68
+        ],
+        [
+          68
+        ],
+        [
+          52
+        ],
+        [
+          36
+        ],
+        [
+          20
+        ],
+        [
+          20
+        ],
+        [
+          20
+        ],
+        [
+          4
+        ],
+        []
+      ]
+    },
+    {
+      "case": "isolated solo unaffected by party clear",
+      "room": 2,
+      "hp": 84
+    },
+    {
+      "case": "offline party member reconnects ready",
+      "progress": {
+        "objective": "boss",
+        "revision": 8,
+        "gold": 47,
+        "bossDiscovered": true,
+        "stats": {
+          "hp": 112,
+          "attack": 12,
+          "defense": 2
+        }
+      },
+      "questStates": {
+        "watch": "completed",
+        "supplies": "available",
+        "hunt": "completed",
+        "ridge_boss": "ready"
+      }
+    },
+    {
+      "case": "NPC report and repeated claim",
+      "before": {
+        "ridge_sword": 0,
+        "ore": 0,
+        "rare_ore": 0,
+        "gold": 47
+      },
+      "after": {
+        "ridge_sword": 1,
+        "ore": 10,
+        "rare_ore": 1,
+        "gold": 147
+      }
+    },
+    {
+      "case": "endgame sword +1 through inventory confirmation",
+      "gold": 137,
+      "ore": 9
+    },
+    {
+      "case": "completed player re-entry and in-room equip restriction",
+      "refused": {
+        "room": 0,
+        "status": "종결 검을 해제한 뒤 도전하세요."
+      },
+      "reentry": {
+        "room": 1,
+        "ridgeBoss": "completed",
+        "gold": 137,
+        "revision": 13
+      }
+    },
+    {
+      "case": "A reconnect restores one +1 sword, spent materials and completed quest",
+      "bladeId": "b4942e206ef043a0a0cc3210bc3ce4d7",
+      "enhancement": 1,
+      "balances": {
+        "ridge_sword": 1,
+        "ore": 9,
+        "rare_ore": 1,
+        "gold": 137
+      },
+      "revision": 13
+    }
+  ]
+}

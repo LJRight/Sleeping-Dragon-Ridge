@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "networkListening": false,
+  "reusedBasicLabel": true,
+  "error": "",
+  "phase": "Files",
+  "setup": "Existing local player and scene dragon. Stationary front target and a cloned rear target with 3 HP. Camera framed for capture. Inputs call RequestAttack and RequestSpinningSlash.",
+  "basic": {
+    "before": [
+      100,
+      3
+    ],
+    "after": [
+      90,
+      3
+    ],
+    "popupValues": [
+      10
+    ]
+  },
+  "spin": {
+    "before": [
+      90,
+      3
+    ],
+    "after": [
+      80,
+      0
+    ],
+    "popupValues": [
+      3,
+      10
+    ],
+    "screenshot": "local-spin.jpg"
+  }
+}

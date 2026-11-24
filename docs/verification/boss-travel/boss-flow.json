@@ -1,0 +1,415 @@
+{
+  "environment": "macOS standalone QA clients, latest dedicated server, isolated SQLite; regular joystick and Unity EventSystem button clicks for successful travel and combat",
+  "setup": "Two temporary profiles receive a boss-ready checkpoint via standard server actions before entry. Invalid town and remote-gate requests use the owner RPC path explicitly. Damage is inflicted by the live boss AI.",
+  "steps": [
+    {
+      "step": "first town menu locked; remote gate rejected",
+      "profile": "A",
+      "state": {
+        "account": "g_5f26bae5b2614b826ea3d481",
+        "pos": [
+          -3.32,
+          1.08,
+          -4.14
+        ],
+        "hp": 116,
+        "max": 116,
+        "arena": false,
+        "epoch": 0,
+        "objective": "boss",
+        "revision": 6,
+        "discovered": false,
+        "gold": 47,
+        "xp": 40.0,
+        "equipped": [
+          "e922e271b31b4535a646be0a2e2c6e0d"
+        ],
+        "quests": {
+          "watch": "completed",
+          "supplies": "available",
+          "hunt": "completed"
+        }
+      }
+    },
+    {
+      "step": "walked to gate; cancellation does not unlock",
+      "profile": "A",
+      "state": {
+        "account": "g_5f26bae5b2614b826ea3d481",
+        "pos": [
+          12.29,
+          1.08,
+          -8.07
+        ],
+        "hp": 116,
+        "max": 116,
+        "arena": false,
+        "epoch": 0,
+        "objective": "boss",
+        "revision": 6,
+        "discovered": false,
+        "gold": 47,
+        "xp": 40.0,
+        "equipped": [
+          "e922e271b31b4535a646be0a2e2c6e0d"
+        ],
+        "quests": {
+          "watch": "completed",
+          "supplies": "available",
+          "hunt": "completed"
+        }
+      }
+    },
+    {
+      "step": "first physical gate admission",
+      "profile": "A",
+      "state": {
+        "account": "g_5f26bae5b2614b826ea3d481",
+        "pos": [
+          56.0,
+          1.08,
+          -36.0
+        ],
+        "hp": 116,
+        "max": 116,
+        "arena": true,
+        "epoch": 1,
+        "objective": "boss",
+        "revision": 7,
+        "discovered": true,
+        "gold": 47,
+        "xp": 40.0,
+        "equipped": [
+          "e922e271b31b4535a646be0a2e2c6e0d"
+        ],
+        "quests": {
+          "watch": "completed",
+          "supplies": "available",
+          "hunt": "completed"
+        }
+      }
+    },
+    {
+      "step": "gate entry returns to gate on voluntary exit",
+      "profile": "A",
+      "state": {
+        "account": "g_5f26bae5b2614b826ea3d481",
+        "pos": [
+          12.0,
+          1.0,
+          -8.0
+        ],
+        "hp": 116,
+        "max": 116,
+        "arena": false,
+        "epoch": 2,
+        "objective": "boss",
+        "revision": 7,
+        "discovered": true,
+        "gold": 47,
+        "xp": 40.0,
+        "equipped": [
+          "e922e271b31b4535a646be0a2e2c6e0d"
+        ],
+        "quests": {
+          "watch": "completed",
+          "supplies": "available",
+          "hunt": "completed"
+        }
+      }
+    },
+    {
+      "step": "boss inflicted lethal damage",
+      "profile": "A",
+      "state": {
+        "account": "g_5f26bae5b2614b826ea3d481",
+        "pos": [
+          56.0,
+          1.08,
+          -35.5
+        ],
+        "hp": 0,
+        "max": 116,
+        "arena": true,
+        "epoch": 4,
+        "objective": "boss",
+        "revision": 7,
+        "discovered": true,
+        "gold": 47,
+        "xp": 40.0,
+        "equipped": [
+          "e922e271b31b4535a646be0a2e2c6e0d"
+        ],
+        "quests": {
+          "watch": "completed",
+          "supplies": "available",
+          "hunt": "completed"
+        }
+      },
+      "labels": [
+        "쓰러졌습니다",
+        "가장 가까운 마을에서 부활합니다."
+      ]
+    },
+    {
+      "step": "auto respawn at closest town",
+      "profile": "A",
+      "state": {
+        "account": "g_5f26bae5b2614b826ea3d481",
+        "pos": [
+          -3.0,
+          1.0,
+          -4.0
+        ],
+        "hp": 116,
+        "max": 116,
+        "arena": false,
+        "epoch": 5,
+        "objective": "boss",
+        "revision": 7,
+        "discovered": true,
+        "gold": 47,
+        "xp": 40.0,
+        "equipped": [
+          "e922e271b31b4535a646be0a2e2c6e0d"
+        ],
+        "quests": {
+          "watch": "completed",
+          "supplies": "available",
+          "hunt": "completed"
+        }
+      },
+      "hpTransitions": [
+        [
+          0.0,
+          107,
+          true
+        ],
+        [
+          0.86,
+          98,
+          true
+        ],
+        [
+          2.47,
+          89,
+          true
+        ],
+        [
+          3.94,
+          80,
+          true
+        ],
+        [
+          5.54,
+          71,
+          true
+        ],
+        [
+          7.02,
+          62,
+          true
+        ],
+        [
+          8.62,
+          53,
+          true
+        ],
+        [
+          10.09,
+          44,
+          true
+        ],
+        [
+          11.69,
+          35,
+          true
+        ],
+        [
+          13.3,
+          26,
+          true
+        ],
+        [
+          14.78,
+          17,
+          true
+        ],
+        [
+          16.26,
+          8,
+          true
+        ],
+        [
+          17.86,
+          0,
+          true
+        ],
+        [
+          20.37,
+          116,
+          false
+        ]
+      ],
+      "playerHitBoss": true
+    },
+    {
+      "step": "town menu enters shared boss arena",
+      "profile": "A",
+      "state": {
+        "account": "g_5f26bae5b2614b826ea3d481",
+        "pos": [
+          56.0,
+          1.08,
+          -36.0
+        ],
+        "hp": 116,
+        "max": 116,
+        "arena": true,
+        "epoch": 6,
+        "objective": "boss",
+        "revision": 7,
+        "discovered": true,
+        "gold": 47,
+        "xp": 40.0,
+        "equipped": [
+          "e922e271b31b4535a646be0a2e2c6e0d"
+        ],
+        "quests": {
+          "watch": "completed",
+          "supplies": "available",
+          "hunt": "completed"
+        }
+      }
+    },
+    {
+      "step": "town entry returns to town on voluntary exit",
+      "profile": "A",
+      "state": {
+        "account": "g_5f26bae5b2614b826ea3d481",
+        "pos": [
+          -3.0,
+          1.08,
+          -4.0
+        ],
+        "hp": 116,
+        "max": 116,
+        "arena": false,
+        "epoch": 7,
+        "objective": "boss",
+        "revision": 7,
+        "discovered": true,
+        "gold": 47,
+        "xp": 40.0,
+        "equipped": [
+          "e922e271b31b4535a646be0a2e2c6e0d"
+        ],
+        "quests": {
+          "watch": "completed",
+          "supplies": "available",
+          "hunt": "completed"
+        }
+      }
+    },
+    {
+      "step": "out of town retry rejected",
+      "profile": "A",
+      "state": {
+        "account": "g_5f26bae5b2614b826ea3d481",
+        "pos": [
+          5.29,
+          1.08,
+          -12.29
+        ],
+        "hp": 116,
+        "max": 116,
+        "arena": false,
+        "epoch": 7,
+        "objective": "boss",
+        "revision": 7,
+        "discovered": true,
+        "gold": 47,
+        "xp": 40.0,
+        "equipped": [
+          "e922e271b31b4535a646be0a2e2c6e0d"
+        ],
+        "quests": {
+          "watch": "completed",
+          "supplies": "available",
+          "hunt": "completed"
+        }
+      }
+    },
+    {
+      "step": "second account still locked",
+      "profile": "B",
+      "state": {
+        "account": "g_51c18719b48145d161ae5b6e",
+        "pos": [
+          3.0,
+          1.08,
+          0.0
+        ],
+        "hp": 116,
+        "max": 116,
+        "arena": false,
+        "epoch": 0,
+        "objective": "boss",
+        "revision": 6,
+        "discovered": false,
+        "gold": 47,
+        "xp": 40.0,
+        "equipped": [
+          "f68b74a357034b94ab045f6630723656"
+        ],
+        "quests": {
+          "watch": "completed",
+          "supplies": "available",
+          "hunt": "completed"
+        }
+      }
+    },
+    {
+      "step": "fresh app restores entitlement and town retry",
+      "profile": "A-rejoin",
+      "state": {
+        "account": "g_5f26bae5b2614b826ea3d481",
+        "pos": [
+          56.0,
+          1.08,
+          -36.0
+        ],
+        "hp": 116,
+        "max": 116,
+        "arena": true,
+        "epoch": 1,
+        "objective": "boss",
+        "revision": 7,
+        "discovered": true,
+        "gold": 47,
+        "xp": 40.0,
+        "equipped": [
+          "e922e271b31b4535a646be0a2e2c6e0d"
+        ],
+        "quests": {
+          "watch": "completed",
+          "supplies": "available",
+          "hunt": "completed"
+        }
+      }
+    }
+  ],
+  "database": [
+    [
+      "g_51c18719b48145d161ae5b6e",
+      0,
+      6
+    ],
+    [
+      "g_5f26bae5b2614b826ea3d481",
+      1,
+      7
+    ]
+  ],
+  "passed": true
+}

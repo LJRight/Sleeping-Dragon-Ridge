@@ -1,0 +1,5 @@
+The scene starts with its authored DragonSoulEater inactive; activated only for this Play Mode run.
+Editor diagnostic during startup (Unity Search index): ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Offline authored DragonSoulEater: initial 6.07m, approach 3.70m, first basic hit HP 100 → 90, stage 1.
+Offline HUD pointer activation, joystick cancellation, manual movement and release all passed.
+PASS

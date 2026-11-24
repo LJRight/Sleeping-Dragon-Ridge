@@ -1,0 +1,171 @@
+{
+  "passed": true,
+  "events": [
+    {
+      "role": "A",
+      "seq": 24,
+      "width": 640,
+      "height": 480,
+      "device": 4,
+      "downFrame": 206,
+      "upFrame": 208,
+      "focused": true,
+      "downSeen": true,
+      "upSeen": true,
+      "sx": 374.5595703125,
+      "sy": 240.0,
+      "op": "world",
+      "target": "2",
+      "error": "",
+      "beforeHits": [],
+      "afterButtons": [
+        "InviteSelectedPlayer",
+        "Attack Button",
+        "CloseSelectedPlayer"
+      ]
+    },
+    {
+      "role": "A",
+      "seq": 25,
+      "width": 640,
+      "height": 480,
+      "device": 4,
+      "downFrame": 215,
+      "upFrame": 217,
+      "focused": true,
+      "downSeen": true,
+      "upSeen": true,
+      "sx": 384.25,
+      "sy": 187.0,
+      "op": "button",
+      "target": "InviteSelectedPlayer",
+      "error": "",
+      "beforeHits": [
+        "InviteSelectedPlayer",
+        "Modal Input Shield"
+      ],
+      "afterButtons": [
+        "Spinning Slash Button",
+        "Attack Button",
+        "OpenParty",
+        "TrackedObjective",
+        "OpenInventory"
+      ]
+    },
+    {
+      "role": "B",
+      "seq": 27,
+      "width": 640,
+      "height": 480,
+      "device": 4,
+      "downFrame": 133,
+      "upFrame": 135,
+      "focused": true,
+      "downSeen": true,
+      "upSeen": true,
+      "sx": 238.0,
+      "sy": 153.75,
+      "op": "button",
+      "target": "DeclinePartyInvite",
+      "error": "",
+      "beforeHits": [
+        "DeclinePartyInvite",
+        "Modal Input Shield",
+        "Variable Joystick"
+      ],
+      "afterButtons": [
+        "OpenParty",
+        "Spinning Slash Button",
+        "Attack Button",
+        "OpenInventory",
+        "TrackedObjective"
+      ]
+    },
+    {
+      "role": "B",
+      "seq": 29,
+      "width": 640,
+      "height": 480,
+      "device": 5,
+      "downFrame": 143,
+      "upFrame": 145,
+      "focused": true,
+      "downSeen": true,
+      "upSeen": true,
+      "sx": 265.4404296875,
+      "sy": 240.0,
+      "op": "mouse",
+      "target": "1",
+      "error": "",
+      "beforeHits": [],
+      "afterButtons": [
+        "CloseSelectedPlayer",
+        "Attack Button",
+        "InviteSelectedPlayer"
+      ]
+    },
+    {
+      "role": "B",
+      "seq": 30,
+      "width": 640,
+      "height": 480,
+      "device": 4,
+      "downFrame": 152,
+      "upFrame": 154,
+      "focused": true,
+      "downSeen": true,
+      "upSeen": true,
+      "sx": 384.25,
+      "sy": 187.0,
+      "op": "button",
+      "target": "InviteSelectedPlayer",
+      "error": "",
+      "beforeHits": [
+        "InviteSelectedPlayer",
+        "Modal Input Shield"
+      ],
+      "afterButtons": [
+        "OpenParty",
+        "Spinning Slash Button",
+        "Attack Button",
+        "OpenInventory",
+        "TrackedObjective"
+      ]
+    },
+    {
+      "role": "A",
+      "seq": 32,
+      "width": 640,
+      "height": 480,
+      "device": 4,
+      "downFrame": 264,
+      "upFrame": 266,
+      "focused": true,
+      "downSeen": true,
+      "upSeen": true,
+      "sx": 401.5,
+      "sy": 153.75,
+      "op": "button",
+      "target": "AcceptPartyInvite",
+      "error": "",
+      "beforeHits": [
+        "AcceptPartyInvite",
+        "Modal Input Shield"
+      ],
+      "afterButtons": [
+        "Spinning Slash Button",
+        "Attack Button",
+        "OpenParty",
+        "TrackedObjective",
+        "OpenInventory"
+      ]
+    },
+    {
+      "case": "two clients formed party with virtual device events",
+      "members": [
+        2,
+        1
+      ]
+    }
+  ]
+}

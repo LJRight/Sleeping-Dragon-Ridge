@@ -1,0 +1,1551 @@
+{
+  "game": "용흔의 능선",
+  "scenario": "macOS 클라이언트와 전용 게임 서버 · 임시 SQLite DB",
+  "profiles": {
+    "A": "g_3267d1fd8bf109f83e1d4d56",
+    "B": "g_bc9a3b1543e0145fadd10ace"
+  },
+  "capture": {
+    "ownerReadout": "실행 중인 Unity 클라이언트가 받은 소유자 스냅샷",
+    "frame": "클라이언트 실행마다 재시작되는 Unity frameCount",
+    "sampleMode": "실제 게임 렌더 프레임 JPEG와 캡처 시각으로 24fps 동영상 구성",
+    "audio": "미수록"
+  },
+  "steps": [
+    {
+      "step": "first entry",
+      "client": "A-quest",
+      "scene": "Prototype",
+      "account": "g_3267d1fd8bf109f83e1d4d56",
+      "frame": 3890,
+      "resolution": [
+        960,
+        540
+      ],
+      "position": {
+        "x": -1.6427061557769775,
+        "y": 1.0799999237060547,
+        "z": 0.2300654947757721
+      },
+      "revision": 0,
+      "totalXp": 0.0,
+      "gold": 0,
+      "stats": {
+        "hp": 100,
+        "attack": 10,
+        "defense": 0
+      },
+      "equipped": [],
+      "quests": {
+        "watch": "available",
+        "supplies": "available",
+        "hunt": "locked"
+      }
+    },
+    {
+      "step": "accepted hunt and delivery after tutorial",
+      "client": "A-quest",
+      "scene": "Prototype",
+      "account": "g_3267d1fd8bf109f83e1d4d56",
+      "frame": 4494,
+      "resolution": [
+        960,
+        540
+      ],
+      "position": {
+        "x": -1.6427061557769775,
+        "y": 1.0799999237060547,
+        "z": 0.2300654947757721
+      },
+      "revision": 5,
+      "totalXp": 0.0,
+      "gold": 10,
+      "stats": {
+        "hp": 104,
+        "attack": 14,
+        "defense": 0
+      },
+      "equipped": [
+        "21c158a1daa24a59ad1908b5e4c57a62"
+      ],
+      "quests": {
+        "watch": "completed",
+        "supplies": "ready",
+        "hunt": "active"
+      }
+    },
+    {
+      "step": "parcel delivered to smith",
+      "client": "A-quest",
+      "scene": "Prototype",
+      "account": "g_3267d1fd8bf109f83e1d4d56",
+      "frame": 4824,
+      "resolution": [
+        960,
+        540
+      ],
+      "position": {
+        "x": 4.679111957550049,
+        "y": 1.0799999237060547,
+        "z": 1.7117186784744263
+      },
+      "revision": 6,
+      "totalXp": 0.0,
+      "gold": 25,
+      "stats": {
+        "hp": 104,
+        "attack": 14,
+        "defense": 0
+      },
+      "equipped": [
+        "21c158a1daa24a59ad1908b5e4c57a62"
+      ],
+      "quests": {
+        "watch": "completed",
+        "supplies": "completed",
+        "hunt": "active"
+      }
+    },
+    {
+      "step": "real A1 kill and quest target",
+      "client": "A-quest",
+      "scene": "Prototype",
+      "account": "g_3267d1fd8bf109f83e1d4d56",
+      "frame": 5217,
+      "resolution": [
+        960,
+        540
+      ],
+      "position": {
+        "x": -0.035267431288957596,
+        "y": 1.0799999237060547,
+        "z": 5.7023444175720215
+      },
+      "revision": 7,
+      "totalXp": 20.0,
+      "gold": 37,
+      "stats": {
+        "hp": 116,
+        "attack": 16,
+        "defense": 2
+      },
+      "equipped": [
+        "21c158a1daa24a59ad1908b5e4c57a62"
+      ],
+      "quests": {
+        "watch": "completed",
+        "supplies": "completed",
+        "hunt": "ready"
+      }
+    },
+    {
+      "step": "real A1 hunt reported",
+      "client": "A-quest",
+      "scene": "Prototype",
+      "account": "g_3267d1fd8bf109f83e1d4d56",
+      "frame": 5399,
+      "resolution": [
+        960,
+        540
+      ],
+      "position": {
+        "x": -1.5435320138931274,
+        "y": 1.0799999237060547,
+        "z": 0.173715740442276
+      },
+      "revision": 8,
+      "totalXp": 40.0,
+      "gold": 62,
+      "stats": {
+        "hp": 116,
+        "attack": 16,
+        "defense": 2
+      },
+      "equipped": [
+        "21c158a1daa24a59ad1908b5e4c57a62"
+      ],
+      "quests": {
+        "watch": "completed",
+        "supplies": "completed",
+        "hunt": "completed"
+      }
+    },
+    {
+      "step": "independent A1 respawn kill",
+      "client": "A-quest",
+      "scene": "Prototype",
+      "account": "g_3267d1fd8bf109f83e1d4d56",
+      "frame": 8382,
+      "resolution": [
+        960,
+        540
+      ],
+      "position": {
+        "x": 0.07917614281177521,
+        "y": 1.0799999237060547,
+        "z": 5.75475549697876
+      },
+      "revision": 9,
+      "totalXp": 60.0,
+      "gold": 74,
+      "stats": {
+        "hp": 128,
+        "attack": 18,
+        "defense": 4
+      },
+      "equipped": [
+        "21c158a1daa24a59ad1908b5e4c57a62"
+      ],
+      "quests": {
+        "watch": "completed",
+        "supplies": "completed",
+        "hunt": "completed"
+      }
+    },
+    {
+      "step": "fixture restored with three pieces",
+      "client": "A-inv-wide",
+      "scene": "Prototype",
+      "account": "g_3267d1fd8bf109f83e1d4d56",
+      "frame": 514,
+      "resolution": [
+        1040,
+        480
+      ],
+      "position": {
+        "x": 6.0,
+        "y": 1.0799999237060547,
+        "z": 0.0
+      },
+      "revision": 10,
+      "totalXp": 60.0,
+      "gold": 174,
+      "stats": {
+        "hp": 164,
+        "attack": 23,
+        "defense": 10
+      },
+      "equipped": [
+        "fixture-balance-armor",
+        "fixture-balance-helm",
+        "fixture-balance-sword"
+      ],
+      "quests": {
+        "watch": "completed",
+        "supplies": "completed",
+        "hunt": "completed"
+      }
+    },
+    {
+      "step": "removed sword, two-piece set",
+      "client": "A-inv-wide",
+      "scene": "Prototype",
+      "account": "g_3267d1fd8bf109f83e1d4d56",
+      "frame": 794,
+      "resolution": [
+        1040,
+        480
+      ],
+      "position": {
+        "x": 6.0,
+        "y": 1.0799999237060547,
+        "z": 0.0
+      },
+      "revision": 11,
+      "totalXp": 60.0,
+      "gold": 174,
+      "stats": {
+        "hp": 152,
+        "attack": 17,
+        "defense": 9
+      },
+      "equipped": [
+        "fixture-balance-armor",
+        "fixture-balance-helm"
+      ],
+      "quests": {
+        "watch": "completed",
+        "supplies": "completed",
+        "hunt": "completed"
+      }
+    },
+    {
+      "step": "equipped rare +2 sword",
+      "client": "A-inv-wide",
+      "scene": "Prototype",
+      "account": "g_3267d1fd8bf109f83e1d4d56",
+      "frame": 902,
+      "resolution": [
+        1040,
+        480
+      ],
+      "position": {
+        "x": 6.0,
+        "y": 1.0799999237060547,
+        "z": 0.0
+      },
+      "revision": 12,
+      "totalXp": 60.0,
+      "gold": 174,
+      "stats": {
+        "hp": 164,
+        "attack": 27,
+        "defense": 10
+      },
+      "equipped": [
+        "fixture-balance-armor",
+        "fixture-balance-helm",
+        "fixture-balance-spare"
+      ],
+      "quests": {
+        "watch": "completed",
+        "supplies": "completed",
+        "hunt": "completed"
+      }
+    },
+    {
+      "step": "mixed set appearance",
+      "client": "A-inv-wide",
+      "scene": "Prototype",
+      "account": "g_3267d1fd8bf109f83e1d4d56",
+      "frame": 1109,
+      "resolution": [
+        1040,
+        480
+      ],
+      "position": {
+        "x": 6.0,
+        "y": 1.0799999237060547,
+        "z": 0.0
+      },
+      "revision": 14,
+      "totalXp": 60.0,
+      "gold": 174,
+      "stats": {
+        "hp": 187,
+        "attack": 24,
+        "defense": 10
+      },
+      "equipped": [
+        "fixture-balance-armor",
+        "fixture-balance-spare",
+        "fixture-vital-helm"
+      ],
+      "quests": {
+        "watch": "completed",
+        "supplies": "completed",
+        "hunt": "completed"
+      }
+    },
+    {
+      "step": "restored then all slots empty, base knight",
+      "client": "A-inv-restored",
+      "scene": "Prototype",
+      "account": "g_3267d1fd8bf109f83e1d4d56",
+      "frame": 3201,
+      "resolution": [
+        960,
+        540
+      ],
+      "position": {
+        "x": 6.0,
+        "y": 1.0799999237060547,
+        "z": 0.0
+      },
+      "revision": 17,
+      "totalXp": 60.0,
+      "gold": 174,
+      "stats": {
+        "hp": 124,
+        "attack": 14,
+        "defense": 4
+      },
+      "equipped": [],
+      "quests": {
+        "watch": "completed",
+        "supplies": "completed",
+        "hunt": "completed"
+      }
+    }
+  ],
+  "checkpointActions": [
+    {
+      "kind": "accept",
+      "actionId": "fa3e31db6af84be3a357fe1453609f0f",
+      "revision": 1
+    },
+    {
+      "kind": "accept",
+      "actionId": "8bac75dee68049439bf29245013ff535",
+      "revision": 2
+    },
+    {
+      "kind": "tutorial",
+      "actionId": "1c87ec28cb6942f9b536ce70c1139bc6",
+      "revision": 3
+    },
+    {
+      "kind": "equip",
+      "actionId": "6d741d5f8e4e47c8bfc93bf7a39dd2d5",
+      "revision": 4
+    },
+    {
+      "kind": "accept",
+      "actionId": "08286e606e4a43dca901d269a0cc8059",
+      "revision": 5
+    },
+    {
+      "kind": "report",
+      "actionId": "2e2b9940604040059eec02776d557f53",
+      "revision": 6
+    },
+    {
+      "kind": "kill",
+      "actionId": "83b47cf215fe4755b16c500725825ab3",
+      "revision": 7
+    },
+    {
+      "kind": "report",
+      "actionId": "1892d1ff38b84b67a458f908bd20f1a8",
+      "revision": 8
+    },
+    {
+      "kind": "kill",
+      "actionId": "f8b26346c1214e239ff5d6c64b387825",
+      "revision": 9
+    }
+  ],
+  "rewardChecks": {
+    "monsterDefinition": "A1",
+    "awardsInKillOrder": [
+      "83b47cf215fe4755b16c500725825ab3",
+      "f8b26346c1214e239ff5d6c64b387825"
+    ],
+    "databaseDistinctRows": 2,
+    "firstKill": {
+      "beforeRevision": 6,
+      "afterRevision": 7,
+      "beforeXP": 0,
+      "afterXP": 20,
+      "beforeGold": 25,
+      "afterGold": 37
+    },
+    "secondKill": {
+      "beforeRevision": 8,
+      "afterRevision": 9,
+      "beforeXP": 40,
+      "afterXP": 60,
+      "beforeGold": 62,
+      "afterGold": 74
+    },
+    "responseDroppedAfterBackendCommit": [
+      {
+        "event": "read",
+        "upstreamStatus": 200,
+        "revision": 0,
+        "actionId": ""
+      },
+      {
+        "event": "kill",
+        "upstreamStatus": 200,
+        "revision": 7,
+        "actionId": "83b47cf215fe4755b16c500725825ab3"
+      }
+    ],
+    "notes": "첫 처치의 성공 응답을 프록시가 끊었으며 복구 뒤 같은 보상 ID가 DB에 한 건이었다."
+  },
+  "processRestart": {
+    "A": {
+      "account": "g_3267d1fd8bf109f83e1d4d56",
+      "beforeRevision": 9,
+      "afterRevision": 9,
+      "beforeOwnerSnapshot": {
+        "level": 3,
+        "experience": 0.0,
+        "totalXp": 60.0,
+        "objective": "boss",
+        "revision": 9,
+        "gold": 74,
+        "items": [
+          {
+            "instanceId": "6971e3be34164abca8c76214b323baf6",
+            "definitionId": "balance_helm",
+            "name": "균형의 투구",
+            "type": "equipment",
+            "slot": "helm",
+            "rarity": "common",
+            "enhancement": 0,
+            "quantity": 1,
+            "equipped": false,
+            "setId": "balance",
+            "setName": "균형",
+            "setCount": 1,
+            "base": {
+              "hp": 14,
+              "attack": 1,
+              "defense": 1
+            },
+            "rarityBonus": {
+              "hp": 0,
+              "attack": 0,
+              "defense": 0
+            },
+            "enhanceBonus": {
+              "hp": 0,
+              "attack": 0,
+              "defense": 0
+            },
+            "setTwo": {
+              "hp": 6,
+              "attack": 1,
+              "defense": 1
+            },
+            "setThree": {
+              "hp": 8,
+              "attack": 2,
+              "defense": 1
+            }
+          },
+          {
+            "instanceId": "21c158a1daa24a59ad1908b5e4c57a62",
+            "definitionId": "balance_sword",
+            "name": "균형의 검",
+            "type": "equipment",
+            "slot": "sword",
+            "rarity": "common",
+            "enhancement": 0,
+            "quantity": 1,
+            "equipped": true,
+            "setId": "balance",
+            "setName": "균형",
+            "setCount": 1,
+            "base": {
+              "hp": 4,
+              "attack": 4,
+              "defense": 0
+            },
+            "rarityBonus": {
+              "hp": 0,
+              "attack": 0,
+              "defense": 0
+            },
+            "enhanceBonus": {
+              "hp": 0,
+              "attack": 0,
+              "defense": 0
+            },
+            "setTwo": {
+              "hp": 6,
+              "attack": 1,
+              "defense": 1
+            },
+            "setThree": {
+              "hp": 8,
+              "attack": 2,
+              "defense": 1
+            }
+          },
+          {
+            "instanceId": "2a18766d53b34ba883bd86531bf41f97",
+            "definitionId": "fury_sword",
+            "name": "맹공의 검",
+            "type": "equipment",
+            "slot": "sword",
+            "rarity": "common",
+            "enhancement": 0,
+            "quantity": 1,
+            "equipped": false,
+            "setId": "fury",
+            "setName": "맹공",
+            "setCount": 0,
+            "base": {
+              "hp": 0,
+              "attack": 6,
+              "defense": 0
+            },
+            "rarityBonus": {
+              "hp": 0,
+              "attack": 0,
+              "defense": 0
+            },
+            "enhanceBonus": {
+              "hp": 0,
+              "attack": 0,
+              "defense": 0
+            },
+            "setTwo": {
+              "hp": 0,
+              "attack": 3,
+              "defense": 0
+            },
+            "setThree": {
+              "hp": 0,
+              "attack": 4,
+              "defense": 0
+            }
+          },
+          {
+            "instanceId": "a878d0097e794345abe114247338fe38",
+            "definitionId": "vital_sword",
+            "name": "생명의 검",
+            "type": "equipment",
+            "slot": "sword",
+            "rarity": "common",
+            "enhancement": 0,
+            "quantity": 1,
+            "equipped": false,
+            "setId": "vital",
+            "setName": "생명",
+            "setCount": 0,
+            "base": {
+              "hp": 8,
+              "attack": 2,
+              "defense": 1
+            },
+            "rarityBonus": {
+              "hp": 0,
+              "attack": 0,
+              "defense": 0
+            },
+            "enhanceBonus": {
+              "hp": 0,
+              "attack": 0,
+              "defense": 0
+            },
+            "setTwo": {
+              "hp": 12,
+              "attack": 0,
+              "defense": 2
+            },
+            "setThree": {
+              "hp": 18,
+              "attack": 0,
+              "defense": 3
+            }
+          },
+          {
+            "instanceId": "stack:ore",
+            "definitionId": "ore",
+            "name": "강화석",
+            "type": "material",
+            "slot": "",
+            "rarity": "common",
+            "enhancement": 0,
+            "quantity": 1,
+            "equipped": false
+          }
+        ],
+        "stats": {
+          "hp": 128,
+          "attack": 18,
+          "defense": 4
+        },
+        "quests": [
+          {
+            "id": "watch",
+            "name": "원정 준비",
+            "category": "main",
+            "type": "tutorial",
+            "npcId": "warden",
+            "reportNpcId": "warden",
+            "dialogue": "출발하기 전에 장비 가방을 열어 보게.",
+            "instruction": "인벤토리 열기",
+            "state": "completed",
+            "goals": [
+              {
+                "id": "open_bag",
+                "target": "open_inventory",
+                "label": "인벤토리 열기",
+                "count": 1,
+                "required": 1,
+                "allowExisting": false,
+                "observedCount": 1
+              }
+            ],
+            "target": "open_inventory",
+            "required": 1,
+            "count": 1,
+            "rewardXp": 0,
+            "rewardGold": 10,
+            "rewardLabel": "골드 10 · 균형의 검"
+          },
+          {
+            "id": "supplies",
+            "name": "대장간 보급",
+            "category": "side",
+            "type": "collect",
+            "npcId": "warden",
+            "reportNpcId": "smith",
+            "dialogue": "대장장이에게 이 꾸러미를 전해 주게.",
+            "instruction": "대장장이에게 보급 꾸러미 전달",
+            "state": "completed",
+            "goals": [
+              {
+                "id": "package",
+                "target": "parcel",
+                "label": "보급 꾸러미",
+                "count": 1,
+                "required": 1,
+                "allowExisting": false,
+                "observedCount": 0
+              }
+            ],
+            "target": "parcel",
+            "required": 1,
+            "count": 1,
+            "rewardXp": 0,
+            "rewardGold": 15,
+            "rewardLabel": "골드 15"
+          },
+          {
+            "id": "hunt",
+            "name": "능선의 위협",
+            "category": "main",
+            "type": "kill",
+            "npcId": "warden",
+            "reportNpcId": "warden",
+            "dialogue": "능선의 영혼 포식자를 처치한 뒤 나에게 보고하게.",
+            "instruction": "영혼 포식자 처치 후 경비대장에게 보고",
+            "state": "completed",
+            "goals": [
+              {
+                "id": "slay_dragon",
+                "target": "A1",
+                "label": "영혼 포식자",
+                "count": 1,
+                "required": 1,
+                "allowExisting": false,
+                "observedCount": 0
+              }
+            ],
+            "target": "A1",
+            "required": 1,
+            "count": 1,
+            "rewardXp": 20,
+            "rewardGold": 25,
+            "rewardLabel": "경험치 20 · 골드 25 · 균형의 투구"
+          }
+        ],
+        "inventory": [],
+        "equipped": {}
+      },
+      "beforeSHA256": "defb75d3e5b6206284d4e9dcbf4ee333d0037b889c0e0f8bb6416edcb43ef2b2",
+      "afterSHA256": "defb75d3e5b6206284d4e9dcbf4ee333d0037b889c0e0f8bb6416edcb43ef2b2",
+      "entireSnapshotEqual": true,
+      "beforeCapture": "A-quest-before-crash.json",
+      "afterCapture": "A-restore/state.json"
+    },
+    "B": {
+      "account": "g_bc9a3b1543e0145fadd10ace",
+      "beforeRevision": 0,
+      "afterRevision": 0,
+      "beforeOwnerSnapshot": {
+        "level": 1,
+        "experience": 0.0,
+        "totalXp": 0.0,
+        "objective": "tutorial",
+        "revision": 0,
+        "gold": 0,
+        "items": [],
+        "stats": {
+          "hp": 100,
+          "attack": 10,
+          "defense": 0
+        },
+        "quests": [
+          {
+            "id": "watch",
+            "name": "원정 준비",
+            "category": "main",
+            "type": "tutorial",
+            "npcId": "warden",
+            "reportNpcId": "warden",
+            "dialogue": "출발하기 전에 장비 가방을 열어 보게.",
+            "instruction": "인벤토리 열기",
+            "state": "available",
+            "goals": [
+              {
+                "id": "open_bag",
+                "target": "open_inventory",
+                "label": "인벤토리 열기",
+                "count": 0,
+                "required": 1,
+                "allowExisting": false,
+                "observedCount": 0
+              }
+            ],
+            "target": "open_inventory",
+            "required": 1,
+            "count": 0,
+            "rewardXp": 0,
+            "rewardGold": 10,
+            "rewardLabel": "골드 10 · 균형의 검"
+          },
+          {
+            "id": "supplies",
+            "name": "대장간 보급",
+            "category": "side",
+            "type": "collect",
+            "npcId": "warden",
+            "reportNpcId": "smith",
+            "dialogue": "대장장이에게 이 꾸러미를 전해 주게.",
+            "instruction": "대장장이에게 보급 꾸러미 전달",
+            "state": "available",
+            "goals": [
+              {
+                "id": "package",
+                "target": "parcel",
+                "label": "보급 꾸러미",
+                "count": 0,
+                "required": 1,
+                "allowExisting": false,
+                "observedCount": 0
+              }
+            ],
+            "target": "parcel",
+            "required": 1,
+            "count": 0,
+            "rewardXp": 0,
+            "rewardGold": 15,
+            "rewardLabel": "골드 15"
+          },
+          {
+            "id": "hunt",
+            "name": "능선의 위협",
+            "category": "main",
+            "type": "kill",
+            "npcId": "warden",
+            "reportNpcId": "warden",
+            "dialogue": "능선의 영혼 포식자를 처치한 뒤 나에게 보고하게.",
+            "instruction": "영혼 포식자 처치 후 경비대장에게 보고",
+            "state": "locked",
+            "goals": [
+              {
+                "id": "slay_dragon",
+                "target": "A1",
+                "label": "영혼 포식자",
+                "count": 0,
+                "required": 1,
+                "allowExisting": false,
+                "observedCount": 0
+              }
+            ],
+            "target": "A1",
+            "required": 1,
+            "count": 0,
+            "rewardXp": 20,
+            "rewardGold": 25,
+            "rewardLabel": "경험치 20 · 골드 25 · 균형의 투구"
+          }
+        ],
+        "inventory": [],
+        "equipped": {}
+      },
+      "beforeSHA256": "305c9e301c4b9681839c158c95ab2cec2407253573f9ea3ac03114274f5a45f6",
+      "afterSHA256": "305c9e301c4b9681839c158c95ab2cec2407253573f9ea3ac03114274f5a45f6",
+      "entireSnapshotEqual": true,
+      "beforeCapture": "B-control-before-crash.json",
+      "afterCapture": "B-restored/state.json"
+    }
+  },
+  "controlB": {
+    "afterHunt": {
+      "account": "g_bc9a3b1543e0145fadd10ace",
+      "snapshot": {
+        "level": 1,
+        "experience": 0.0,
+        "totalXp": 0.0,
+        "objective": "tutorial",
+        "revision": 0,
+        "gold": 0,
+        "items": [],
+        "stats": {
+          "hp": 100,
+          "attack": 10,
+          "defense": 0
+        },
+        "quests": [
+          {
+            "id": "watch",
+            "name": "원정 준비",
+            "category": "main",
+            "type": "tutorial",
+            "npcId": "warden",
+            "reportNpcId": "warden",
+            "dialogue": "출발하기 전에 장비 가방을 열어 보게.",
+            "instruction": "인벤토리 열기",
+            "state": "available",
+            "goals": [
+              {
+                "id": "open_bag",
+                "target": "open_inventory",
+                "label": "인벤토리 열기",
+                "count": 0,
+                "required": 1,
+                "allowExisting": false,
+                "observedCount": 0
+              }
+            ],
+            "target": "open_inventory",
+            "required": 1,
+            "count": 0,
+            "rewardXp": 0,
+            "rewardGold": 10,
+            "rewardLabel": "골드 10 · 균형의 검"
+          },
+          {
+            "id": "supplies",
+            "name": "대장간 보급",
+            "category": "side",
+            "type": "collect",
+            "npcId": "warden",
+            "reportNpcId": "smith",
+            "dialogue": "대장장이에게 이 꾸러미를 전해 주게.",
+            "instruction": "대장장이에게 보급 꾸러미 전달",
+            "state": "available",
+            "goals": [
+              {
+                "id": "package",
+                "target": "parcel",
+                "label": "보급 꾸러미",
+                "count": 0,
+                "required": 1,
+                "allowExisting": false,
+                "observedCount": 0
+              }
+            ],
+            "target": "parcel",
+            "required": 1,
+            "count": 0,
+            "rewardXp": 0,
+            "rewardGold": 15,
+            "rewardLabel": "골드 15"
+          },
+          {
+            "id": "hunt",
+            "name": "능선의 위협",
+            "category": "main",
+            "type": "kill",
+            "npcId": "warden",
+            "reportNpcId": "warden",
+            "dialogue": "능선의 영혼 포식자를 처치한 뒤 나에게 보고하게.",
+            "instruction": "영혼 포식자 처치 후 경비대장에게 보고",
+            "state": "locked",
+            "goals": [
+              {
+                "id": "slay_dragon",
+                "target": "A1",
+                "label": "영혼 포식자",
+                "count": 0,
+                "required": 1,
+                "allowExisting": false,
+                "observedCount": 0
+              }
+            ],
+            "target": "A1",
+            "required": 1,
+            "count": 0,
+            "rewardXp": 20,
+            "rewardGold": 25,
+            "rewardLabel": "경험치 20 · 골드 25 · 균형의 투구"
+          }
+        ],
+        "inventory": [],
+        "equipped": {}
+      }
+    },
+    "unchangedThroughCrashAndRestart": true,
+    "duplicateLoginAttempt": "이미 게임에 접속한 계정입니다. 다른 계정을 사용해 주세요."
+  },
+  "inventoryTest": {
+    "fixtureAppliedAtRevision": 10,
+    "fixtureGoldIncrease": 100,
+    "earnedGoldBeforeFixture": 74,
+    "beforeRelaunchSnapshot": {
+      "level": 3,
+      "experience": 0.0,
+      "totalXp": 60.0,
+      "objective": "boss",
+      "revision": 14,
+      "gold": 174,
+      "items": [
+        {
+          "instanceId": "fixture-balance-armor",
+          "definitionId": "balance_armor",
+          "name": "균형의 방어구",
+          "type": "equipment",
+          "slot": "armor",
+          "rarity": "common",
+          "enhancement": 0,
+          "quantity": 1,
+          "equipped": true,
+          "setId": "balance",
+          "setName": "균형",
+          "setCount": 2,
+          "base": {
+            "hp": 8,
+            "attack": 1,
+            "defense": 3
+          },
+          "rarityBonus": {
+            "hp": 0,
+            "attack": 0,
+            "defense": 0
+          },
+          "enhanceBonus": {
+            "hp": 0,
+            "attack": 0,
+            "defense": 0
+          },
+          "setTwo": {
+            "hp": 6,
+            "attack": 1,
+            "defense": 1
+          },
+          "setThree": {
+            "hp": 8,
+            "attack": 2,
+            "defense": 1
+          }
+        },
+        {
+          "instanceId": "6971e3be34164abca8c76214b323baf6",
+          "definitionId": "balance_helm",
+          "name": "균형의 투구",
+          "type": "equipment",
+          "slot": "helm",
+          "rarity": "common",
+          "enhancement": 0,
+          "quantity": 1,
+          "equipped": false,
+          "setId": "balance",
+          "setName": "균형",
+          "setCount": 2,
+          "base": {
+            "hp": 14,
+            "attack": 1,
+            "defense": 1
+          },
+          "rarityBonus": {
+            "hp": 0,
+            "attack": 0,
+            "defense": 0
+          },
+          "enhanceBonus": {
+            "hp": 0,
+            "attack": 0,
+            "defense": 0
+          },
+          "setTwo": {
+            "hp": 6,
+            "attack": 1,
+            "defense": 1
+          },
+          "setThree": {
+            "hp": 8,
+            "attack": 2,
+            "defense": 1
+          }
+        },
+        {
+          "instanceId": "fixture-balance-helm",
+          "definitionId": "balance_helm",
+          "name": "균형의 투구",
+          "type": "equipment",
+          "slot": "helm",
+          "rarity": "common",
+          "enhancement": 0,
+          "quantity": 1,
+          "equipped": false,
+          "setId": "balance",
+          "setName": "균형",
+          "setCount": 2,
+          "base": {
+            "hp": 14,
+            "attack": 1,
+            "defense": 1
+          },
+          "rarityBonus": {
+            "hp": 0,
+            "attack": 0,
+            "defense": 0
+          },
+          "enhanceBonus": {
+            "hp": 0,
+            "attack": 0,
+            "defense": 0
+          },
+          "setTwo": {
+            "hp": 6,
+            "attack": 1,
+            "defense": 1
+          },
+          "setThree": {
+            "hp": 8,
+            "attack": 2,
+            "defense": 1
+          }
+        },
+        {
+          "instanceId": "21c158a1daa24a59ad1908b5e4c57a62",
+          "definitionId": "balance_sword",
+          "name": "균형의 검",
+          "type": "equipment",
+          "slot": "sword",
+          "rarity": "common",
+          "enhancement": 0,
+          "quantity": 1,
+          "equipped": false,
+          "setId": "balance",
+          "setName": "균형",
+          "setCount": 2,
+          "base": {
+            "hp": 4,
+            "attack": 4,
+            "defense": 0
+          },
+          "rarityBonus": {
+            "hp": 0,
+            "attack": 0,
+            "defense": 0
+          },
+          "enhanceBonus": {
+            "hp": 0,
+            "attack": 0,
+            "defense": 0
+          },
+          "setTwo": {
+            "hp": 6,
+            "attack": 1,
+            "defense": 1
+          },
+          "setThree": {
+            "hp": 8,
+            "attack": 2,
+            "defense": 1
+          }
+        },
+        {
+          "instanceId": "fixture-balance-spare",
+          "definitionId": "balance_sword",
+          "name": "균형의 검",
+          "type": "equipment",
+          "slot": "sword",
+          "rarity": "rare",
+          "enhancement": 2,
+          "quantity": 1,
+          "equipped": true,
+          "setId": "balance",
+          "setName": "균형",
+          "setCount": 2,
+          "base": {
+            "hp": 4,
+            "attack": 4,
+            "defense": 0
+          },
+          "rarityBonus": {
+            "hp": 0,
+            "attack": 2,
+            "defense": 0
+          },
+          "enhanceBonus": {
+            "hp": 0,
+            "attack": 2,
+            "defense": 0
+          },
+          "setTwo": {
+            "hp": 6,
+            "attack": 1,
+            "defense": 1
+          },
+          "setThree": {
+            "hp": 8,
+            "attack": 2,
+            "defense": 1
+          }
+        },
+        {
+          "instanceId": "fixture-balance-sword",
+          "definitionId": "balance_sword",
+          "name": "균형의 검",
+          "type": "equipment",
+          "slot": "sword",
+          "rarity": "common",
+          "enhancement": 0,
+          "quantity": 1,
+          "equipped": false,
+          "setId": "balance",
+          "setName": "균형",
+          "setCount": 2,
+          "base": {
+            "hp": 4,
+            "attack": 4,
+            "defense": 0
+          },
+          "rarityBonus": {
+            "hp": 0,
+            "attack": 0,
+            "defense": 0
+          },
+          "enhanceBonus": {
+            "hp": 0,
+            "attack": 0,
+            "defense": 0
+          },
+          "setTwo": {
+            "hp": 6,
+            "attack": 1,
+            "defense": 1
+          },
+          "setThree": {
+            "hp": 8,
+            "attack": 2,
+            "defense": 1
+          }
+        },
+        {
+          "instanceId": "2a18766d53b34ba883bd86531bf41f97",
+          "definitionId": "fury_sword",
+          "name": "맹공의 검",
+          "type": "equipment",
+          "slot": "sword",
+          "rarity": "common",
+          "enhancement": 0,
+          "quantity": 1,
+          "equipped": false,
+          "setId": "fury",
+          "setName": "맹공",
+          "setCount": 0,
+          "base": {
+            "hp": 0,
+            "attack": 6,
+            "defense": 0
+          },
+          "rarityBonus": {
+            "hp": 0,
+            "attack": 0,
+            "defense": 0
+          },
+          "enhanceBonus": {
+            "hp": 0,
+            "attack": 0,
+            "defense": 0
+          },
+          "setTwo": {
+            "hp": 0,
+            "attack": 3,
+            "defense": 0
+          },
+          "setThree": {
+            "hp": 0,
+            "attack": 4,
+            "defense": 0
+          }
+        },
+        {
+          "instanceId": "fixture-vital-helm",
+          "definitionId": "vital_helm",
+          "name": "생명의 투구",
+          "type": "equipment",
+          "slot": "helm",
+          "rarity": "legendary",
+          "enhancement": 1,
+          "quantity": 1,
+          "equipped": true,
+          "setId": "vital",
+          "setName": "생명",
+          "setCount": 1,
+          "base": {
+            "hp": 20,
+            "attack": 0,
+            "defense": 2
+          },
+          "rarityBonus": {
+            "hp": 20,
+            "attack": 0,
+            "defense": 0
+          },
+          "enhanceBonus": {
+            "hp": 5,
+            "attack": 0,
+            "defense": 0
+          },
+          "setTwo": {
+            "hp": 12,
+            "attack": 0,
+            "defense": 2
+          },
+          "setThree": {
+            "hp": 18,
+            "attack": 0,
+            "defense": 3
+          }
+        },
+        {
+          "instanceId": "a878d0097e794345abe114247338fe38",
+          "definitionId": "vital_sword",
+          "name": "생명의 검",
+          "type": "equipment",
+          "slot": "sword",
+          "rarity": "common",
+          "enhancement": 0,
+          "quantity": 1,
+          "equipped": false,
+          "setId": "vital",
+          "setName": "생명",
+          "setCount": 1,
+          "base": {
+            "hp": 8,
+            "attack": 2,
+            "defense": 1
+          },
+          "rarityBonus": {
+            "hp": 0,
+            "attack": 0,
+            "defense": 0
+          },
+          "enhanceBonus": {
+            "hp": 0,
+            "attack": 0,
+            "defense": 0
+          },
+          "setTwo": {
+            "hp": 12,
+            "attack": 0,
+            "defense": 2
+          },
+          "setThree": {
+            "hp": 18,
+            "attack": 0,
+            "defense": 3
+          }
+        },
+        {
+          "instanceId": "stack:ore",
+          "definitionId": "ore",
+          "name": "강화석",
+          "type": "material",
+          "slot": "",
+          "rarity": "common",
+          "enhancement": 0,
+          "quantity": 4,
+          "equipped": false
+        }
+      ],
+      "stats": {
+        "hp": 187,
+        "attack": 24,
+        "defense": 10
+      },
+      "quests": [
+        {
+          "id": "watch",
+          "name": "원정 준비",
+          "category": "main",
+          "type": "tutorial",
+          "npcId": "warden",
+          "reportNpcId": "warden",
+          "dialogue": "출발하기 전에 장비 가방을 열어 보게.",
+          "instruction": "인벤토리 열기",
+          "state": "completed",
+          "goals": [
+            {
+              "id": "open_bag",
+              "target": "open_inventory",
+              "label": "인벤토리 열기",
+              "count": 1,
+              "required": 1,
+              "allowExisting": false,
+              "observedCount": 1
+            }
+          ],
+          "target": "open_inventory",
+          "required": 1,
+          "count": 1,
+          "rewardXp": 0,
+          "rewardGold": 10,
+          "rewardLabel": "골드 10 · 균형의 검"
+        },
+        {
+          "id": "supplies",
+          "name": "대장간 보급",
+          "category": "side",
+          "type": "collect",
+          "npcId": "warden",
+          "reportNpcId": "smith",
+          "dialogue": "대장장이에게 이 꾸러미를 전해 주게.",
+          "instruction": "대장장이에게 보급 꾸러미 전달",
+          "state": "completed",
+          "goals": [
+            {
+              "id": "package",
+              "target": "parcel",
+              "label": "보급 꾸러미",
+              "count": 1,
+              "required": 1,
+              "allowExisting": false,
+              "observedCount": 0
+            }
+          ],
+          "target": "parcel",
+          "required": 1,
+          "count": 1,
+          "rewardXp": 0,
+          "rewardGold": 15,
+          "rewardLabel": "골드 15"
+        },
+        {
+          "id": "hunt",
+          "name": "능선의 위협",
+          "category": "main",
+          "type": "kill",
+          "npcId": "warden",
+          "reportNpcId": "warden",
+          "dialogue": "능선의 영혼 포식자를 처치한 뒤 나에게 보고하게.",
+          "instruction": "영혼 포식자 처치 후 경비대장에게 보고",
+          "state": "completed",
+          "goals": [
+            {
+              "id": "slay_dragon",
+              "target": "A1",
+              "label": "영혼 포식자",
+              "count": 1,
+              "required": 1,
+              "allowExisting": false,
+              "observedCount": 0
+            }
+          ],
+          "target": "A1",
+          "required": 1,
+          "count": 1,
+          "rewardXp": 20,
+          "rewardGold": 25,
+          "rewardLabel": "경험치 20 · 골드 25 · 균형의 투구"
+        }
+      ],
+      "inventory": [],
+      "equipped": {}
+    },
+    "afterReloginAssertion": {
+      "account": "g_3267d1fd8bf109f83e1d4d56",
+      "revision": 14,
+      "gold": 174,
+      "stats": {
+        "hp": 187,
+        "attack": 24,
+        "defense": 10
+      },
+      "entireSnapshotEqual": true
+    },
+    "scope": "장비 검증용 준비 데이터는 첫 두 처치와 퀘스트 진행을 검증한 뒤 같은 계정에 별도로 적용했다."
+  },
+  "screenshots": {
+    "inventory-wide.jpg": {
+      "capture": "A-inv-wide/04-inventory/000052.jpg",
+      "sha256": "930df93590a86df2b18e2e57b4a8e0377c6075d8451e6a3588dfbf6624e44fd9"
+    },
+    "inventory-detail.jpg": {
+      "capture": "A-inv-restored/05-restored/000051.jpg",
+      "sha256": "7efe609c541287303904ac0df24904ac441448dbae8d1d6ed4aef82ee0cc5ac4"
+    },
+    "inventory-unequipped.jpg": {
+      "capture": "A-inv-restored/05-restored/000150.jpg",
+      "sha256": "464567b0e40b242d6f442fa95b6d07fd3a7bd12d32a41ca9a5da1f351c766f84"
+    }
+  },
+  "finalBuild": {
+    "productionServer": "ServerBuild_2",
+    "QAClientSourceMatch": true,
+    "accountA": "g_3267d1fd8bf109f83e1d4d56",
+    "revisionA": 17,
+    "goldA": 174,
+    "accountB": "g_bc9a3b1543e0145fadd10ace",
+    "revisionB": 0,
+    "goldB": 0,
+    "entireSnapshotEqualOnRelaunch": {
+      "A": true,
+      "B": true
+    },
+    "modal": {
+      "duplicateHudButton": "missing button OpenInventory",
+      "attackBehindInventory": "blocked Modal Input Shield",
+      "inventoryCloseBehindDetail": "blocked Item Detail Overlay",
+      "uniqueCloseButton": true,
+      "fieldInputRestored": true
+    },
+    "fullSnapshotSHA256": {
+      "A": {
+        "before": "d0ef1db91311b09c48928345267725d1b8626df77db72382258d46b1cbfd9913",
+        "after": "d0ef1db91311b09c48928345267725d1b8626df77db72382258d46b1cbfd9913"
+      },
+      "B": {
+        "before": "305c9e301c4b9681839c158c95ab2cec2407253573f9ea3ac03114274f5a45f6",
+        "after": "305c9e301c4b9681839c158c95ab2cec2407253573f9ea3ac03114274f5a45f6"
+      }
+    }
+  },
+  "recording": {
+    "file": "prototype-playthrough.mp4",
+    "resolution": [
+      1280,
+      812
+    ],
+    "frames": 3245,
+    "durationSeconds": 135.208333,
+    "frameRate": "24",
+    "videoCodec": "H.264",
+    "audioTracks": 0,
+    "chapters": [
+      {
+        "start": "00:00.000",
+        "end": "00:22.708",
+        "title": "원정 준비와 첫 장비",
+        "sourceClip": "A-quest-01-start.mp4"
+      },
+      {
+        "start": "00:22.708",
+        "end": "00:33.667",
+        "title": "보급품 전달",
+        "sourceClip": "A-quest-02-delivery.mp4"
+      },
+      {
+        "start": "00:33.667",
+        "end": "00:52.667",
+        "title": "영혼 포식자 처치와 보고",
+        "sourceClip": "A-quest-03-hunt-final.mp4"
+      },
+      {
+        "start": "00:52.667",
+        "end": "01:03.500",
+        "title": "다음 개체의 보상",
+        "sourceClip": "A-quest-03b-next-kill.mp4"
+      },
+      {
+        "start": "01:03.500",
+        "end": "01:22.750",
+        "title": "앱 재시작과 계정 복원",
+        "sourceClip": "A-restore-00-launch.mp4"
+      },
+      {
+        "start": "01:22.750",
+        "end": "01:48.250",
+        "title": "장비 비교와 교체 · 19.5:9",
+        "sourceClip": "A-inv-wide-04-inventory.mp4"
+      },
+      {
+        "start": "01:48.250",
+        "end": "02:06.000",
+        "title": "재접속과 기본 복장 · 16:9",
+        "sourceClip": "A-inv-restored-05-restored.mp4"
+      },
+      {
+        "start": "02:06.000",
+        "end": "02:15.208",
+        "title": "최종 빌드의 입력 검증",
+        "sourceClip": "A-final-06-final.mp4"
+      }
+    ],
+    "fullVideoDecodePassed": true,
+    "sha256": "8db2679d073ba4e631a42dd4521efa4dedc6498f15ed218af16112e0bc7d388b"
+  }
+}

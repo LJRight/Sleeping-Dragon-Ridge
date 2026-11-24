@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f52ad26d3f44ae5963385ff104b7478, type: 3}
+  m_Name: GameplayUiAudio
+  m_EditorClassIdentifier:
+  uiDefault: {fileID: 8300000, guid: 06854c676b5904205a5d243052e2a05f, type: 3}
+  dropOrSell: {fileID: 8300000, guid: dbc5e4719c36540cda92820ee103825e, type: 3}
+  equipItem: {fileID: 8300000, guid: 5d3fc9c5160ca4095b92c0fec54789f6, type: 3}
+  bossVictory: {fileID: 8300000, guid: 0af2abe1e2e7747f895323b123e1e6c0, type: 3}
+  potionDrink: {fileID: 8300000, guid: 46a1ac773c0544abbb48ae2bfbc73d6a, type: 3}

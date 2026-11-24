@@ -1,0 +1,57 @@
+{
+  "verifiedAtKST": "2026-11-20T11:31:28+09:00",
+  "unity": "6000.3.10f1",
+  "hostOS": "macOS 26.5.2",
+  "hostArchitecture": "arm64",
+  "builds": [
+    {
+      "role": "macOS QA client",
+      "executableSHA256": "dc8da7fbe1ed4fd05b7979121b259b96d74e46d5f8240b306ccf5f221a8dc3a1",
+      "assemblySHA256": "86ad9851c4e2c1fa4044c51c1e29b1def90e072d249649d681f5a299a525cd8c",
+      "unityPartyProbePresent": true,
+      "bossPartyServerPresent": true,
+      "architecture": "arm64"
+    },
+    {
+      "role": "macOS dedicated server",
+      "executableSHA256": "86bf21c7ad07f6ccfd3b0c705158fd54e680562add51adcdd787299de9aec13d",
+      "assemblySHA256": "191e0068fbcb563d69bdc1bed3e19efaefbe310e3f22e9e69dfe932073a79c02",
+      "unityPartyProbePresent": false,
+      "bossPartyServerPresent": true,
+      "architecture": "arm64",
+      "executable": "ServerBuild/ServerBuild_5/NetmarbleNeo"
+    },
+    {
+      "role": "macOS player",
+      "executableSHA256": "a079301a9eec1ff036631e94b1fe9c0a044fa996a442611b387ebcbfc1ec2761",
+      "assemblySHA256": "9cde4493220881e3a3f643ee2ecd03363bd7f9ee09fd11cff48892bfd166dd49",
+      "unityPartyProbePresent": false,
+      "bossPartyServerPresent": true,
+      "architecture": "arm64",
+      "executable": "ClientBuild/TODO-023/NetmarbleNeo.app/Contents/MacOS/NetmarbleNeo"
+    }
+  ],
+  "releaseGameplaySource": {
+    "directory": "NetmarbleNeo/Assets/Scripts",
+    "csharpFileCount": 40,
+    "manifestSHA256": "114a016a67f208d7d4921dde3b37e34721ac19b5985fe3a87d0d8accd8f54498",
+    "comparedAgainstIsolatedProject": true
+  },
+  "qa2ToReleaseChangedFiles": [
+    "UI/Expedition/ExpeditionBoss.cs",
+    "UI/Expedition/ExpeditionParty.cs"
+  ],
+  "releaseSmoke": {
+    "clientAndLoginEndpoints": "127.0.0.1",
+    "dedicatedUdpListenAddress": "0.0.0.0 (existing LAN configuration)",
+    "dedicatedUdpPort": "temporary dynamic port",
+    "temporarySqlite": true,
+    "isolatedGuestProfile": true,
+    "gameServerLog": "게임 서버가 접속을 기다립니다.",
+    "clientLog": "플레이 준비 완료",
+    "guestAccounts": 1,
+    "sessions": 1,
+    "progressRows": 1,
+    "scope": "Fresh guest against released server and macOS client through world admission."
+  }
+}

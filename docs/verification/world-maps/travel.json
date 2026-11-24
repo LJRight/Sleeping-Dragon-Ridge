@@ -1,0 +1,449 @@
+{
+  "completed": true,
+  "cases": [
+    {
+      "case": "A enters village",
+      "room": 0,
+      "music": [
+        "VillageCamp"
+      ],
+      "loadingIllustrations": [
+        "Village"
+      ],
+      "loaded": [
+        "WorldSession",
+        "village"
+      ],
+      "player": 1
+    },
+    {
+      "case": "A prerequisite fixture: backend progression actions",
+      "quest": "active"
+    },
+    {
+      "case": "B enters village",
+      "room": 0,
+      "music": [
+        "VillageCamp"
+      ],
+      "loadingIllustrations": [
+        "Village"
+      ],
+      "loaded": [
+        "WorldSession",
+        "village"
+      ],
+      "player": 2
+    },
+    {
+      "case": "B prerequisite fixture: backend progression actions",
+      "quest": "active"
+    },
+    {
+      "case": "A enters HuntingField",
+      "room": 0,
+      "music": [
+        "World Map"
+      ],
+      "loadingIllustrations": [
+        "Village",
+        "HuntingField"
+      ],
+      "loaded": [
+        "WorldSession",
+        "HuntingField"
+      ],
+      "player": 1
+    },
+    {
+      "case": "Gate requires nearby button and only moves the traveller"
+    },
+    {
+      "case": "A enters village",
+      "room": 0,
+      "music": [
+        "VillageCamp"
+      ],
+      "loadingIllustrations": [
+        "Village",
+        "HuntingField",
+        "Village"
+      ],
+      "loaded": [
+        "WorldSession",
+        "village"
+      ],
+      "player": 1
+    },
+    {
+      "case": "A enters HuntingField",
+      "room": 0,
+      "music": [
+        "World Map"
+      ],
+      "loadingIllustrations": [
+        "Village",
+        "HuntingField",
+        "Village",
+        "HuntingField"
+      ],
+      "loaded": [
+        "WorldSession",
+        "HuntingField"
+      ],
+      "player": 1
+    },
+    {
+      "case": "B enters HuntingField",
+      "room": 0,
+      "music": [
+        "World Map"
+      ],
+      "loadingIllustrations": [
+        "Village",
+        "HuntingField"
+      ],
+      "loaded": [
+        "WorldSession",
+        "HuntingField"
+      ],
+      "player": 2
+    },
+    {
+      "case": "A enters BossRoom",
+      "room": 1,
+      "music": [
+        "Final Boss Battle"
+      ],
+      "loadingIllustrations": [
+        "Village",
+        "HuntingField",
+        "Village",
+        "HuntingField",
+        "BossRoom"
+      ],
+      "loaded": [
+        "WorldSession",
+        "BossRoom"
+      ],
+      "player": 1
+    },
+    {
+      "case": "B enters BossRoom",
+      "room": 2,
+      "music": [
+        "Final Boss Battle"
+      ],
+      "loadingIllustrations": [
+        "Village",
+        "HuntingField",
+        "BossRoom"
+      ],
+      "loaded": [
+        "WorldSession",
+        "BossRoom"
+      ],
+      "player": 2
+    },
+    {
+      "case": "Concurrent solos have separate bosses and rooms",
+      "rooms": [
+        1,
+        2
+      ]
+    },
+    {
+      "case": "A enters HuntingField",
+      "room": 0,
+      "music": [
+        "World Map"
+      ],
+      "loadingIllustrations": [
+        "Village",
+        "HuntingField",
+        "Village",
+        "HuntingField",
+        "BossRoom",
+        "HuntingField"
+      ],
+      "loaded": [
+        "WorldSession",
+        "HuntingField"
+      ],
+      "player": 1
+    },
+    {
+      "case": "A enters village",
+      "room": 0,
+      "music": [
+        "VillageCamp"
+      ],
+      "loadingIllustrations": [
+        "Village",
+        "HuntingField",
+        "Village",
+        "HuntingField",
+        "BossRoom",
+        "HuntingField",
+        "Village"
+      ],
+      "loaded": [
+        "WorldSession",
+        "village"
+      ],
+      "player": 1
+    },
+    {
+      "case": "B enters village",
+      "room": 0,
+      "music": [
+        "VillageCamp"
+      ],
+      "loadingIllustrations": [
+        "Village",
+        "HuntingField",
+        "BossRoom",
+        "Village"
+      ],
+      "loaded": [
+        "WorldSession",
+        "village"
+      ],
+      "player": 2
+    },
+    {
+      "case": "Field death and solo boss death both revive in village"
+    },
+    {
+      "case": "A enters HuntingField",
+      "room": 0,
+      "music": [
+        "World Map"
+      ],
+      "loadingIllustrations": [
+        "Village",
+        "HuntingField",
+        "Village",
+        "HuntingField",
+        "BossRoom",
+        "HuntingField",
+        "Village",
+        "HuntingField"
+      ],
+      "loaded": [
+        "WorldSession",
+        "HuntingField"
+      ],
+      "player": 1
+    },
+    {
+      "case": "B enters HuntingField",
+      "room": 0,
+      "music": [
+        "World Map"
+      ],
+      "loadingIllustrations": [
+        "Village",
+        "HuntingField",
+        "BossRoom",
+        "Village",
+        "HuntingField"
+      ],
+      "loaded": [
+        "WorldSession",
+        "HuntingField"
+      ],
+      "player": 2
+    },
+    {
+      "case": "A enters BossRoom",
+      "room": 1,
+      "music": [
+        "Final Boss Battle"
+      ],
+      "loadingIllustrations": [
+        "Village",
+        "HuntingField",
+        "Village",
+        "HuntingField",
+        "BossRoom",
+        "HuntingField",
+        "Village",
+        "HuntingField",
+        "BossRoom"
+      ],
+      "loaded": [
+        "WorldSession",
+        "BossRoom"
+      ],
+      "player": 1
+    },
+    {
+      "case": "B enters BossRoom",
+      "room": 1,
+      "music": [
+        "Final Boss Battle"
+      ],
+      "loadingIllustrations": [
+        "Village",
+        "HuntingField",
+        "BossRoom",
+        "Village",
+        "HuntingField",
+        "BossRoom"
+      ],
+      "loaded": [
+        "WorldSession",
+        "BossRoom"
+      ],
+      "player": 2
+    },
+    {
+      "case": "A enters village",
+      "room": 0,
+      "music": [
+        "VillageCamp"
+      ],
+      "loadingIllustrations": [
+        "Village",
+        "HuntingField",
+        "Village",
+        "HuntingField",
+        "BossRoom",
+        "HuntingField",
+        "Village",
+        "HuntingField",
+        "BossRoom",
+        "Village"
+      ],
+      "loaded": [
+        "WorldSession",
+        "village"
+      ],
+      "player": 1
+    },
+    {
+      "case": "B enters village",
+      "room": 0,
+      "music": [
+        "VillageCamp"
+      ],
+      "loadingIllustrations": [
+        "Village",
+        "HuntingField",
+        "BossRoom",
+        "Village",
+        "HuntingField",
+        "BossRoom",
+        "Village"
+      ],
+      "loaded": [
+        "WorldSession",
+        "village"
+      ],
+      "player": 2
+    },
+    {
+      "case": "Party boss death preserves spectator and victory returns both guests together"
+    },
+    {
+      "case": "A enters BossRoom",
+      "room": 1,
+      "music": [
+        "Final Boss Battle"
+      ],
+      "loadingIllustrations": [
+        "Village",
+        "HuntingField",
+        "Village",
+        "HuntingField",
+        "BossRoom",
+        "HuntingField",
+        "Village",
+        "HuntingField",
+        "BossRoom",
+        "Village",
+        "BossRoom"
+      ],
+      "loaded": [
+        "WorldSession",
+        "BossRoom"
+      ],
+      "player": 1
+    },
+    {
+      "case": "B enters BossRoom",
+      "room": 1,
+      "music": [
+        "Final Boss Battle"
+      ],
+      "loadingIllustrations": [
+        "Village",
+        "HuntingField",
+        "BossRoom",
+        "Village",
+        "HuntingField",
+        "BossRoom",
+        "Village",
+        "BossRoom"
+      ],
+      "loaded": [
+        "WorldSession",
+        "BossRoom"
+      ],
+      "player": 2
+    },
+    {
+      "case": "A enters village",
+      "room": 0,
+      "music": [
+        "VillageCamp"
+      ],
+      "loadingIllustrations": [
+        "Village",
+        "HuntingField",
+        "Village",
+        "HuntingField",
+        "BossRoom",
+        "HuntingField",
+        "Village",
+        "HuntingField",
+        "BossRoom",
+        "Village",
+        "BossRoom",
+        "Village"
+      ],
+      "loaded": [
+        "WorldSession",
+        "village"
+      ],
+      "player": 1
+    },
+    {
+      "case": "B enters village",
+      "room": 0,
+      "music": [
+        "VillageCamp"
+      ],
+      "loadingIllustrations": [
+        "Village",
+        "HuntingField",
+        "BossRoom",
+        "Village",
+        "HuntingField",
+        "BossRoom",
+        "Village",
+        "BossRoom",
+        "Village"
+      ],
+      "loaded": [
+        "WorldSession",
+        "village"
+      ],
+      "player": 2
+    },
+    {
+      "case": "Village rematch menu and party wipe return both guests alive"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "test": "fresh guest D, localhost only, disposable SQLite",
+  "stages": [
+    {
+      "stage": "first successful upstream response discarded",
+      "scene": "Login Scene",
+      "connected": false,
+      "status": "Guest login unavailable. Check the server and tap Guest to retry.",
+      "counts": {
+        "users": 1,
+        "guest_keys": 1,
+        "user_progress": 1
+      },
+      "credentialState": "P",
+      "createdAccount": "g_03f7b77967e74a69aa07d9e1"
+    },
+    {
+      "stage": "tap Guest with backend physically stopped while creation pending",
+      "scene": "Login Scene",
+      "connected": false,
+      "status": "Guest login unavailable. Check the server and tap Guest to retry.",
+      "counts": {
+        "users": 1,
+        "guest_keys": 1,
+        "user_progress": 1
+      },
+      "credentialState": "P",
+      "credentialUnchanged": true
+    },
+    {
+      "stage": "tap Guest with backend restored recovered the same account",
+      "scene": "Prototype",
+      "connected": true,
+      "status": "플레이 준비 완료",
+      "counts": {
+        "users": 1,
+        "guest_keys": 1,
+        "user_progress": 1
+      },
+      "credentialState": "R",
+      "account": "g_03f7b77967e74a69aa07d9e1"
+    },
+    {
+      "stage": "fresh process offline resume",
+      "scene": "Login Scene",
+      "connected": false,
+      "status": "Guest login unavailable. Check the server and tap Guest to retry.",
+      "counts": {
+        "users": 1,
+        "guest_keys": 1,
+        "user_progress": 1
+      },
+      "credentialState": "R",
+      "credentialUnchanged": true
+    },
+    {
+      "stage": "tap Guest offline after prior login",
+      "scene": "Login Scene",
+      "connected": false,
+      "status": "Guest login unavailable. Check the server and tap Guest to retry.",
+      "counts": {
+        "users": 1,
+        "guest_keys": 1,
+        "user_progress": 1
+      },
+      "credentialState": "R",
+      "credentialUnchanged": true
+    },
+    {
+      "stage": "same stored guest resumes after outage",
+      "scene": "Prototype",
+      "connected": true,
+      "status": "플레이 준비 완료",
+      "counts": {
+        "users": 1,
+        "guest_keys": 1,
+        "user_progress": 1
+      },
+      "credentialState": "R",
+      "account": "g_03f7b77967e74a69aa07d9e1",
+      "credentialUnchanged": true
+    }
+  ],
+  "passed": true,
+  "guestRequests": [
+    {
+      "path": "/auth/guest/create",
+      "upstream": 200,
+      "delivered": false,
+      "account": "g_03f7b77967e74a69aa07d9e1"
+    },
+    {
+      "path": "/auth/guest/create",
+      "upstream": "backend-stopped",
+      "client": 503
+    },
+    {
+      "path": "/auth/guest/create",
+      "upstream": 200,
+      "delivered": true
+    },
+    {
+      "path": "/auth/guest/resume",
+      "upstream": "backend-stopped",
+      "client": 503
+    },
+    {
+      "path": "/auth/guest/resume",
+      "upstream": "backend-stopped",
+      "client": 503
+    },
+    {
+      "path": "/auth/guest/resume",
+      "upstream": 200,
+      "delivered": true
+    }
+  ],
+  "environment": {
+    "date": "2026-11-18",
+    "player": "Unity 6000.3.10f1, macOS standalone, batchmode/nographics",
+    "authentication": "isolated localhost Python HTTP, one-shot proxy drops the first response after reading upstream HTTP 200",
+    "gameServer": "isolated Unity game server, real network connection",
+    "database": "new temporary SQLite, independent from development and other verification profiles",
+    "input": "Guest Login button via EventSystem pointer events in the running Unity Player",
+    "credentialStateLegend": {
+      "P": "pending guest creation",
+      "R": "resumable guest"
+    },
+    "credentialUnchanged": "byte-for-byte comparison of stored credentials between stages"
+  },
+  "existingAccountRegression": {
+    "date": "2026-11-18",
+    "player": "same macOS standalone build as guest and quest playtests; batchmode/nographics",
+    "stages": [
+      {
+        "stage": "open existing-account form using the Login Btn scene button and EventSystem pointer input",
+        "status": "Enter your ID and password to log in.",
+        "buttons": [
+          "Back Btn",
+          "Submit Btn"
+        ]
+      },
+      {
+        "stage": "submit empty account and password in Unity",
+        "status": "Enter an ID and password."
+      },
+      {
+        "stage": "return to initial login menu",
+        "buttons": [
+          "Login Btn",
+          "SignUp Btn",
+          "Guest Login"
+        ]
+      },
+      {
+        "stage": "create disposable existing-account fixture over HTTP",
+        "httpStatus": 201
+      },
+      {
+        "stage": "reject incorrect password over HTTP",
+        "httpStatus": 401
+      },
+      {
+        "stage": "verify existing-account password over HTTP",
+        "httpStatus": 200
+      },
+      {
+        "stage": "authenticate issued session over HTTP",
+        "httpStatus": 200,
+        "expectedAccountMatches": true
+      }
+    ],
+    "syntheticAccount": "known_user_180d8b",
+    "finalDatabaseCounts": {
+      "users": 1,
+      "guest_keys": 0,
+      "user_progress": 1
+    },
+    "scope": "Unity EventSystem open form, empty submission and return path; API registration, rejected password, valid password and session check. Keyboard entry and completed account login inside this Player were not exercised.",
+    "passed": true
+  }
+}

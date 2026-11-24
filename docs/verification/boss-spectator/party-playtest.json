@@ -1,0 +1,517 @@
+{
+  "passed": true,
+  "verifiedAt": "2026-11-20T13:00:56+09:00",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "unity": "6000.3.10f1",
+  "method": "macOS standalone Unity game server role and three real Unity clients; temporary local login service and SQLite; server ApplyDamage forces reproducible deaths, real party/arena/NGO/UI/camera/quest transitions; virtual touch presses the next-target button.",
+  "cases": [
+    {
+      "case": "A prerequisite fixture: backend progression actions",
+      "quest": "active"
+    },
+    {
+      "case": "B prerequisite fixture: backend progression actions",
+      "quest": "active"
+    },
+    {
+      "case": "C prerequisite fixture: backend progression actions",
+      "quest": "active"
+    },
+    {
+      "case": "field death retains existing town respawn",
+      "dead": {
+        "role": "A",
+        "frame": 894,
+        "room": 0,
+        "hp": 0,
+        "maxHp": 112,
+        "xz": [
+          12.0,
+          -8.0
+        ],
+        "spectating": false,
+        "nextAvailable": false,
+        "cameraTarget": 1,
+        "viewportCenterError": 0.0,
+        "targetLabel": "",
+        "panel": false,
+        "townNotice": true,
+        "town": false,
+        "victoryCount": 0,
+        "quest": "active"
+      },
+      "revived": {
+        "role": "A",
+        "frame": 975,
+        "room": 0,
+        "hp": 112,
+        "maxHp": 112,
+        "xz": [
+          -3.0,
+          -4.0
+        ],
+        "spectating": false,
+        "nextAvailable": false,
+        "cameraTarget": 1,
+        "viewportCenterError": 0.0,
+        "targetLabel": "",
+        "panel": false,
+        "townNotice": false,
+        "town": true,
+        "victoryCount": 0,
+        "quest": "active"
+      },
+      "secondsFromDamage": 2.78
+    },
+    {
+      "case": "downed party member stays after ordinary revival delay, auto-follows first survivor",
+      "first": {
+        "role": "A",
+        "frame": 1032,
+        "room": 1,
+        "hp": 0,
+        "maxHp": 112,
+        "xz": [
+          56.0,
+          -36.0
+        ],
+        "spectating": true,
+        "nextAvailable": true,
+        "cameraTarget": 2,
+        "viewportCenterError": 0.0,
+        "targetLabel": "기사 2 관전 중",
+        "panel": true,
+        "townNotice": false,
+        "town": false,
+        "victoryCount": 0,
+        "quest": "active"
+      },
+      "after": {
+        "role": "A",
+        "frame": 1140,
+        "room": 1,
+        "hp": 0,
+        "maxHp": 112,
+        "xz": [
+          56.0,
+          -36.0
+        ],
+        "spectating": true,
+        "nextAvailable": true,
+        "cameraTarget": 2,
+        "viewportCenterError": 0.0,
+        "targetLabel": "기사 2 관전 중",
+        "panel": true,
+        "townNotice": false,
+        "town": false,
+        "victoryCount": 0,
+        "quest": "active"
+      },
+      "elapsed": 3.08
+    },
+    {
+      "case": "next party member button changes active camera using touch input",
+      "touch": {
+        "sx": 579.375,
+        "sy": 49.5,
+        "width": 960,
+        "height": 540,
+        "downFrame": 1142,
+        "upFrame": 1144,
+        "downSeen": true,
+        "upSeen": true,
+        "beforeHits": [
+          "NextSpectatorTarget"
+        ]
+      },
+      "after": {
+        "role": "A",
+        "frame": 1149,
+        "room": 1,
+        "hp": 0,
+        "maxHp": 112,
+        "xz": [
+          56.0,
+          -36.0
+        ],
+        "spectating": true,
+        "nextAvailable": true,
+        "cameraTarget": 3,
+        "viewportCenterError": 0.0,
+        "targetLabel": "기사 3 관전 중",
+        "panel": true,
+        "townNotice": false,
+        "town": false,
+        "victoryCount": 0,
+        "quest": "active"
+      }
+    },
+    {
+      "case": "target dies, both observers follow remaining survivor and next button disables",
+      "originalSpectator": {
+        "role": "A",
+        "frame": 1164,
+        "room": 1,
+        "hp": 0,
+        "maxHp": 112,
+        "xz": [
+          56.0,
+          -36.0
+        ],
+        "spectating": true,
+        "nextAvailable": false,
+        "cameraTarget": 2,
+        "viewportCenterError": 0.0,
+        "targetLabel": "기사 2 관전 중",
+        "panel": true,
+        "townNotice": false,
+        "town": false,
+        "victoryCount": 0,
+        "quest": "active"
+      },
+      "newSpectator": {
+        "role": "C",
+        "frame": 392,
+        "room": 1,
+        "hp": 0,
+        "maxHp": 112,
+        "xz": [
+          56.0,
+          -34.2
+        ],
+        "spectating": true,
+        "nextAvailable": false,
+        "cameraTarget": 2,
+        "viewportCenterError": 0.0,
+        "targetLabel": "기사 2 관전 중",
+        "panel": true,
+        "townNotice": false,
+        "town": false,
+        "victoryCount": 0,
+        "quest": "active"
+      }
+    },
+    {
+      "case": "wipe returns all to camp and destroys room; quest remains active, party intact",
+      "members": [
+        {
+          "role": "A",
+          "frame": 1182,
+          "room": 0,
+          "hp": 112,
+          "maxHp": 112,
+          "xz": [
+            -3.0,
+            -4.0
+          ],
+          "spectating": false,
+          "nextAvailable": false,
+          "cameraTarget": 1,
+          "viewportCenterError": 0.0,
+          "targetLabel": "",
+          "panel": false,
+          "townNotice": false,
+          "town": true,
+          "victoryCount": 0,
+          "quest": "active"
+        },
+        {
+          "role": "B",
+          "frame": 763,
+          "room": 0,
+          "hp": 112,
+          "maxHp": 112,
+          "xz": [
+            -1.2,
+            -4.0
+          ],
+          "spectating": false,
+          "nextAvailable": false,
+          "cameraTarget": 2,
+          "viewportCenterError": 0.0,
+          "targetLabel": "",
+          "panel": false,
+          "townNotice": false,
+          "town": true,
+          "victoryCount": 0,
+          "quest": "active"
+        },
+        {
+          "role": "C",
+          "frame": 410,
+          "room": 0,
+          "hp": 112,
+          "maxHp": 112,
+          "xz": [
+            -3.0,
+            -2.2
+          ],
+          "spectating": false,
+          "nextAvailable": false,
+          "cameraTarget": 3,
+          "viewportCenterError": 0.0,
+          "targetLabel": "",
+          "panel": false,
+          "townNotice": false,
+          "town": true,
+          "victoryCount": 0,
+          "quest": "active"
+        }
+      ],
+      "bossPresent": false
+    },
+    {
+      "case": "one real claw kills three players in the same server damage loop and returns all to camp",
+      "fixture": "placed party members with 1 HP in fixed claw area before impact",
+      "beforeHp": [
+        1,
+        1,
+        1
+      ],
+      "members": [
+        {
+          "role": "A",
+          "frame": 1283,
+          "room": 0,
+          "hp": 112,
+          "maxHp": 112,
+          "xz": [
+            -3.0,
+            -4.0
+          ],
+          "spectating": false,
+          "nextAvailable": false,
+          "cameraTarget": 1,
+          "viewportCenterError": 1.2455,
+          "targetLabel": "",
+          "panel": false,
+          "townNotice": false,
+          "town": true,
+          "victoryCount": 0,
+          "quest": "active"
+        },
+        {
+          "role": "B",
+          "frame": 863,
+          "room": 0,
+          "hp": 112,
+          "maxHp": 112,
+          "xz": [
+            -1.2,
+            -4.0
+          ],
+          "spectating": false,
+          "nextAvailable": false,
+          "cameraTarget": 2,
+          "viewportCenterError": 0.0,
+          "targetLabel": "",
+          "panel": false,
+          "townNotice": false,
+          "town": true,
+          "victoryCount": 0,
+          "quest": "active"
+        },
+        {
+          "role": "C",
+          "frame": 519,
+          "room": 0,
+          "hp": 112,
+          "maxHp": 112,
+          "xz": [
+            -3.0,
+            -2.2
+          ],
+          "spectating": false,
+          "nextAvailable": false,
+          "cameraTarget": 3,
+          "viewportCenterError": 0.0,
+          "targetLabel": "",
+          "panel": false,
+          "townNotice": false,
+          "town": true,
+          "victoryCount": 0,
+          "quest": "active"
+        }
+      ]
+    },
+    {
+      "case": "surviving member clears boss; both spectators revived and every quest is reportable",
+      "members": [
+        {
+          "role": "A",
+          "frame": 1446,
+          "room": 0,
+          "hp": 112,
+          "maxHp": 112,
+          "xz": [
+            -3.0,
+            -4.0
+          ],
+          "spectating": false,
+          "nextAvailable": false,
+          "cameraTarget": 1,
+          "viewportCenterError": 0.0,
+          "targetLabel": "",
+          "panel": false,
+          "townNotice": false,
+          "town": true,
+          "victoryCount": 1,
+          "quest": "ready"
+        },
+        {
+          "role": "B",
+          "frame": 1029,
+          "room": 0,
+          "hp": 112,
+          "maxHp": 112,
+          "xz": [
+            -1.2,
+            -4.0
+          ],
+          "spectating": false,
+          "nextAvailable": false,
+          "cameraTarget": 2,
+          "viewportCenterError": 0.0,
+          "targetLabel": "",
+          "panel": false,
+          "townNotice": false,
+          "town": true,
+          "victoryCount": 1,
+          "quest": "ready"
+        },
+        {
+          "role": "C",
+          "frame": 676,
+          "room": 0,
+          "hp": 112,
+          "maxHp": 112,
+          "xz": [
+            -3.0,
+            -2.2
+          ],
+          "spectating": false,
+          "nextAvailable": false,
+          "cameraTarget": 3,
+          "viewportCenterError": 0.0,
+          "targetLabel": "",
+          "panel": false,
+          "townNotice": false,
+          "town": true,
+          "victoryCount": 1,
+          "quest": "ready"
+        }
+      ]
+    },
+    {
+      "case": "disconnect of watched survivor switches to remaining member",
+      "spectator": {
+        "role": "A",
+        "frame": 2593,
+        "room": 1,
+        "hp": 0,
+        "maxHp": 112,
+        "xz": [
+          56.0,
+          -36.0
+        ],
+        "spectating": true,
+        "nextAvailable": false,
+        "cameraTarget": 3,
+        "viewportCenterError": 0.0,
+        "targetLabel": "기사 3 관전 중",
+        "panel": true,
+        "townNotice": false,
+        "town": false,
+        "victoryCount": 1,
+        "quest": "ready"
+      },
+      "serverDisconnectDetectedAfterSeconds": 30.58,
+      "fixture": "server repeats scream to protect stationary characters during transport timeout"
+    },
+    {
+      "case": "last survivor disconnects, spectator revived, no additional victory",
+      "member": {
+        "role": "A",
+        "frame": 3658,
+        "room": 0,
+        "hp": 112,
+        "maxHp": 112,
+        "xz": [
+          -3.0,
+          -4.0
+        ],
+        "spectating": false,
+        "nextAvailable": false,
+        "cameraTarget": 1,
+        "viewportCenterError": 0.0,
+        "targetLabel": "",
+        "panel": false,
+        "townNotice": false,
+        "town": true,
+        "victoryCount": 1,
+        "quest": "ready"
+      },
+      "serverDisconnectDetectedAfterSeconds": 30.47
+    },
+    {
+      "case": "solo death retains existing town respawn",
+      "dead": {
+        "role": "A",
+        "frame": 3676,
+        "room": 1,
+        "hp": 0,
+        "maxHp": 112,
+        "xz": [
+          56.0,
+          -36.0
+        ],
+        "spectating": false,
+        "nextAvailable": false,
+        "cameraTarget": 1,
+        "viewportCenterError": 0.0,
+        "targetLabel": "",
+        "panel": false,
+        "townNotice": true,
+        "town": false,
+        "victoryCount": 1,
+        "quest": "ready"
+      },
+      "revived": {
+        "role": "A",
+        "frame": 3763,
+        "room": 0,
+        "hp": 112,
+        "maxHp": 112,
+        "xz": [
+          -3.0,
+          -4.0
+        ],
+        "spectating": false,
+        "nextAvailable": false,
+        "cameraTarget": 1,
+        "viewportCenterError": 0.0,
+        "targetLabel": "",
+        "panel": false,
+        "townNotice": true,
+        "town": true,
+        "victoryCount": 1,
+        "quest": "ready"
+      },
+      "secondsFromDamage": 2.73
+    },
+    {
+      "case": "isolated progress database contains one clear across all five boss attempts",
+      "attempts": 5,
+      "cleared": 1
+    }
+  ],
+  "finishedAt": "2026-11-20T13:03:01+09:00",
+  "gameSource": {
+    "count": 46,
+    "sha256": "d0e6c347b8a37e7b02246f7cc9c678506e0d37e81ef11fbda1e975fdc076c94e",
+    "match": "all Unity gameplay scripts matched the workspace at verification"
+  },
+  "probeAssemblySHA256": "4bfb784dbccda05b2521b084aeb74f34d41089c3117cf1d8dcba3536ddc9484a",
+  "scope": "Three independent graphical macOS clients connected to a game-server role running headless. Party invites and arena readiness used owner requests. Dedicated QA injected server damage and positions; tests also exercised one actual claw impact and one real Unity Input System screen tap. Camera target and world-to-viewport projection were sampled on the client. Earlier test stopped at its 24 s watchdog before the 30 s transport timeout; this passing run waited for the server to remove the client and kept test characters safe while waiting.",
+  "limits": "Apple Silicon macOS. Virtual touch at 960×540. Android and iOS device checks are pending."
+}

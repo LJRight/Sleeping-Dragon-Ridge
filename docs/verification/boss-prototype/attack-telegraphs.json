@@ -1,0 +1,121 @@
+{
+  "engine": "Unity 6000.3.10f1, Metal, Mobile_RPAsset",
+  "isolatedTimedSamples": true,
+  "shape": "6 m range, 3 m rectangle width or 100 degree sector; origin on test floor",
+  "rectangleNearFar": {
+    "rect25": [
+      [
+        195,
+        107,
+        105
+      ],
+      [
+        139,
+        123,
+        124
+      ]
+    ],
+    "rect75": [
+      [
+        195,
+        107,
+        105
+      ],
+      [
+        195,
+        107,
+        105
+      ]
+    ]
+  },
+  "fanRightCenterLeft": {
+    "fan25": [
+      [
+        195,
+        107,
+        105
+      ],
+      [
+        139,
+        123,
+        124
+      ],
+      [
+        139,
+        123,
+        124
+      ]
+    ],
+    "fan50": [
+      [
+        195,
+        107,
+        105
+      ],
+      [
+        250,
+        226,
+        180
+      ],
+      [
+        139,
+        123,
+        124
+      ]
+    ],
+    "fan75": [
+      [
+        195,
+        107,
+        105
+      ],
+      [
+        195,
+        107,
+        105
+      ],
+      [
+        195,
+        107,
+        105
+      ]
+    ],
+    "fan-full": [
+      [
+        195,
+        107,
+        105
+      ],
+      [
+        195,
+        107,
+        105
+      ],
+      [
+        195,
+        107,
+        105
+      ]
+    ],
+    "fan-active": [
+      [
+        218,
+        118,
+        90
+      ],
+      [
+        222,
+        139,
+        93
+      ],
+      [
+        218,
+        117,
+        90
+      ]
+    ]
+  },
+  "outsideUnchanged": true,
+  "hiddenExactBaseline": true,
+  "bluePlayer": true
+}

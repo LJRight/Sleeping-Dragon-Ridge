@@ -1,0 +1,25 @@
+{
+  "name": "Mossfang Goblin",
+  "vertices": 1386,
+  "triangles": 2308,
+  "bones": 18,
+  "materials": 1,
+  "walk_frames": [
+    1,
+    33
+  ],
+  "walk_seconds": 1.0666666666666667,
+  "walk_reference_speed_mps": 0.5625,
+  "attack_frames": [
+    1,
+    46
+  ],
+  "attack_seconds": 1.5,
+  "attack_contact_frame": 21,
+  "exports": [
+    "Goblin_Model.fbx",
+    "Goblin_Walk.fbx",
+    "Goblin_Attack.fbx"
+  ],
+  "source": "Original procedural modeling and authored skeletal keyframes; no third-party model, texture or motion."
+}

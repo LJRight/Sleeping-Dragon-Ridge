@@ -1,0 +1,84 @@
+{
+  "engine": "Unity 6000.3.10f1, Metal, Mobile_RPAsset, 840 x 560",
+  "mode": "Isolated renderer check. Actual Boss hierarchy with clip poses sampled by frame; client/server and danger inputs supplied by a fixture. Particle simulation advanced to the capture time. No network, device, or GPU-performance measurement.",
+  "emitter": "Boss/Tongue01 (descendant) / Flame Particle; authored local pose and scale. Single existing root, Flare and Flames children.",
+  "originalMaterials": [
+    "Flare00_AB_2",
+    "DistortedFlare01_AB_2"
+  ],
+  "originalShader": "Particles/Standard Unlit",
+  "phaseChecks": {
+    "dedicatedServerWithDangerCue": "inactive",
+    "groundBefore15F": "inactive",
+    "ground15F": "playing",
+    "ground80F": "inactive and cleared",
+    "flightBefore15F": "inactive",
+    "flight15F": "playing",
+    "flight90F": "inactive and cleared",
+    "sameParticleInstanceAcrossBothCasts": true,
+    "emitterMovedWithSampledTongue": true
+  },
+  "comparison": "Visible effect pixels differ by over 25 levels in any 8-bit channel from the same camera and pose with only the particle renderers hidden. Pink diagnostic counts changed pixels with red >= 200, green < 0.4 * red, and blue > 0.8 * red. The comparison URP material used the authored texture, HDR tint and alpha blend; only the isolated fixture used it.",
+  "samples": [
+    {
+      "sample": "ground15",
+      "visibleEffectPixels": 1509,
+      "pinkEffectPixels": 0,
+      "meanDifferenceFromURPMaterialRGB": [
+        0.0052,
+        0.0051,
+        0.003
+      ]
+    },
+    {
+      "sample": "ground38",
+      "visibleEffectPixels": 1125,
+      "pinkEffectPixels": 0,
+      "meanDifferenceFromURPMaterialRGB": [
+        0.0015,
+        0.005,
+        0.0047
+      ]
+    },
+    {
+      "sample": "ground67",
+      "visibleEffectPixels": 1185,
+      "pinkEffectPixels": 0,
+      "meanDifferenceFromURPMaterialRGB": [
+        0.0012,
+        0.0038,
+        0.0026
+      ]
+    },
+    {
+      "sample": "air15",
+      "visibleEffectPixels": 1320,
+      "pinkEffectPixels": 0,
+      "meanDifferenceFromURPMaterialRGB": [
+        0.008,
+        0.0067,
+        0.0049
+      ]
+    },
+    {
+      "sample": "air45",
+      "visibleEffectPixels": 2485,
+      "pinkEffectPixels": 0,
+      "meanDifferenceFromURPMaterialRGB": [
+        0.0102,
+        0.0079,
+        0.0061
+      ]
+    },
+    {
+      "sample": "air73",
+      "visibleEffectPixels": 2048,
+      "pinkEffectPixels": 0,
+      "meanDifferenceFromURPMaterialRGB": [
+        0.0093,
+        0.0096,
+        0.0071
+      ]
+    }
+  ]
+}

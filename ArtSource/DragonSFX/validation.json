@@ -1,0 +1,46 @@
+[
+  {
+    "file": "wav/dragon_hurt.wav",
+    "duration_seconds": 0.8,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "peak_dbfs": -4.0,
+    "rms_dbfs": -13.32,
+    "clipped_samples": 0,
+    "sha256": "21c393b30bf0946b66803bb0489858b828ce2c761c9410a78d28ece8924c1b26"
+  },
+  {
+    "file": "wav/dragon_death.wav",
+    "duration_seconds": 1.48,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "peak_dbfs": -3.5,
+    "rms_dbfs": -12.89,
+    "clipped_samples": 0,
+    "sha256": "7a27c182e9fe96735d2198e929c0cf9a9046fd6c3b4fb71295063b6a58bf5f23"
+  },
+  {
+    "file": "wav/dragon_bite.wav",
+    "duration_seconds": 1.0,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "peak_dbfs": -4.0,
+    "rms_dbfs": -17.11,
+    "clipped_samples": 0,
+    "sha256": "bff9cff57b173cc1e4c8cfd0419a3dbed248b3289c8ca276c7b5906435d6cd16"
+  },
+  {
+    "file": "wav/dragon_alert_roar.wav",
+    "duration_seconds": 2.32,
+    "sample_rate": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "peak_dbfs": -3.0,
+    "rms_dbfs": -11.09,
+    "clipped_samples": 0,
+    "sha256": "61e90a9b68d5b85a614367f28594820b3ae77f19a9b823df22d5172366a2f11a"
+  }
+]

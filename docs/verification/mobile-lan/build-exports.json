@@ -1,0 +1,162 @@
+{
+  "verifiedAt": "2026-11-20T13:14:43+09:00",
+  "unity": "6000.3.10f1",
+  "passed": true,
+  "method": "Built isolated, single-camera fixture scenes with the project’s editor processors. Generated real Xcode and Gradle projects via BuildPipeline.BuildPlayer. Reused export paths for subsequent builds.",
+  "wifi": "192.168.201.14 was detected by the actual editor resolver. 10.16.8.77 was injected into the temporary resolver only, to simulate switching Wi-Fi on a subsequent build.",
+  "buildExports": [
+    {
+      "platform": "Android",
+      "case": "android-dev",
+      "sceneUnmodified": true,
+      "actualAddress": "192.168.201.14",
+      "streamingAssetPath": "unityLibrary/src/main/assets/mobile-dev-wifi-ip.txt",
+      "unityReportedSuccess": true
+    },
+    {
+      "platform": "Android",
+      "case": "android-release",
+      "sceneUnmodified": true,
+      "actualAddress": null,
+      "streamingAssetPath": "unityLibrary/src/main/assets/mobile-dev-wifi-ip.txt",
+      "unityReportedSuccess": true
+    },
+    {
+      "platform": "Android",
+      "case": "android-changed",
+      "sceneUnmodified": true,
+      "actualAddress": "10.16.8.77",
+      "streamingAssetPath": "unityLibrary/src/main/assets/mobile-dev-wifi-ip.txt",
+      "unityReportedSuccess": true
+    },
+    {
+      "platform": "Android",
+      "case": "android-release-matched",
+      "sceneUnmodified": true,
+      "actualAddress": null,
+      "streamingAssetPath": "unityLibrary/src/main/assets/mobile-dev-wifi-ip.txt",
+      "unityReportedSuccess": true
+    },
+    {
+      "platform": "iOS",
+      "case": "ios-final-dev",
+      "sceneUnmodified": true,
+      "actualAddress": "192.168.201.14",
+      "streamingAssetPath": "Data/Raw/mobile-dev-wifi-ip.txt",
+      "unityReportedSuccess": true,
+      "httpIPExceptions": {
+        "192.168.201.14": true
+      },
+      "allowsLocalNetworking": true,
+      "hasUsageDescription": true
+    },
+    {
+      "platform": "iOS",
+      "case": "ios-final-changed",
+      "sceneUnmodified": true,
+      "actualAddress": "10.16.8.77",
+      "streamingAssetPath": "Data/Raw/mobile-dev-wifi-ip.txt",
+      "unityReportedSuccess": true,
+      "httpIPExceptions": {
+        "10.16.8.77": true
+      },
+      "allowsLocalNetworking": true,
+      "hasUsageDescription": true
+    },
+    {
+      "platform": "iOS",
+      "case": "ios-final-release",
+      "sceneUnmodified": true,
+      "actualAddress": null,
+      "streamingAssetPath": "Data/Raw/mobile-dev-wifi-ip.txt",
+      "unityReportedSuccess": true,
+      "httpIPExceptions": {},
+      "allowsLocalNetworking": null,
+      "hasUsageDescription": true
+    }
+  ],
+  "buildTargetFilters": [
+    {
+      "target": "iOS",
+      "development": true,
+      "streamingAssetsRegistered": 1,
+      "stagedValue": "192.168.201.14"
+    },
+    {
+      "target": "iOS",
+      "development": false,
+      "streamingAssetsRegistered": 0,
+      "stagedValue": "unchanged"
+    },
+    {
+      "target": "Android",
+      "development": true,
+      "streamingAssetsRegistered": 1,
+      "stagedValue": "192.168.201.14"
+    },
+    {
+      "target": "Android",
+      "development": false,
+      "streamingAssetsRegistered": 0,
+      "stagedValue": "unchanged"
+    },
+    {
+      "target": "StandaloneOSX",
+      "development": true,
+      "streamingAssetsRegistered": 0,
+      "stagedValue": "unchanged"
+    },
+    {
+      "target": "StandaloneOSX",
+      "development": false,
+      "streamingAssetsRegistered": 0,
+      "stagedValue": "unchanged"
+    }
+  ],
+  "runtimeEndpointPairs": [
+    {
+      "loginUrl": "http://192.168.201.14:8080",
+      "gameAddress": "192.168.201.14"
+    },
+    {
+      "loginUrl": "http://10.16.8.77:8080",
+      "gameAddress": "10.16.8.77"
+    }
+  ],
+  "iosPostprocessor": "Across an existing-output dev→different Wi-Fi dev→regular sequence, the regular build lost the generated IP, ATS domain, and local-networking flag. Dedicated plist fixture separately preserved pre-existing false and true entries, an unrelated domain and TLS settings.",
+  "androidManifest": {
+    "insecureHttpOption": "DevelopmentOnly (1), identical to the game, for android-changed and android-release-matched. The first two Android control builds used the fixture default (0).",
+    "development": {
+      "launcher/src/main/AndroidManifest.xml": {
+        "internet": false,
+        "usesCleartextTraffic": null,
+        "networkSecurityConfig": null
+      },
+      "unityLibrary/src/main/AndroidManifest.xml": {
+        "internet": true,
+        "usesCleartextTraffic": null,
+        "networkSecurityConfig": null
+      }
+    },
+    "regular": {
+      "launcher/src/main/AndroidManifest.xml": {
+        "internet": false,
+        "usesCleartextTraffic": null,
+        "networkSecurityConfig": null
+      },
+      "unityLibrary/src/main/AndroidManifest.xml": {
+        "internet": true,
+        "usesCleartextTraffic": null,
+        "networkSecurityConfig": null
+      }
+    }
+  },
+  "productionSourceHashes": {
+    "Editor/MacWifiBuildAddress.cs": "56b3d8b9cf05045c707f3a24c6ec4e140f695638bdefc367af8fef279e02f7c5",
+    "Editor/MobileLanBuildSettings.cs": "858be735937e98a66511c966d8477f5a719c4c9832eef4673e5c89b9a87c0fd2",
+    "Editor/IosLocalNetworkBuildSettings.cs": "22b9462f03fd34ab27510fc6973063d4030779a83676be003acb8e51915d2376",
+    "Scripts/MobileLanEndpoint.cs": "f790758d1d4cfbba69e11c8ea6b936e798f3d224a8ae1226c7fedc159cc41885"
+  },
+  "loginSceneBeforeAfterSHA256": "2a293162b3738f27a5da456ff3bb12c2f76d080de62ea98863c3c510376ba8ad",
+  "limits": "No APK or IPA installation, Xcode signing, physical device connection, or on-device gameplay in these exports. Endpoint-pair validation called the production TryApply method in the Editor."
+}

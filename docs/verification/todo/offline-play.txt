@@ -1,0 +1,15 @@
+scene=Player Controll Test
+frames=74248..74724
+networkListening=False
+restoredProgress=False
+resetDeadTestActorBeforeInput=True
+joystickPeak=1
+movementFixedSteps=22
+attackDistance=2.124263
+fixture=positioned player 3.4m west of live monster, no damage or combo injected
+movementMetres=1.500
+comboStage=1
+target=DragonSoulEater
+hpBefore=100
+hpAfter=90
+passed=True

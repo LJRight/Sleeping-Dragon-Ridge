@@ -1,0 +1,80 @@
+{
+  "field": {
+    "A1": {
+      "xp": 20,
+      "gold": 12,
+      "commonGearChance": 20,
+      "rareGearChance": 0,
+      "legendaryGearChance": 0,
+      "oreChance": 55,
+      "oreCount": 1,
+      "refinedOreChance": 0,
+      "refinedOreCount": 0
+    },
+    "A2": {
+      "xp": 40,
+      "gold": 20,
+      "commonGearChance": 35,
+      "rareGearChance": 6,
+      "legendaryGearChance": 0,
+      "oreChance": 75,
+      "oreCount": 2,
+      "refinedOreChance": 0,
+      "refinedOreCount": 0
+    },
+    "A3": {
+      "xp": 50,
+      "gold": 32,
+      "commonGearChance": 25,
+      "rareGearChance": 14,
+      "legendaryGearChance": 1,
+      "oreChance": 80,
+      "oreCount": 5,
+      "refinedOreChance": 5,
+      "refinedOreCount": 1
+    },
+    "A4": {
+      "xp": 100,
+      "gold": 50,
+      "commonGearChance": 10,
+      "rareGearChance": 25,
+      "legendaryGearChance": 3,
+      "oreChance": 85,
+      "oreCount": 7,
+      "refinedOreChance": 20,
+      "refinedOreCount": 1
+    },
+    "B1": {
+      "xp": 120,
+      "gold": 100,
+      "commonGearChance": 7,
+      "rareGearChance": 35,
+      "legendaryGearChance": 7,
+      "oreChance": 90,
+      "oreCount": 12,
+      "refinedOreChance": 25,
+      "refinedOreCount": 1
+    },
+    "B1G": {
+      "xp": 150,
+      "gold": 350,
+      "commonGearChance": 0,
+      "rareGearChance": 60,
+      "legendaryGearChance": 15,
+      "oreChance": 100,
+      "oreCount": 20,
+      "refinedOreChance": 90,
+      "refinedOreCount": 3
+    }
+  },
+  "questDropChance": {
+    "ember_heartstone": 75,
+    "sturdy_tusk": 60
+  },
+  "bossReport": {
+    "xp": 0,
+    "gold": 0,
+    "oreCount": 200,
+    "refinedOreCount": 5
+  }
+}

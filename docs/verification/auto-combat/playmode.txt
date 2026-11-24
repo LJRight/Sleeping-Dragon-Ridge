@@ -1,0 +1,11 @@
+Editor diagnostic during startup (Unity Search index): ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Village default off; owner cannot enable in town.
+Enabled HUD; 12m enemy, dead 2m enemy and wrong-area 2m enemy left player idle.
+Nearest 5.6m before 6.96m, approach 3.20m, three hits 1@2.40m,2@2.40m,3@2.40m. HP 30 → 0.
+Retargeted next enemy and lowered HP 200 → 190.
+Manual spinning-slash HUD tap during an auto combo cast the skill, then normal attacks resumed with auto enabled.
+HUD off stopped further movement, swings and damage after current attack ended.
+Joystick drag cancelled auto, moved the character manually, and release left it off.
+Area change set mode off; boss room 1 accepted toggle and hit its boss (480 → 473), adjacent room 2 fixture stayed at 90.
+Server death cancelled auto; town respawn left it unavailable.
+PASS

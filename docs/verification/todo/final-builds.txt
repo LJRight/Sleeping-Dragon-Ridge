@@ -1,0 +1,23 @@
+용흔의 능선 · 최종 macOS 빌드 검증
+2026-11-18T17:37+09:00 / Unity 6000.3.10f1
+
+프로젝트 Assets 전체를 격리 복제본에 체크섬 기준으로 동기화했다.
+원본 C#, Objective-C++, Java, 씬, 프리팹 99개에 대해 빌드 후 SHA-256 일치.
+위 파일들의 상대 경로 및 개별 SHA-256을 정렬한 목록의 SHA-256  7e03ac38641061a90252226411329d9a8b97c6667541fe0b1d6696cb496f36c4
+동일한 Unity 빌드 씬 목록 및 패키지 구성  Packages/manifest.json, Packages/packages-lock.json, ProjectSettings/EditorBuildSettings.asset
+빌드 씬 순서  Bootstrap → Login Scene → Prototype
+
+녹화용 macOS 플레이어
+FinalQA.app / StandaloneOSX, Player / BuildResult.Succeeded
+Unity BuildReport 총 크기  132,804,630 B
+관리 어셈블리 SHA-256  24bd6eabf0951614ff517d032c95442fcc9069c4e0c18d65a7ffc1293ff73f54
+QA 계측 클래스 RidgePlaybackProbe가 실행 어셈블리에 포함되었음을 확인.
+
+배포용 전용 서버
+ServerBuild/ServerBuild_2/NetmarbleNeo / StandaloneOSX, Server / BuildResult.Succeeded
+제품명 NetmarbleNeo / Unity BuildReport 총 크기  83,570,770 B
+관리 어셈블리 SHA-256  d75ce504284a4c8dd602780e544f9b18472295dc817d6fa0588a16f37a8c2cdd
+QA 스크립트를 격리 프로젝트 Assets에서 빼고 다시 컴파일. 전용 서버 어셈블리에서 계측 클래스가 없는 것을 확인.
+NEO_DEDICATED_SERVER를 제거한 환경에서 실행. Bootstrap이 Server 역할과 Prototype 씬을 선택했다.
+임시 UDP 51254 접속 대기 메시지와 운영체제의 포트 점유를 확인한 뒤 검증 인스턴스를 종료했다.
+start-servers.command 내장 Python 구문과 실제 후보 탐색 결과가 ServerBuild/ServerBuild_2/NetmarbleNeo임을 확인.

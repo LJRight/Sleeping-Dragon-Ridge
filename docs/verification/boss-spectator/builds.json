@@ -1,0 +1,27 @@
+{
+  "verifiedAtKST": "2026-11-20T13:02:31+09:00",
+  "unity": "6000.3.10f1",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "builds": {
+    "server": {
+      "path": "ServerBuild/ServerBuild_7/NetmarbleNeo",
+      "executableSHA256": "86bf21c7ad07f6ccfd3b0c705158fd54e680562add51adcdd787299de9aec13d",
+      "assemblySHA256": "9320d4fe417025ead1eb1bbc86e1a676c3d5c6a058d9b7fd157595abba126bf4",
+      "qaProbePresent": false,
+      "shaderErrors": 0
+    },
+    "client": {
+      "path": "ClientBuild/BossSpectator/NetmarbleNeo.app",
+      "executableSHA256": "ed6aa24704d94ecfcd357a07134b9301025737cfcb0990d29887cc7147162fa5",
+      "assemblySHA256": "4d859bda6f8ad1531b9c368fcb039489c39841b55dbfeee22f50c0958df299da",
+      "qaProbePresent": false,
+      "shaderErrors": 0
+    }
+  },
+  "matchingProductionScripts": 46,
+  "test": "Headless standalone release player entered the world on a dedicated server using a fresh guest, local test service, temporary SQLite DB and loopback ports.",
+  "ready": true,
+  "guestAccounts": 1,
+  "sessions": 1,
+  "progressRows": 1
+}

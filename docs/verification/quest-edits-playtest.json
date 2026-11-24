@@ -1,0 +1,550 @@
+{
+  "source_sha256": "c4c30370c2a22af4ebca8eb1ed8e13380ae5cb1b8cfe47672d87095abdac2c48",
+  "fixture_sha256": "bb26e99b235962a19073469b26ca746e16073b430b22b75a0a7783a962219ec7",
+  "resolutionRequested": [
+    1040,
+    480
+  ],
+  "steps": [
+    {
+      "step": "new account and spawner",
+      "account": "g_cb07c5267b85e525fcc49fbd",
+      "resolution": [
+        640,
+        480
+      ],
+      "gold": 0,
+      "revision": 0,
+      "labels": [
+        "인벤토리"
+      ],
+      "items": {},
+      "quests": {
+        "watch": {
+          "state": "available",
+          "goals": [
+            [
+              "open_inventory",
+              0,
+              1
+            ]
+          ]
+        },
+        "supplies": {
+          "state": "available",
+          "goals": [
+            [
+              "ore",
+              0,
+              2
+            ]
+          ]
+        },
+        "hunt": {
+          "state": "locked",
+          "goals": [
+            [
+              "A1",
+              0,
+              1
+            ]
+          ]
+        },
+        "dual_supply": {
+          "state": "available",
+          "goals": [
+            [
+              "ore",
+              0,
+              2
+            ],
+            [
+              "rare_ore",
+              0,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "step": "edited pickup NPC smith and target",
+      "account": "g_cb07c5267b85e525fcc49fbd",
+      "resolution": [
+        640,
+        480
+      ],
+      "gold": 0,
+      "revision": 0,
+      "labels": [
+        "강화석   0/2",
+        "대장장이",
+        "대장장이에게 수락",
+        "수락 가능   ·   대장장이 의뢰",
+        "대장장이",
+        "경비대장에게 강화석 두 개를 전달해 주게.",
+        "경비대장에게 강화석 2개 전달",
+        "경비대장"
+      ],
+      "items": {},
+      "quests": {
+        "watch": {
+          "state": "available",
+          "goals": [
+            [
+              "open_inventory",
+              0,
+              1
+            ]
+          ]
+        },
+        "supplies": {
+          "state": "available",
+          "goals": [
+            [
+              "ore",
+              0,
+              2
+            ]
+          ]
+        },
+        "hunt": {
+          "state": "locked",
+          "goals": [
+            [
+              "A1",
+              0,
+              1
+            ]
+          ]
+        },
+        "dual_supply": {
+          "state": "available",
+          "goals": [
+            [
+              "ore",
+              0,
+              2
+            ],
+            [
+              "rare_ore",
+              0,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "step": "field shows edited target count and handoff",
+      "account": "g_cb07c5267b85e525fcc49fbd",
+      "resolution": [
+        640,
+        480
+      ],
+      "gold": 0,
+      "revision": 1,
+      "labels": [
+        "강화석   2/2",
+        "경비대장에게 전달"
+      ],
+      "items": {
+        "ore": 2
+      },
+      "quests": {
+        "watch": {
+          "state": "available",
+          "goals": [
+            [
+              "open_inventory",
+              0,
+              1
+            ]
+          ]
+        },
+        "supplies": {
+          "state": "ready",
+          "goals": [
+            [
+              "ore",
+              2,
+              2
+            ]
+          ]
+        },
+        "hunt": {
+          "state": "locked",
+          "goals": [
+            [
+              "A1",
+              0,
+              1
+            ]
+          ]
+        },
+        "dual_supply": {
+          "state": "available",
+          "goals": [
+            [
+              "ore",
+              0,
+              2
+            ],
+            [
+              "rare_ore",
+              0,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "step": "quest book shows two separately counted objectives",
+      "account": "g_cb07c5267b85e525fcc49fbd",
+      "resolution": [
+        640,
+        480
+      ],
+      "gold": 0,
+      "revision": 2,
+      "labels": [
+        "정제 강화석   1/1",
+        "경비대장에게 강화석과 정제 강화석을 전해 주게.",
+        "일반 강화석   2/2"
+      ],
+      "items": {
+        "ore": 4,
+        "rare_ore": 1
+      },
+      "quests": {
+        "watch": {
+          "state": "available",
+          "goals": [
+            [
+              "open_inventory",
+              0,
+              1
+            ]
+          ]
+        },
+        "supplies": {
+          "state": "ready",
+          "goals": [
+            [
+              "ore",
+              2,
+              2
+            ]
+          ]
+        },
+        "hunt": {
+          "state": "locked",
+          "goals": [
+            [
+              "A1",
+              0,
+              1
+            ]
+          ]
+        },
+        "dual_supply": {
+          "state": "ready",
+          "goals": [
+            [
+              "ore",
+              2,
+              2
+            ],
+            [
+              "rare_ore",
+              1,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "step": "field shows both counts and new destination",
+      "account": "g_cb07c5267b85e525fcc49fbd",
+      "resolution": [
+        640,
+        480
+      ],
+      "gold": 0,
+      "revision": 2,
+      "labels": [
+        "일반 강화석   2/2",
+        "정제 강화석   1/1",
+        "경비대장에게 전달"
+      ],
+      "items": {
+        "ore": 4,
+        "rare_ore": 1
+      },
+      "quests": {
+        "watch": {
+          "state": "available",
+          "goals": [
+            [
+              "open_inventory",
+              0,
+              1
+            ]
+          ]
+        },
+        "supplies": {
+          "state": "ready",
+          "goals": [
+            [
+              "ore",
+              2,
+              2
+            ]
+          ]
+        },
+        "hunt": {
+          "state": "locked",
+          "goals": [
+            [
+              "A1",
+              0,
+              1
+            ]
+          ]
+        },
+        "dual_supply": {
+          "state": "ready",
+          "goals": [
+            [
+              "ore",
+              2,
+              2
+            ],
+            [
+              "rare_ore",
+              1,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "step": "revised delivery credited once at warden",
+      "account": "g_cb07c5267b85e525fcc49fbd",
+      "resolution": [
+        640,
+        480
+      ],
+      "gold": 15,
+      "revision": 3,
+      "labels": [
+        "완료된 의뢰",
+        "경비대장에게 강화석 2개 전달",
+        "경비대장",
+        "경비대장에게 강화석 두 개를 전달해 주게.",
+        "경비대장"
+      ],
+      "items": {
+        "ore": 2,
+        "rare_ore": 1
+      },
+      "quests": {
+        "watch": {
+          "state": "available",
+          "goals": [
+            [
+              "open_inventory",
+              0,
+              1
+            ]
+          ]
+        },
+        "supplies": {
+          "state": "completed",
+          "goals": [
+            [
+              "ore",
+              2,
+              2
+            ]
+          ]
+        },
+        "hunt": {
+          "state": "locked",
+          "goals": [
+            [
+              "A1",
+              0,
+              1
+            ]
+          ]
+        },
+        "dual_supply": {
+          "state": "ready",
+          "goals": [
+            [
+              "ore",
+              2,
+              2
+            ],
+            [
+              "rare_ore",
+              1,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "step": "both deliveries consumed exact quantities",
+      "account": "g_cb07c5267b85e525fcc49fbd",
+      "resolution": [
+        640,
+        480
+      ],
+      "gold": 22,
+      "revision": 4,
+      "labels": [
+        "보유한 아이템이 없습니다.",
+        "22 G"
+      ],
+      "items": {},
+      "quests": {
+        "watch": {
+          "state": "available",
+          "goals": [
+            [
+              "open_inventory",
+              0,
+              1
+            ]
+          ]
+        },
+        "supplies": {
+          "state": "completed",
+          "goals": [
+            [
+              "ore",
+              2,
+              2
+            ]
+          ]
+        },
+        "hunt": {
+          "state": "locked",
+          "goals": [
+            [
+              "A1",
+              0,
+              1
+            ]
+          ]
+        },
+        "dual_supply": {
+          "state": "completed",
+          "goals": [
+            [
+              "ore",
+              2,
+              2
+            ],
+            [
+              "rare_ore",
+              1,
+              1
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "db": {
+    "completed": [
+      [
+        "dual_supply",
+        1
+      ],
+      [
+        "supplies",
+        1
+      ]
+    ],
+    "gold": 22
+  },
+  "passed": true,
+  "frames": 0,
+  "environment": "2026-11-18 macOS Unity 6000.3.10f1, 최종 검증 Player, 별도 로컬 로그인 서버·게임 서버·임시 SQLite·새 게스트 C",
+  "driver": "Unity EventSystem raycast로 실제 HUD/대화 버튼을 선택. 이동은 기존 가상 조이스틱 드래그로 수행. 관찰값은 실제 클라이언트 TMP 텍스트·소유자 스냅샷과 최종 DB에서 읽음.",
+  "capture": "백그라운드 batchmode로 실행. 런타임 해상도 640×480, 녹화 프레임 0장. 이 자료는 게임 UI 동작 및 DB 결과 기록이다.",
+  "definitions": [
+    {
+      "id": "supplies",
+      "name": "대장간 보급",
+      "category": "side",
+      "type": "collect",
+      "npcId": "smith",
+      "reportNpcId": "warden",
+      "minLevel": 1,
+      "requires": [],
+      "dialogue": "경비대장에게 강화석 두 개를 전달해 주게.",
+      "instruction": "경비대장에게 강화석 2개 전달",
+      "goals": [
+        {
+          "id": "package",
+          "target": "ore",
+          "label": "강화석",
+          "required": 2
+        }
+      ],
+      "onAccept": {
+        "materials": {
+          "ore": 2
+        }
+      },
+      "completion": "report",
+      "reward": {
+        "gold": 15
+      }
+    },
+    {
+      "id": "dual_supply",
+      "name": "야영지 이중 보급",
+      "category": "side",
+      "type": "collect",
+      "npcId": "smith",
+      "reportNpcId": "warden",
+      "minLevel": 1,
+      "requires": [],
+      "dialogue": "경비대장에게 강화석과 정제 강화석을 전해 주게.",
+      "instruction": "경비대장에게 두 재료 전달",
+      "goals": [
+        {
+          "id": "iron",
+          "target": "ore",
+          "label": "일반 강화석",
+          "required": 2
+        },
+        {
+          "id": "rare",
+          "target": "rare_ore",
+          "label": "정제 강화석",
+          "required": 1
+        }
+      ],
+      "onAccept": {
+        "materials": {
+          "ore": 2,
+          "rare_ore": 1
+        }
+      },
+      "completion": "report",
+      "reward": {
+        "gold": 7
+      }
+    }
+  ]
+}

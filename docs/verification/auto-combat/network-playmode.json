@@ -1,0 +1,45 @@
+{
+  "completed": true,
+  "cases": [
+    {
+      "case": "remote owner entered village",
+      "room": 0
+    },
+    {
+      "case": "A prerequisite fixture: backend progression actions",
+      "quest": "active"
+    },
+    {
+      "case": "remote owner entered HuntingField",
+      "room": 0
+    },
+    {
+      "case": "remote owner HUD toggle on/off"
+    },
+    {
+      "case": "remote joystick disables auto"
+    },
+    {
+      "case": "dedicated field monster loses HP from automatic basic attack",
+      "before": 28,
+      "after": 16
+    },
+    {
+      "case": "remote owner entered BossRoom",
+      "room": 1
+    },
+    {
+      "case": "dedicated boss loses HP from automatic basic attack",
+      "before": 480,
+      "after": 471,
+      "room": 1
+    },
+    {
+      "case": "remote owner entered village",
+      "room": 0
+    },
+    {
+      "case": "boss death returns owner to village with auto off"
+    }
+  ]
+}

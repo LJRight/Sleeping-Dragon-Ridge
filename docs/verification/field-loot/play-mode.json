@@ -1,0 +1,68 @@
+{
+  "unity": "6000.3.10f1",
+  "mode": "Dedicated server and Player in separate Editor Play Mode processes. Temporary loopback login server and SQLite. Lv3 and prerequisite report seeded, server positioned actors and called the normal damage entry point.",
+  "target": "A2",
+  "damageSamples": [
+    {
+      "before": 46,
+      "after": 39,
+      "shown": 7
+    },
+    {
+      "before": 39,
+      "after": 0,
+      "shown": 39
+    },
+    {
+      "before": 46,
+      "after": 0,
+      "shown": 46
+    }
+  ],
+  "firstPopup": {
+    "observedRiseCanvasUnits": 74.56,
+    "lowestSampledAlpha": 0.003,
+    "deactivated": true
+  },
+  "kills": 2,
+  "hudRows": [
+    {
+      "name": "골드",
+      "quantity": "×20",
+      "sprite": "gold"
+    },
+    {
+      "name": "생명의 방어구",
+      "quantity": "×1",
+      "sprite": "vital_armor"
+    },
+    {
+      "name": "강화석",
+      "quantity": "×1",
+      "sprite": "ore"
+    },
+    {
+      "name": "잿불 심장석",
+      "quantity": "×1",
+      "sprite": "ember_heartstone"
+    }
+  ],
+  "inventoryCard": {
+    "name": "잿불 심장석",
+    "quantityLabel": "수량  2",
+    "sprite": "ember_heartstone"
+  },
+  "questItemBeforeReport": 2,
+  "questItemAfterReport": 0,
+  "goldBeforeReport": 40,
+  "goldAfterReport": 65,
+  "oreBeforeReport": 1,
+  "oreAfterReport": 2,
+  "questAfterReport": "completed",
+  "reconnect": {
+    "accountRestored": true,
+    "sameInventoryAndGold": true,
+    "oldLootNotifications": 0,
+    "observationSecondsAfterRefresh": 4
+  }
+}

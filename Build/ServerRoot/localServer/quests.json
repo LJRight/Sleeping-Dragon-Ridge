@@ -1,0 +1,96 @@
+[
+  {
+    "id": "watch", "name": "원정 준비", "category": "main", "type": "tutorial",
+    "npcId": "warden", "reportNpcId": "warden", "minLevel": 1, "requires": [],
+    "dialogue": "출발하기 전에 장비 가방을 열어 보게.", "instruction": "인벤토리 열기",
+    "goals": [{"id":"open_bag","target":"open_inventory","label":"인벤토리 열기","required":1,"allowExisting":false}],
+    "completion": "immediate", "nextObjective":"hunt", "reward": {"gold":10,"items":["balance_sword"]}
+  },
+  {
+    "id": "supplies", "name": "대장간 보급", "category": "side", "type": "collect",
+    "npcId": "warden", "reportNpcId": "smith", "minLevel": 1, "requires": [],
+    "dialogue": "대장장이에게 이 꾸러미를 전해 주게.", "instruction": "대장장이에게 보급 꾸러미 전달",
+    "goals": [{"id":"package","target":"parcel","label":"보급 꾸러미","required":1}],
+    "onAccept": {"materials":{"parcel":1}}, "completion":"report", "reward":{"gold":15}
+  },
+  {
+    "id": "first_temper", "name": "첫 담금질", "category": "main", "type": "tutorial",
+    "npcId": "smith", "reportNpcId": "smith", "minLevel": 1, "requires": ["watch"],
+    "dialogue": "경비대장에게 받은 균형의 검을 보여 주게. 이 강화석 하나와 10골드면 첫 담금질을 마칠 수 있네.",
+    "instruction": "대장장이의 ‘장비 강화’에서 균형의 검을 +1로 강화",
+    "goals": [{"id":"temper_sword","target":"temper_starter_sword","label":"지급받은 균형의 검 +1 강화","required":1,"allowExisting":true}],
+    "onAccept": {"materials":{"ore":1}}, "completion": "immediate", "reward": {}
+  },
+  {
+    "id": "equip_sword", "name": "첫 검을 차고", "category": "main", "type": "tutorial",
+    "npcId": "warden", "reportNpcId": "warden", "minLevel": 1, "requires": ["first_temper"],
+    "dialogue": "가방 속의 검을 장착하게. 칼집을 허리에 차면 출발할 준비가 된 걸세.",
+    "instruction": "인벤토리에서 검 장착",
+    "goals": [{"id":"wear_sword","target":"equip_sword","label":"검 장착","required":1,"allowExisting":true}],
+    "completion": "immediate", "reward": {"materials":{"ore":1}}
+  },
+  {
+    "id": "hunt", "name": "능선의 위협", "category":"main", "type":"kill",
+    "npcId":"warden","reportNpcId":"warden","minLevel":1,"requires":["equip_sword"],
+    "dialogue":"능선의 영혼 포식자를 처치한 뒤 나에게 보고하게.", "instruction":"영혼 포식자 처치 후 경비대장에게 보고",
+    "goals":[{"id":"slay_dragon","target":"A1","label":"영혼 포식자","required":1}],
+    "completion":"report","reward":{"gold":25,"xp":20,"items":["balance_helm"]}
+  },
+  {
+    "id":"ember_hearts", "name":"식지 않는 불씨", "category":"side", "type":"collect",
+    "npcId":"smith", "reportNpcId":"smith", "minLevel":3, "requires":["hunt"],
+    "dialogue":"화염 영혼 포식자의 심장석에는 쓰러진 뒤에도 불씨가 남지. 두 개만 가져오게. 식어 가는 화덕을 살릴 수 있겠어.",
+    "instruction":"화염 영혼 포식자에게서 잿불 심장석 2개를 모아 대장장이에게 전달",
+    "goals":[{"id":"embers","target":"ember_heartstone","label":"잿불 심장석","required":2,"dropFrom":["A2"],"dropChanceRef":"ember_heartstone"}],
+    "completion":"report", "reward":{"gold":25,"materials":{"ore":1}}
+  },
+  {
+    "id":"hunt_a2", "name":"잿불이 번지기 전에", "category":"main", "type":"kill",
+    "npcId":"warden", "reportNpcId":"warden", "minLevel":3, "requires":["hunt"],
+    "dialogue":"불씨를 머금은 포식자들이 능선 아래로 내려오고 있네. 잿불이 번지기 전에 막아 주게.",
+    "instruction":"화염 영혼 포식자 2마리 처치 후 경비대장에게 보고",
+    "goals":[{"id":"slay_flame","target":"A2","label":"화염 영혼 포식자","required":2}],
+    "completion":"report", "reward":{"gold":30}
+  },
+  {
+    "id":"hunt_a3", "name":"독안개 속의 발자국", "category":"main", "type":"kill",
+    "npcId":"warden", "reportNpcId":"warden", "minLevel":5, "requires":["hunt_a2"],
+    "dialogue":"순찰대가 독안개 속에서 발자국을 놓쳤다네. 독 영혼 포식자를 찾아 길을 열어 주게.",
+    "instruction":"독 영혼 포식자 3마리 처치 후 경비대장에게 보고",
+    "goals":[{"id":"slay_venom","target":"A3","label":"독 영혼 포식자","required":3}],
+    "completion":"report", "reward":{"gold":45,"materials":{"ore":2}}
+  },
+  {
+    "id":"hunt_a4", "name":"얼어붙은 고갯길", "category":"main", "type":"kill",
+    "npcId":"warden", "reportNpcId":"warden", "minLevel":10, "requires":["hunt_a3"],
+    "dialogue":"고갯길의 서리가 풀리지 않는군. 냉기를 뿜는 영혼 포식자를 물리쳐 주게.",
+    "instruction":"서리 영혼 포식자 4마리 처치 후 경비대장에게 보고",
+    "goals":[{"id":"slay_frost","target":"A4","label":"서리 영혼 포식자","required":4}],
+    "completion":"report", "reward":{"gold":70,"items":["balance_armor"]}
+  },
+  {
+    "id":"broken_palisade", "name":"부러진 방책", "category":"side", "type":"collect",
+    "npcId":"warden", "reportNpcId":"warden", "minLevel":15, "requires":["hunt_a4"],
+    "dialogue":"멧돼지 떼가 방책을 들이받아 말뚝들이 갈라졌네. 놈들의 단단한 엄니 두 개를 가져오게. 부러진 끝을 덧댈 수 있을 걸세.",
+    "instruction":"일반 또는 황금 멧돼지에게서 단단한 엄니 2개를 모아 경비대장에게 전달",
+    "goals":[{"id":"tusks","target":"sturdy_tusk","label":"단단한 엄니","required":2,"dropFrom":["B1","B1G"],"dropChanceRef":"sturdy_tusk"}],
+    "completion":"report", "reward":{"gold":60,"materials":{"ore":2}}
+  },
+  {
+    "id":"hunt_boar", "name":"관문 앞의 엄니", "category":"main", "type":"kill",
+    "npcId":"warden", "reportNpcId":"warden", "minLevel":15, "requires":["hunt_a4"],
+    "dialogue":"관문으로 향하는 마지막 길목을 멧돼지들이 막고 있네. 황금빛 털을 가진 놈도 같은 무리일세.",
+    "instruction":"일반 또는 황금 멧돼지 3마리 처치 후 경비대장에게 보고",
+    "goals":[{"id":"slay_boars","target":"B1","alsoTargets":["B1G"],"label":"일반·황금 멧돼지","required":3}],
+    "completion":"report", "reward":{"gold":100,"materials":{"rare_ore":1}}
+  },
+  {
+    "id":"ridge_boss", "name":"능선의 주인", "category":"main", "type":"kill",
+    "npcId":"warden", "reportNpcId":"warden", "minLevel":20, "requires":["hunt_boar"],
+    "dialogue":"능선 관문 너머에 영혼 포식자의 우두머리가 있다. 쓰러뜨리고 돌아오게.",
+    "instruction":"능선의 우두머리 처치 후 경비대장에게 보고",
+    "goals":[{"id":"defeat_boss","target":"ridge_boss","label":"능선의 우두머리","required":1}],
+    "completion":"report", "nextObjective":"complete",
+    "rewardRef":"bossReport","reward":{"items":["ridge_sword"]}
+  }
+]

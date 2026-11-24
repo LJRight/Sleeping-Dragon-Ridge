@@ -1,0 +1,30 @@
+{
+  "source": "FinalQA / ServerBuild_2 / isolated SQLite",
+  "input": "actual client joystick, attack and NPC interaction via Unity EventSystem",
+  "firstCombatHp": [
+    28,
+    14
+  ],
+  "rejoinDuringHunt": {
+    "account": "g_8ad4d2ab407e554cf6acb688",
+    "revision": 6,
+    "gold": 25,
+    "xp": 0.0,
+    "huntState": "active",
+    "entireOwnerSnapshotEqual": true
+  },
+  "rejoinBeforeReport": {
+    "account": "g_8ad4d2ab407e554cf6acb688",
+    "revision": 7,
+    "gold": 37,
+    "xp": 20.0,
+    "huntState": "ready",
+    "entireOwnerSnapshotEqual": true
+  },
+  "afterReport": {
+    "revision": 8,
+    "gold": 62,
+    "totalXp": 40.0,
+    "huntState": "completed"
+  }
+}

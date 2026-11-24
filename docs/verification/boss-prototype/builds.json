@@ -1,0 +1,99 @@
+{
+  "verifiedAtKST": "2026-11-20T12:47:31+09:00",
+  "unity": "6000.3.10f1",
+  "hostOS": "macOS 26.5.2",
+  "hostArchitecture": "arm64",
+  "builds": [
+    {
+      "role": "macOS QA client",
+      "verifiedTypes": [
+        "BossCombat",
+        "BossAnimationView",
+        "DisplayedHealth",
+        "ActorHealthBars"
+      ],
+      "executableSHA256": "55e1e73bc5965472cbd0d0918b818b2891013bc757690617bc3cc2e2c7cc16bf",
+      "assemblySHA256": "36cc9dc886d9e4f157bd396c6cb2b25144c399c5968b3fa01931a516f8f20377",
+      "unityPartyProbePresent": true,
+      "bossPartyServerPresent": true,
+      "architecture": "arm64"
+    },
+    {
+      "role": "macOS dedicated server",
+      "verifiedTypes": [
+        "BossCombat",
+        "BossAnimationView",
+        "DisplayedHealth",
+        "ActorHealthBars",
+        "BossBreathView"
+      ],
+      "executableSHA256": "86bf21c7ad07f6ccfd3b0c705158fd54e680562add51adcdd787299de9aec13d",
+      "assemblySHA256": "a8f5a008e3beeaa258b3c58b3d1ce8fc011356d0bdd29edb658d84f05bae5b09",
+      "unityPartyProbePresent": false,
+      "bossPartyServerPresent": true,
+      "architecture": "arm64",
+      "executable": "ServerBuild/ServerBuild_6/NetmarbleNeo"
+    },
+    {
+      "role": "macOS player",
+      "verifiedTypes": [
+        "BossCombat",
+        "BossAnimationView",
+        "DisplayedHealth",
+        "ActorHealthBars",
+        "BossBreathView"
+      ],
+      "executableSHA256": "80d20001d69f6da01eae97aa8042c3afc602ae6b979f91711daa6284dccdc41d",
+      "assemblySHA256": "2b43483c98a745ac27120782eb5530809d034e813983e1053ced6258948a71d3",
+      "unityPartyProbePresent": false,
+      "bossPartyServerPresent": true,
+      "architecture": "arm64",
+      "executable": "ClientBuild/BossPrototype/NetmarbleNeo.app/Contents/MacOS/NetmarbleNeo"
+    }
+  ],
+  "releaseGameplaySource": {
+    "directory": "NetmarbleNeo/Assets/Scripts",
+    "csharpFileCount": 46,
+    "manifestSHA256": "8409c3b016a1e87bf89c212c98214a8efa5c03694e1f1ab584124afc90c8d83d",
+    "comparedAgainstIsolatedProject": true
+  },
+  "buildReports": {
+    "client": {
+      "result": "Success",
+      "shaderCompilerErrors": []
+    },
+    "server": {
+      "result": "Success",
+      "shaderCompilerErrors": []
+    }
+  },
+  "sourceAssetMetaFilesMatched": 2158,
+  "releaseBossAssetSHA256": {
+    "Animation/Boss Animator.controller": "388ff4f5b96254e9166feb7ed21258b2281fed4a1cf4c02aa5ff80bc3f95977c",
+    "DefaultNetworkPrefabs.asset": "fb664a5c778a6e75c017195239896f70ac7519bf5c773304d9abf2c6940b7525",
+    "Scenes/Prototype.unity": "e07e333c2d8d00177d2c21b7c636c2da13ba5bf4e4700d4522dacb7f99424210",
+    "Prefabs/Boss.prefab": "cc2f07837dc78fb35f7b09b0ba03d820a3c657dc86565df1f7b7e50d118a7a63",
+    "Prefabs/Flame Particle.prefab": "03731c71bb64cccc884eb95bd3b5e2f8ec4ba3385d6a78a99535e463f9f9a337",
+    "Shaders/Combat/AttackRange.shadergraph": "f92fd5cc7550b501cc2e63ac3e8e784769a643420a42d7e3183aea68dccaceb6",
+    "Shaders/Combat/AttackRange.mat": "0519d094260292005329f088c448f17ff54c70fb62994b315f3176c564533c91",
+    "Shaders/Combat/AttackRangeMask.hlsl": "19b09ae13232a096b93599f0e8776364b47f74d2bc422a9bc151be0e473b883f",
+    "Fire/FreeQuickEffectsVol1/Materials/Flare00_AB_2.mat": "3a480a579637d390406117a80e92bbb653d1137a60c91af3a9ad894b4d6db3d3",
+    "Fire/FreeQuickEffectsVol1/Materials/DistortedFlare01_AB_2.mat": "0f8f4eb8db35c1dfe60bc812389a84652ab171b7f3211e23143c5291886e7760",
+    "Fire/FreeQuickEffectsVol1/Textures/Flare00.PNG": "cd95c8842d220d86bc4e0791c13df210def6eefd96a36628165c8cc779ddfaf4",
+    "Fire/FreeQuickEffectsVol1/Textures/DistortedFlare01.png": "f770b0163e764822257ce83c726de5e39c3e8fdc50739218298981880753e71c"
+  },
+  "qaAndReleaseScope": "Instrumented QA build exercised boss gameplay. Release builds include the final Flame Particle child binding and exclude QA instrumentation.",
+  "releaseSmoke": {
+    "clientAndLoginEndpoints": "127.0.0.1",
+    "dedicatedUdpListenAddress": "0.0.0.0 (existing LAN configuration)",
+    "dedicatedUdpPort": "temporary dynamic port",
+    "temporarySqlite": true,
+    "isolatedGuestProfile": true,
+    "gameServerLog": "게임 서버가 접속을 기다립니다.",
+    "clientLog": "플레이 준비 완료",
+    "guestAccounts": 1,
+    "sessions": 1,
+    "progressRows": 1,
+    "scope": "Fresh guest against the release server and macOS client through game-world admission. The smoke client ran headless. Interactive Metal, mobile devices and store signing were outside this smoke run."
+  }
+}
