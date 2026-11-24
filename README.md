@@ -12,7 +12,8 @@ Unity 6000.3.10f1과 Netcode for GameObjects로 만들었습니다. Unity 전용
 
 ## 플레이 데모
 
-YouTube 영상 공개 준비 중 <!-- [YouTube에서 플레이 데모 보기](YOUTUBE_DEMO_URL) -->
+- [일반 플레이 영상 보기](https://youtu.be/bKdLibyQhYE)
+- [멀티플레이 보스전 영상 보기](https://youtu.be/0eIhy1JeAC8)
 
 ## 다운로드
 
