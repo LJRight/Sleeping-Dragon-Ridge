@@ -4,7 +4,7 @@
 
 Unity 6000.3.10f1과 Netcode for GameObjects로 만들었습니다. Unity 전용 서버가 이동·타격·보스 패턴을 판정하고, Python·SQLite 백엔드가 기기별 게스트 계정과 퀘스트·장비·거래를 저장합니다.
 
-![검과 방패를 든 기사가 사냥터의 자갈길에 서 있고, 화면 양쪽에 조이스틱과 전투 버튼이 보이는 플레이 화면](docs/verification/skill-areas/combat-icons-field.png)
+
 
 ## AI와 함께 만든 과정
 
