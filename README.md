@@ -4,7 +4,7 @@
 
 Unity 6000.3.10f1과 Netcode for GameObjects로 만들었습니다. Unity 전용 서버가 이동·타격·보스 패턴을 판정하고, Python·SQLite 백엔드가 기기별 게스트 계정과 퀘스트·장비·거래를 저장합니다.
 
-![사냥터에서 몬스터를 처치하고 골드와 아이템을 획득하는 플레이 화면](docs/verification/field-loot/field.jpg)
+![검과 방패를 든 기사가 사냥터의 자갈길에 서 있고, 화면 양쪽에 조이스틱과 전투 버튼이 보이는 플레이 화면](docs/verification/skill-areas/combat-icons-field.png)
 
 ## AI와 함께 만든 과정
 
@@ -16,11 +16,13 @@ YouTube 영상 공개 준비 중 <!-- [YouTube에서 플레이 데모 보기](YO
 
 ## 다운로드
 
+[Google Drive에서 전체 빌드 보기](https://drive.google.com/drive/folders/1UMrcuIIOONqgl8K_5yOPpZ_tQqiBUcCG?usp=share_link)
+
 | 플랫폼 | 배포 파일과 실행 방법 | Google Drive |
 | --- | --- | --- |
-| Android | ARM64용 `1.0.0.apk`를 휴대폰에서 열어 설치합니다. 설치 권한을 묻는 경우 파일을 연 브라우저나 파일 앱에 허용합니다. | 공개 준비 중 <!-- [Android 다운로드](DRIVE_ANDROID_URL) --> |
-| iOS | Unity Hub 기본 경로에 Unity 6000.3.10f1이 설치된 Mac에서 `Ridge-iOS-Xcode.zip`을 풉니다. `Ridge-iOS/Unity-iPhone.xcodeproj`를 Xcode로 열고 본인의 서명 Team과 연결한 iPhone을 선택해 **Run**합니다. | 공개 준비 중 <!-- [iOS Xcode 프로젝트 다운로드](DRIVE_IOS_URL) --> |
-| Windows 서버 | x64용 `Ridge-Server-Windows-x64.zip`을 풀고 `ServerRoot/start-servers.cmd`를 실행합니다. Python 3.11 이상이 필요합니다. | 공개 준비 중 <!-- [Windows 서버 다운로드](DRIVE_WINDOWS_SERVER_URL) --> |
+| Android | ARM64용 `1.0.0.apk`를 휴대폰에서 열어 설치합니다. 설치 권한을 묻는 경우 파일을 연 브라우저나 파일 앱에 허용합니다. | [APK 받기](https://drive.google.com/file/d/1HbNAsPmYrP-qzWRJv2-AzTUxYUosEWtK/view) |
+| iOS | Unity Hub 기본 경로에 Unity 6000.3.10f1이 설치된 Mac에서 `Ridge-iOS-Xcode.zip`을 풉니다. `Ridge-iOS/Unity-iPhone.xcodeproj`를 Xcode로 열고 본인의 서명 Team과 연결한 iPhone을 선택해 **Run**합니다. | [Xcode 프로젝트 받기](https://drive.google.com/file/d/1A3Tm3hOiFaHPa_q33OWxsY_iiy5R8WuH/view) |
+| Windows 서버 | x64용 `Ridge-Server-Windows-x64.zip`을 풀고 `ServerRoot/start-servers.cmd`를 실행합니다. Python 3.11 이상이 필요합니다. | [서버 ZIP 받기](https://drive.google.com/file/d/1_0nzV0BbbpsKiDZFrmZT88wDpw2lTvow/view) |
 
 **플레이만 하려면** 운영자 서버가 켜져 있을 때 모바일 앱을 실행하세요. 앱이 `binaryRight.iptime.org`에 접속해 게스트로 로그인합니다. Windows 서버 ZIP은 직접 서버를 운영할 때 사용합니다.
 
